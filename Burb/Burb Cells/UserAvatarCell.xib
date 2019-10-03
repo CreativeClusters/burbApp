@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="169" id="KGk-i7-Jjw" customClass="UserAvatarCell" customModule="Burb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQr-6S-plY" customClass="PhotoView" customModule="Burb" customModuleProvider="target">
+                        <rect key="frame" x="83.5" y="8" width="153" height="153"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wQr-6S-plY" secondAttribute="height" multiplier="1:1" id="Og4-1a-Rkw"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OwE-LO-32d">
+                        <rect key="frame" x="87.5" y="12" width="145" height="145"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="OwE-LO-32d" firstAttribute="width" secondItem="wQr-6S-plY" secondAttribute="width" multiplier="1.9/2" id="Cd6-A0-hnF"/>
+                    <constraint firstItem="wQr-6S-plY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WYW-hW-jUe"/>
+                    <constraint firstItem="OwE-LO-32d" firstAttribute="centerX" secondItem="wQr-6S-plY" secondAttribute="centerX" id="Yk8-ZI-ka4"/>
+                    <constraint firstItem="OwE-LO-32d" firstAttribute="height" secondItem="wQr-6S-plY" secondAttribute="height" multiplier="1.9/2" id="bMA-9x-5le"/>
+                    <constraint firstItem="wQr-6S-plY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="hEF-1j-SkU"/>
+                    <constraint firstItem="wQr-6S-plY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="pKK-n8-fxN"/>
+                    <constraint firstItem="OwE-LO-32d" firstAttribute="centerY" secondItem="wQr-6S-plY" secondAttribute="centerY" id="pMO-8z-tXX"/>
+                    <constraint firstAttribute="bottom" secondItem="wQr-6S-plY" secondAttribute="bottom" constant="8" id="xcg-ug-biw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="OwE-LO-32d" id="9lV-WG-y4S"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="179.79910714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

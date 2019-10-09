@@ -15,13 +15,8 @@ class OrdersViewController: UIViewController {
     var barber: User?
     var orders = [Order]()
     var currentOrder: Order?
-    var location: CLLocationCoordinate2D? { didSet {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-            }
-        }
-    }
-    
+
+
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     
     @IBOutlet weak var tableView: UITableView!
@@ -46,9 +41,6 @@ class OrdersViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let cell: OrderCell = tableView.dequeueReusableCell(withIdentifier: "OrderCell") as! OrderCell
-        cell.startManager()
-        cell.setupPin()
     }
     
     func fetchOrders() {
@@ -58,9 +50,7 @@ class OrdersViewController: UIViewController {
                 let order = Order(dictionary: dictionary)
                 print(order)
                 self.currentOrder = order
-                self.orders.append(order)
-                
-                
+                self.orders.append(order)               
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -85,7 +75,8 @@ extension OrdersViewController: UITableViewDelegate, UITableViewDataSource {
         let order = orders[indexPath.row]
         
         let exactDate = NSDate(timeIntervalSince1970: TimeInterval(truncating: order.date!))
-        cell.coordinate = self.location!
+        cell.coordinate.latitude = order.latitude!
+        cell.coordinate.longitude = order.longitude!
         cell.dateTextField.text = exactDate.toString(dateFormat: "MMM d, h:mm a")
         cell.adressTextField.text = order.adress
         cell.nameTextField.text = order.barberName

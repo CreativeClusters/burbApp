@@ -20,7 +20,7 @@ class OrderCell: UITableViewCell, CLLocationManagerDelegate {
      var geocoder         = CLGeocoder()
      var locationManager  = CLLocationManager()
      var locationWasShown = false
-     var coordinate = CLLocationCoordinate2D(latitude: 55.767165774221056, longitude: 37.6751603357539)
+    lazy var coordinate = CLLocationCoordinate2D()
      var pinShowImageView: UIImageView?
     
     @IBOutlet weak var cellView: UIView!
@@ -82,9 +82,10 @@ class OrderCell: UITableViewCell, CLLocationManagerDelegate {
     
      func startManager() {
         
-        if self.coordinate != nil {
+        if self.coordinate != nil, self.coordinate.latitude != 0.0 && self.coordinate.longitude != 0.0  {
             self.locationWasShown = true
             setRegion(self.coordinate)
+            print("here is coordinate \(self.coordinate)")
         }
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self
@@ -106,14 +107,17 @@ class OrderCell: UITableViewCell, CLLocationManagerDelegate {
     
     
        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if !locationWasShown {
-                 
-                 locationWasShown = true
-                 
-                 let location = locations.last! as CLLocation
-                 setRegion(location.coordinate)
-                 findAddress(location)
-             }
+        
+//        if !locationWasShown {
+//
+//                 locationWasShown = true
+//
+//                 let location = locations.last! as CLLocation
+//                 setRegion(location.coordinate)
+//                 findAddress(location)
+//             }
+        
+         findAddress(CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude))
     }
 
     

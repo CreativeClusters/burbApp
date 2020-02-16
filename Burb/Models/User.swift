@@ -12,9 +12,12 @@ class User: NSObject {
     var id: String?
     var phone: String?
     var name: String?
+    var photo: UIImage?
     var avatarReference: String?
     var notifications: String?
     var language: String?
+    var type: Role = .barber    
+    
     
     init(dictionary: [String: Any]) {
         self.id = dictionary["id"] as? String

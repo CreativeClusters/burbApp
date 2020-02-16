@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
         FirebaseApp.configure()
         
         //Mark: - Notifications availivble
@@ -33,7 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UIApplication.shared.registerForRemoteNotifications()
         }
         
-        
+        if #available(iOS 13.0, *) {
+            StartRouter.shared.root(&window)
+        } else {
+            // Fallback on earlier versions
+        }
+
         return true
     }
 

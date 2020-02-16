@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="230" id="KGk-i7-Jjw" customClass="AvatarTableViewCell" customModule="Burb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O10-3i-5Mu">
+                        <rect key="frame" x="80" y="35" width="160" height="160"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="O10-3i-5Mu" secondAttribute="height" multiplier="1:1" id="3uF-eL-UpG"/>
+                            <constraint firstAttribute="width" constant="160" id="aIn-wd-LgI"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-Pr-6Wz">
+                        <rect key="frame" x="88" y="43" width="144" height="144"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="O10-3i-5Mu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5nh-kS-5N1"/>
+                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="centerY" secondItem="O10-3i-5Mu" secondAttribute="centerY" id="6KK-To-9nV"/>
+                    <constraint firstItem="O10-3i-5Mu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Jls-m4-jDb"/>
+                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="centerX" secondItem="O10-3i-5Mu" secondAttribute="centerX" id="TXG-lu-KJa"/>
+                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="height" secondItem="O10-3i-5Mu" secondAttribute="height" multiplier="0.9" id="ZLG-C5-DyK"/>
+                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="width" secondItem="O10-3i-5Mu" secondAttribute="width" multiplier="0.9" id="uIa-bZ-um7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatarImageView" destination="5dU-Pr-6Wz" id="3az-UT-WaJ"/>
+                <outlet property="circleView" destination="O10-3i-5Mu" id="O6B-fT-trR"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="215.625"/>
+        </tableViewCell>
+    </objects>
+</document>

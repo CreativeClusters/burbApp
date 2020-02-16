@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33CAE00A39F1CA28D14ED200 /* Pods_Burb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE859DC4C5202E15324B7C43 /* Pods_Burb.framework */; };
+		371C3F9D4290E5A5021245DE /* Pods_Burb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCB1C46D0F3F673A87A316C /* Pods_Burb.framework */; };
 		440E4191230D3482000FD5FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4190230D3482000FD5FD /* LoginViewController.swift */; };
 		440E4194230D3E6D000FD5FD /* SignupViaPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4193230D3E6D000FD5FD /* SignupViaPhoneViewController.swift */; };
 		440E4197230D47F6000FD5FD /* ConfirmSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4196230D47F6000FD5FD /* ConfirmSignupViewController.swift */; };
@@ -35,9 +35,48 @@
 		443877C52343510C008AD69F /* HidePhoneNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443877C32343510C008AD69F /* HidePhoneNumberCell.xib */; };
 		443877CC2343D69C008AD69F /* SignOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443877CA2343D69C008AD69F /* SignOutCell.swift */; };
 		443877CD2343D69C008AD69F /* SignOutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443877CB2343D69C008AD69F /* SignOutCell.xib */; };
+		4446828623ED4DA60016167C /* BUDetailOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446828423ED4DA60016167C /* BUDetailOrderViewController.swift */; };
+		4446828723ED4DA60016167C /* BUDetailOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4446828523ED4DA60016167C /* BUDetailOrderViewController.xib */; };
+		4446828F23ED8C460016167C /* AvatarOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4446828D23ED8C460016167C /* AvatarOrderTableViewCell.xib */; };
+		4446829023ED8C460016167C /* AvatarOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446828E23ED8C460016167C /* AvatarOrderTableViewCell.swift */; };
+		4446829223ED90400016167C /* MyOrdersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446829123ED90400016167C /* MyOrdersRouter.swift */; };
+		4446829623EEBA180016167C /* TwoButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446829423EEBA180016167C /* TwoButtonTableViewCell.swift */; };
+		4446829723EEBA180016167C /* TwoButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4446829523EEBA180016167C /* TwoButtonTableViewCell.xib */; };
+		4446829B23EEBCE90016167C /* BUTextViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446829923EEBCE90016167C /* BUTextViewTableViewCell.swift */; };
+		4446829C23EEBCE90016167C /* BUTextViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4446829A23EEBCE90016167C /* BUTextViewTableViewCell.xib */; };
+		444682A023EEBE4F0016167C /* MapViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446829E23EEBE4F0016167C /* MapViewTableViewCell.swift */; };
+		444682A123EEBE4F0016167C /* MapViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4446829F23EEBE4F0016167C /* MapViewTableViewCell.xib */; };
+		444682A323F0003C0016167C /* ChooseBarberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444682A223F0003C0016167C /* ChooseBarberRouter.swift */; };
+		44472DA623DDAAA0009259C5 /* BUCreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DA423DDAAA0009259C5 /* BUCreateUserViewController.swift */; };
+		44472DA723DDAAA0009259C5 /* BUCreateUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DA523DDAAA0009259C5 /* BUCreateUserViewController.xib */; };
+		44472DAB23DDAC6F009259C5 /* BUTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DA923DDAC6F009259C5 /* BUTextFieldTableViewCell.swift */; };
+		44472DAC23DDAC6F009259C5 /* BUTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DAA23DDAC6F009259C5 /* BUTextFieldTableViewCell.xib */; };
+		44472DB423DDAE83009259C5 /* AvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DB223DDAE83009259C5 /* AvatarTableViewCell.swift */; };
+		44472DB523DDAE83009259C5 /* AvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DB323DDAE83009259C5 /* AvatarTableViewCell.xib */; };
+		44472DB723DDB5FB009259C5 /* ChooseRoleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DB623DDB5FB009259C5 /* ChooseRoleRouter.swift */; };
+		44472DBA23DDC42C009259C5 /* CreateUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DB923DDC42C009259C5 /* CreateUserRouter.swift */; };
+		44472DBC23DEBF50009259C5 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DBB23DEBF50009259C5 /* Extension+String.swift */; };
+		44472DBF23DEBFD3009259C5 /* ValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DBE23DEBFD3009259C5 /* ValidationHelper.swift */; };
+		44472DCA23E17704009259C5 /* BUClientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DC823E17704009259C5 /* BUClientTabBarController.swift */; };
+		44472DCB23E17704009259C5 /* BUClientTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DC923E17704009259C5 /* BUClientTabBarController.xib */; };
+		44472DCF23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DCD23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift */; };
+		44472DD023E17A6D009259C5 /* BUOrderLocationPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DCE23E17A6D009259C5 /* BUOrderLocationPickerViewController.xib */; };
+		44472DD423E17AAB009259C5 /* BUDialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DD223E17AAB009259C5 /* BUDialogsViewController.swift */; };
+		44472DD523E17AAB009259C5 /* BUDialogsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DD323E17AAB009259C5 /* BUDialogsViewController.xib */; };
+		44472DD923E17AC7009259C5 /* BUClientProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DD723E17AC7009259C5 /* BUClientProfileViewController.swift */; };
+		44472DDA23E17AC7009259C5 /* BUClientProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DD823E17AC7009259C5 /* BUClientProfileViewController.xib */; };
+		44472DDE23E1D054009259C5 /* BUOrderDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DDC23E1D054009259C5 /* BUOrderDatePickerViewController.swift */; };
+		44472DDF23E1D054009259C5 /* BUOrderDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DDD23E1D054009259C5 /* BUOrderDatePickerViewController.xib */; };
+		44472DE323E1D1EB009259C5 /* BULabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DE123E1D1EB009259C5 /* BULabelTableViewCell.swift */; };
+		44472DE423E1D1EB009259C5 /* BULabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DE223E1D1EB009259C5 /* BULabelTableViewCell.xib */; };
 		44499FA9233B55B000467073 /* ChangeClientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44499FA8233B55B000467073 /* ChangeClientSettingsViewController.swift */; };
 		444A90C523363322000C9D15 /* BarberDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A90C323363322000C9D15 /* BarberDetailViewCell.swift */; };
 		444A90C623363322000C9D15 /* BarberDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444A90C423363322000C9D15 /* BarberDetailViewCell.xib */; };
+		4459EC5423CCA46500FE6292 /* BULoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459EC5223CCA46500FE6292 /* BULoginViewController.swift */; };
+		4459EC5523CCA46500FE6292 /* BULoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4459EC5323CCA46500FE6292 /* BULoginViewController.xib */; };
+		4459EC5A23CCA92800FE6292 /* LogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459EC5823CCA92800FE6292 /* LogoTableViewCell.swift */; };
+		4459EC5B23CCA92800FE6292 /* LogoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4459EC5923CCA92800FE6292 /* LogoTableViewCell.xib */; };
+		4459EC6323CCB65A00FE6292 /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459EC6223CCB65A00FE6292 /* StartRouter.swift */; };
 		445A4A6423322F5500DE0417 /* ClientTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445A4A6323322F5500DE0417 /* ClientTabbarController.swift */; };
 		445A4A672332B93900DE0417 /* DetailOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445A4A662332B93900DE0417 /* DetailOrderViewController.swift */; };
 		4466C5DD231E3F83004CA831 /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5DC231E3F83004CA831 /* DialogsViewController.swift */; };
@@ -45,6 +84,28 @@
 		4466C5E2231E62C7004CA831 /* CurrentDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E1231E62C7004CA831 /* CurrentDialogViewController.swift */; };
 		4466C5E4231EAC0F004CA831 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E3231EAC0F004CA831 /* Message.swift */; };
 		4466C5E6231EB135004CA831 /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E5231EB135004CA831 /* MessageViewCell.swift */; };
+		44687BFE23E7FB9800F759F4 /* BUMyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687BFC23E7FB9800F759F4 /* BUMyOrdersViewController.swift */; };
+		44687BFF23E7FB9800F759F4 /* BUMyOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687BFD23E7FB9800F759F4 /* BUMyOrdersViewController.xib */; };
+		44687C0723E81F1900F759F4 /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C0523E81F1900F759F4 /* OrderCollectionViewCell.swift */; };
+		44687C0823E81F1900F759F4 /* OrderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687C0623E81F1900F759F4 /* OrderCollectionViewCell.xib */; };
+		44687C0A23E9523A00F759F4 /* LocationPickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C0923E9523A00F759F4 /* LocationPickerRouter.swift */; };
+		44687C1823EAFBC700F759F4 /* ConfirmTimeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C1723EAFBC700F759F4 /* ConfirmTimeRouter.swift */; };
+		44687C1B23EB0A8300F759F4 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C1923EB0A8300F759F4 /* TextFieldTableViewCell.swift */; };
+		44687C1C23EB0A8300F759F4 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687C1A23EB0A8300F759F4 /* TextFieldTableViewCell.xib */; };
+		44687C2123EBF8CC00F759F4 /* TumblerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C1F23EBF8CC00F759F4 /* TumblerTableViewCell.swift */; };
+		44687C2223EBF8CC00F759F4 /* TumblerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687C2023EBF8CC00F759F4 /* TumblerTableViewCell.xib */; };
+		44687C2623EBFE9B00F759F4 /* AvatarProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C2423EBFE9B00F759F4 /* AvatarProfileTableViewCell.swift */; };
+		44687C2723EBFE9B00F759F4 /* AvatarProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687C2523EBFE9B00F759F4 /* AvatarProfileTableViewCell.xib */; };
+		44687C2A23EC060000F759F4 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C2923EC060000F759F4 /* HeaderTitleView.swift */; };
+		44687C2C23EC060E00F759F4 /* HeaderTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687C2B23EC060E00F759F4 /* HeaderTitleView.xib */; };
+		44687C3023EC38E500F759F4 /* LabelButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C2E23EC38E500F759F4 /* LabelButtonTableViewCell.swift */; };
+		44687C3123EC38E500F759F4 /* LabelButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687C2F23EC38E500F759F4 /* LabelButtonTableViewCell.xib */; };
+		4477AE7623E42CB800295BC9 /* BUChooseBarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4477AE7423E42CB800295BC9 /* BUChooseBarberViewController.swift */; };
+		4477AE7723E42CB800295BC9 /* BUChooseBarberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4477AE7523E42CB800295BC9 /* BUChooseBarberViewController.xib */; };
+		4477AE7B23E45A3F00295BC9 /* BarberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4477AE7923E45A3F00295BC9 /* BarberCollectionViewCell.swift */; };
+		4477AE7C23E45A3F00295BC9 /* BarberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4477AE7A23E45A3F00295BC9 /* BarberCollectionViewCell.xib */; };
+		4477AE8023E45B0C00295BC9 /* BUCVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4477AE7E23E45B0C00295BC9 /* BUCVTableViewCell.swift */; };
+		4477AE8123E45B0C00295BC9 /* BUCVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4477AE7F23E45B0C00295BC9 /* BUCVTableViewCell.xib */; };
 		447B13EB2344A57F004D9275 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B13EA2344A57F004D9275 /* Typealiases.swift */; };
 		4481D30C2316D3EE00F823F2 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481D30B2316D3EE00F823F2 /* UserInfoCell.swift */; };
 		4481D3112316F1F700F823F2 /* BarbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481D3102316F1F700F823F2 /* BarbersViewController.swift */; };
@@ -64,6 +125,23 @@
 		449E73152317A499004771E8 /* BarberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73142317A499004771E8 /* BarberViewCell.swift */; };
 		449E73172317B07A004771E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73162317B07A004771E8 /* User.swift */; };
 		449E731A2317C3F3004771E8 /* ClientOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73192317C3F3004771E8 /* ClientOrderViewController.swift */; };
+		44A0BCDE23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0BCDC23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift */; };
+		44A0BCDF23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A0BCDD23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib */; };
+		44A12AF623D0471300912FFB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12AF523D0471300912FFB /* HeaderView.swift */; };
+		44A12AF823D0493F00912FFB /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A12AF723D0493F00912FFB /* HeaderView.xib */; };
+		44A12AFB23D0557F00912FFB /* BUButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12AF923D0557F00912FFB /* BUButtonTableViewCell.swift */; };
+		44A12AFC23D0557F00912FFB /* BUButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A12AFA23D0557F00912FFB /* BUButtonTableViewCell.xib */; };
+		44A12AFE23D065AA00912FFB /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12AFD23D065AA00912FFB /* LoginRouter.swift */; };
+		44A12B0323D066BC00912FFB /* BUSignupViaPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12B0123D066BC00912FFB /* BUSignupViaPhoneViewController.swift */; };
+		44A12B0423D066BC00912FFB /* BUSignupViaPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A12B0223D066BC00912FFB /* BUSignupViaPhoneViewController.xib */; };
+		44A12B0823D07F6200912FFB /* PhoneNumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12B0623D07F6200912FFB /* PhoneNumberCollectionViewCell.swift */; };
+		44A12B0923D07F6200912FFB /* PhoneNumberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A12B0723D07F6200912FFB /* PhoneNumberCollectionViewCell.xib */; };
+		44A12B0B23D0AA1C00912FFB /* SignupPhoneRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12B0A23D0AA1C00912FFB /* SignupPhoneRouter.swift */; };
+		44A12B0F23D46D4600912FFB /* BUChooseRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12B0D23D46D4600912FFB /* BUChooseRoleViewController.swift */; };
+		44A12B1023D46D4600912FFB /* BUChooseRoleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A12B0E23D46D4600912FFB /* BUChooseRoleViewController.xib */; };
+		44A12B1323D47CB100912FFB /* SignupPhoneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12B1223D47CB100912FFB /* SignupPhoneInteractor.swift */; };
+		44A12B1723D4915300912FFB /* RoleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12B1523D4915300912FFB /* RoleCollectionViewCell.swift */; };
+		44A12B1823D4915300912FFB /* RoleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A12B1623D4915300912FFB /* RoleCollectionViewCell.xib */; };
 		44B9F7032341ED8C00FC6210 /* NiBLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7022341ED8C00FC6210 /* NiBLoadable.swift */; };
 		44B9F7062341FD7500FC6210 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7052341FD7500FC6210 /* PhotoView.swift */; };
 		44B9F7082341FD8400FC6210 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B9F7072341FD8400FC6210 /* PhotoView.xib */; };
@@ -90,8 +168,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		29B24A415BBA8FCFBCFFDA94 /* Pods-Burb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.debug.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.debug.xcconfig"; sourceTree = "<group>"; };
-		39EC30B489133BFC8B8BBEC8 /* Pods-Burb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.release.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.release.xcconfig"; sourceTree = "<group>"; };
+		2148A2AB4DA30897D7385B62 /* Pods-Burb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.debug.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.debug.xcconfig"; sourceTree = "<group>"; };
+		2FCB1C46D0F3F673A87A316C /* Pods_Burb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Burb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		440E4190230D3482000FD5FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		440E4193230D3E6D000FD5FD /* SignupViaPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViaPhoneViewController.swift; sourceTree = "<group>"; };
 		440E4196230D47F6000FD5FD /* ConfirmSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignupViewController.swift; sourceTree = "<group>"; };
@@ -122,9 +200,48 @@
 		443877C32343510C008AD69F /* HidePhoneNumberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HidePhoneNumberCell.xib; sourceTree = "<group>"; };
 		443877CA2343D69C008AD69F /* SignOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutCell.swift; sourceTree = "<group>"; };
 		443877CB2343D69C008AD69F /* SignOutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignOutCell.xib; sourceTree = "<group>"; };
+		4446828423ED4DA60016167C /* BUDetailOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUDetailOrderViewController.swift; sourceTree = "<group>"; };
+		4446828523ED4DA60016167C /* BUDetailOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUDetailOrderViewController.xib; sourceTree = "<group>"; };
+		4446828D23ED8C460016167C /* AvatarOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarOrderTableViewCell.xib; sourceTree = "<group>"; };
+		4446828E23ED8C460016167C /* AvatarOrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarOrderTableViewCell.swift; sourceTree = "<group>"; };
+		4446829123ED90400016167C /* MyOrdersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOrdersRouter.swift; sourceTree = "<group>"; };
+		4446829423EEBA180016167C /* TwoButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoButtonTableViewCell.swift; sourceTree = "<group>"; };
+		4446829523EEBA180016167C /* TwoButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwoButtonTableViewCell.xib; sourceTree = "<group>"; };
+		4446829923EEBCE90016167C /* BUTextViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUTextViewTableViewCell.swift; sourceTree = "<group>"; };
+		4446829A23EEBCE90016167C /* BUTextViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUTextViewTableViewCell.xib; sourceTree = "<group>"; };
+		4446829E23EEBE4F0016167C /* MapViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewTableViewCell.swift; sourceTree = "<group>"; };
+		4446829F23EEBE4F0016167C /* MapViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewTableViewCell.xib; sourceTree = "<group>"; };
+		444682A223F0003C0016167C /* ChooseBarberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBarberRouter.swift; sourceTree = "<group>"; };
+		44472DA423DDAAA0009259C5 /* BUCreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUCreateUserViewController.swift; sourceTree = "<group>"; };
+		44472DA523DDAAA0009259C5 /* BUCreateUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUCreateUserViewController.xib; sourceTree = "<group>"; };
+		44472DA923DDAC6F009259C5 /* BUTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		44472DAA23DDAC6F009259C5 /* BUTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUTextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		44472DB223DDAE83009259C5 /* AvatarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarTableViewCell.swift; sourceTree = "<group>"; };
+		44472DB323DDAE83009259C5 /* AvatarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarTableViewCell.xib; sourceTree = "<group>"; };
+		44472DB623DDB5FB009259C5 /* ChooseRoleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRoleRouter.swift; sourceTree = "<group>"; };
+		44472DB923DDC42C009259C5 /* CreateUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRouter.swift; sourceTree = "<group>"; };
+		44472DBB23DEBF50009259C5 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		44472DBE23DEBFD3009259C5 /* ValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationHelper.swift; sourceTree = "<group>"; };
+		44472DC823E17704009259C5 /* BUClientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUClientTabBarController.swift; sourceTree = "<group>"; };
+		44472DC923E17704009259C5 /* BUClientTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUClientTabBarController.xib; sourceTree = "<group>"; };
+		44472DCD23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUOrderLocationPickerViewController.swift; sourceTree = "<group>"; };
+		44472DCE23E17A6D009259C5 /* BUOrderLocationPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUOrderLocationPickerViewController.xib; sourceTree = "<group>"; };
+		44472DD223E17AAB009259C5 /* BUDialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUDialogsViewController.swift; sourceTree = "<group>"; };
+		44472DD323E17AAB009259C5 /* BUDialogsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUDialogsViewController.xib; sourceTree = "<group>"; };
+		44472DD723E17AC7009259C5 /* BUClientProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUClientProfileViewController.swift; sourceTree = "<group>"; };
+		44472DD823E17AC7009259C5 /* BUClientProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUClientProfileViewController.xib; sourceTree = "<group>"; };
+		44472DDC23E1D054009259C5 /* BUOrderDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUOrderDatePickerViewController.swift; sourceTree = "<group>"; };
+		44472DDD23E1D054009259C5 /* BUOrderDatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUOrderDatePickerViewController.xib; sourceTree = "<group>"; };
+		44472DE123E1D1EB009259C5 /* BULabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BULabelTableViewCell.swift; sourceTree = "<group>"; };
+		44472DE223E1D1EB009259C5 /* BULabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BULabelTableViewCell.xib; sourceTree = "<group>"; };
 		44499FA8233B55B000467073 /* ChangeClientSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClientSettingsViewController.swift; sourceTree = "<group>"; };
 		444A90C323363322000C9D15 /* BarberDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberDetailViewCell.swift; sourceTree = "<group>"; };
 		444A90C423363322000C9D15 /* BarberDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberDetailViewCell.xib; sourceTree = "<group>"; };
+		4459EC5223CCA46500FE6292 /* BULoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BULoginViewController.swift; sourceTree = "<group>"; };
+		4459EC5323CCA46500FE6292 /* BULoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BULoginViewController.xib; sourceTree = "<group>"; };
+		4459EC5823CCA92800FE6292 /* LogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewCell.swift; sourceTree = "<group>"; };
+		4459EC5923CCA92800FE6292 /* LogoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoTableViewCell.xib; sourceTree = "<group>"; };
+		4459EC6223CCB65A00FE6292 /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
 		445A4A6323322F5500DE0417 /* ClientTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTabbarController.swift; sourceTree = "<group>"; };
 		445A4A662332B93900DE0417 /* DetailOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOrderViewController.swift; sourceTree = "<group>"; };
 		4466C5DC231E3F83004CA831 /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +249,28 @@
 		4466C5E1231E62C7004CA831 /* CurrentDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDialogViewController.swift; sourceTree = "<group>"; };
 		4466C5E3231EAC0F004CA831 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4466C5E5231EB135004CA831 /* MessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
+		44687BFC23E7FB9800F759F4 /* BUMyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUMyOrdersViewController.swift; sourceTree = "<group>"; };
+		44687BFD23E7FB9800F759F4 /* BUMyOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUMyOrdersViewController.xib; sourceTree = "<group>"; };
+		44687C0523E81F1900F759F4 /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
+		44687C0623E81F1900F759F4 /* OrderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCollectionViewCell.xib; sourceTree = "<group>"; };
+		44687C0923E9523A00F759F4 /* LocationPickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerRouter.swift; sourceTree = "<group>"; };
+		44687C1723EAFBC700F759F4 /* ConfirmTimeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTimeRouter.swift; sourceTree = "<group>"; };
+		44687C1923EB0A8300F759F4 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		44687C1A23EB0A8300F759F4 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		44687C1F23EBF8CC00F759F4 /* TumblerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblerTableViewCell.swift; sourceTree = "<group>"; };
+		44687C2023EBF8CC00F759F4 /* TumblerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TumblerTableViewCell.xib; sourceTree = "<group>"; };
+		44687C2423EBFE9B00F759F4 /* AvatarProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarProfileTableViewCell.swift; sourceTree = "<group>"; };
+		44687C2523EBFE9B00F759F4 /* AvatarProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvatarProfileTableViewCell.xib; sourceTree = "<group>"; };
+		44687C2923EC060000F759F4 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
+		44687C2B23EC060E00F759F4 /* HeaderTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTitleView.xib; sourceTree = "<group>"; };
+		44687C2E23EC38E500F759F4 /* LabelButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelButtonTableViewCell.swift; sourceTree = "<group>"; };
+		44687C2F23EC38E500F759F4 /* LabelButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelButtonTableViewCell.xib; sourceTree = "<group>"; };
+		4477AE7423E42CB800295BC9 /* BUChooseBarberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUChooseBarberViewController.swift; sourceTree = "<group>"; };
+		4477AE7523E42CB800295BC9 /* BUChooseBarberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUChooseBarberViewController.xib; sourceTree = "<group>"; };
+		4477AE7923E45A3F00295BC9 /* BarberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberCollectionViewCell.swift; sourceTree = "<group>"; };
+		4477AE7A23E45A3F00295BC9 /* BarberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberCollectionViewCell.xib; sourceTree = "<group>"; };
+		4477AE7E23E45B0C00295BC9 /* BUCVTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUCVTableViewCell.swift; sourceTree = "<group>"; };
+		4477AE7F23E45B0C00295BC9 /* BUCVTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUCVTableViewCell.xib; sourceTree = "<group>"; };
 		447B13EA2344A57F004D9275 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
 		4481D30B2316D3EE00F823F2 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
 		4481D3102316F1F700F823F2 /* BarbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarbersViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +290,23 @@
 		449E73142317A499004771E8 /* BarberViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberViewCell.swift; sourceTree = "<group>"; };
 		449E73162317B07A004771E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		449E73192317C3F3004771E8 /* ClientOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderViewController.swift; sourceTree = "<group>"; };
+		44A0BCDC23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUDatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		44A0BCDD23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUDatePickerTableViewCell.xib; sourceTree = "<group>"; };
+		44A12AF523D0471300912FFB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		44A12AF723D0493F00912FFB /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		44A12AF923D0557F00912FFB /* BUButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUButtonTableViewCell.swift; sourceTree = "<group>"; };
+		44A12AFA23D0557F00912FFB /* BUButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUButtonTableViewCell.xib; sourceTree = "<group>"; };
+		44A12AFD23D065AA00912FFB /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		44A12B0123D066BC00912FFB /* BUSignupViaPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUSignupViaPhoneViewController.swift; sourceTree = "<group>"; };
+		44A12B0223D066BC00912FFB /* BUSignupViaPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUSignupViaPhoneViewController.xib; sourceTree = "<group>"; };
+		44A12B0623D07F6200912FFB /* PhoneNumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		44A12B0723D07F6200912FFB /* PhoneNumberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhoneNumberCollectionViewCell.xib; sourceTree = "<group>"; };
+		44A12B0A23D0AA1C00912FFB /* SignupPhoneRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPhoneRouter.swift; sourceTree = "<group>"; };
+		44A12B0D23D46D4600912FFB /* BUChooseRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUChooseRoleViewController.swift; sourceTree = "<group>"; };
+		44A12B0E23D46D4600912FFB /* BUChooseRoleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUChooseRoleViewController.xib; sourceTree = "<group>"; };
+		44A12B1223D47CB100912FFB /* SignupPhoneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPhoneInteractor.swift; sourceTree = "<group>"; };
+		44A12B1523D4915300912FFB /* RoleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleCollectionViewCell.swift; sourceTree = "<group>"; };
+		44A12B1623D4915300912FFB /* RoleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoleCollectionViewCell.xib; sourceTree = "<group>"; };
 		44B9F7022341ED8C00FC6210 /* NiBLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiBLoadable.swift; sourceTree = "<group>"; };
 		44B9F7052341FD7500FC6210 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		44B9F7072341FD8400FC6210 /* PhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
@@ -174,7 +330,7 @@
 		44EE1DC4232F82E1007FACED /* CommonSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSettingsCell.swift; sourceTree = "<group>"; };
 		44F92517230FDC4300B23454 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		44F9251A230FE2FC00B23454 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
-		EE859DC4C5202E15324B7C43 /* Pods_Burb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Burb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C46CE89C9CA332E6F5ED24 /* Pods-Burb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.release.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,14 +338,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33CAE00A39F1CA28D14ED200 /* Pods_Burb.framework in Frameworks */,
+				371C3F9D4290E5A5021245DE /* Pods_Burb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		440E418E230D3461000FD5FD /* ViewController */ = {
+		440E418E230D3461000FD5FD /* ViewController OLD! */ = {
 			isa = PBXGroup;
 			children = (
 				4417455E2340D43500088C9F /* BarberSettingsViewController */,
@@ -213,7 +369,7 @@
 				440E4192230D3E40000FD5FD /* SignupViaPhoneViewController */,
 				440E418F230D346C000FD5FD /* LoginViewController */,
 			);
-			path = ViewController;
+			path = "ViewController OLD!";
 			sourceTree = "<group>";
 		};
 		440E418F230D346C000FD5FD /* LoginViewController */ = {
@@ -274,7 +430,7 @@
 				4418B728230D31AF0093BF3C /* Burb */,
 				4418B727230D31AF0093BF3C /* Products */,
 				ED8ABD633D083DBE3510159A /* Pods */,
-				63DDA3F291D4F9641AD0494A /* Frameworks */,
+				4D5D534FFE24ABD0202B4248 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,13 +445,18 @@
 		4418B728230D31AF0093BF3C /* Burb */ = {
 			isa = PBXGroup;
 			children = (
+				44472DBD23DEBFC6009259C5 /* Helpers */,
+				44A12AF323D045DF00912FFB /* Custom Views */,
+				4459EC4F23CCA33D00FE6292 /* Screens */,
 				4418B729230D31AF0093BF3C /* AppDelegate.swift */,
 				440E419A230D5C61000FD5FD /* Burb.entitlements */,
 				4418B72D230D31AF0093BF3C /* Main.storyboard */,
-				440E418E230D3461000FD5FD /* ViewController */,
-				44B9F70D23424B6C00FC6210 /* Burb Cells */,
+				440E418E230D3461000FD5FD /* ViewController OLD! */,
+				44B9F70D23424B6C00FC6210 /* Custom Cells */,
 				44F9251E231028DA00B23454 /* Extensions */,
 				44F92519230FE2ED00B23454 /* Models */,
+				44A12B1123D47C8600912FFB /* Interactor */,
+				4459EC6123CCB64800FE6292 /* Router */,
 				448D50B62322898700F401AE /* Fonts */,
 				44B9F7012341ED6F00FC6210 /* Protocols */,
 				440E41A2230DAECA000FD5FD /* Extensions.swift */,
@@ -343,12 +504,247 @@
 			path = TermsOfUseViewController;
 			sourceTree = "<group>";
 		};
+		4446828323ED4D590016167C /* Detail Order */ = {
+			isa = PBXGroup;
+			children = (
+				4446828423ED4DA60016167C /* BUDetailOrderViewController.swift */,
+				4446828523ED4DA60016167C /* BUDetailOrderViewController.xib */,
+			);
+			path = "Detail Order";
+			sourceTree = "<group>";
+		};
+		4446828823ED874B0016167C /* Avatar Header Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4446828E23ED8C460016167C /* AvatarOrderTableViewCell.swift */,
+				4446828D23ED8C460016167C /* AvatarOrderTableViewCell.xib */,
+			);
+			path = "Avatar Header Cell";
+			sourceTree = "<group>";
+		};
+		4446829323EEB9F60016167C /* Two buttons Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4446829423EEBA180016167C /* TwoButtonTableViewCell.swift */,
+				4446829523EEBA180016167C /* TwoButtonTableViewCell.xib */,
+			);
+			path = "Two buttons Cell";
+			sourceTree = "<group>";
+		};
+		4446829823EEBCD40016167C /* TextView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4446829923EEBCE90016167C /* BUTextViewTableViewCell.swift */,
+				4446829A23EEBCE90016167C /* BUTextViewTableViewCell.xib */,
+			);
+			path = "TextView Cell";
+			sourceTree = "<group>";
+		};
+		4446829D23EEBE2F0016167C /* MapView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4446829E23EEBE4F0016167C /* MapViewTableViewCell.swift */,
+				4446829F23EEBE4F0016167C /* MapViewTableViewCell.xib */,
+			);
+			path = "MapView Cell";
+			sourceTree = "<group>";
+		};
+		44472DA323DDAA74009259C5 /* Create User */ = {
+			isa = PBXGroup;
+			children = (
+				44472DA423DDAAA0009259C5 /* BUCreateUserViewController.swift */,
+				44472DA523DDAAA0009259C5 /* BUCreateUserViewController.xib */,
+			);
+			path = "Create User";
+			sourceTree = "<group>";
+		};
+		44472DA823DDAC28009259C5 /* TextField Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44472DA923DDAC6F009259C5 /* BUTextFieldTableViewCell.swift */,
+				44472DAA23DDAC6F009259C5 /* BUTextFieldTableViewCell.xib */,
+				44687C1923EB0A8300F759F4 /* TextFieldTableViewCell.swift */,
+				44687C1A23EB0A8300F759F4 /* TextFieldTableViewCell.xib */,
+			);
+			path = "TextField Cell";
+			sourceTree = "<group>";
+		};
+		44472DAD23DDAE46009259C5 /* Avatar Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44472DB223DDAE83009259C5 /* AvatarTableViewCell.swift */,
+				44472DB323DDAE83009259C5 /* AvatarTableViewCell.xib */,
+			);
+			path = "Avatar Cell";
+			sourceTree = "<group>";
+		};
+		44472DBD23DEBFC6009259C5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44472DBE23DEBFD3009259C5 /* ValidationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		44472DC723E17697009259C5 /* Client Main Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				44472DC823E17704009259C5 /* BUClientTabBarController.swift */,
+				44472DC923E17704009259C5 /* BUClientTabBarController.xib */,
+			);
+			path = "Client Main Tab Bar";
+			sourceTree = "<group>";
+		};
+		44472DCC23E17A1D009259C5 /* Order Location Picker */ = {
+			isa = PBXGroup;
+			children = (
+				44472DCD23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift */,
+				44472DCE23E17A6D009259C5 /* BUOrderLocationPickerViewController.xib */,
+			);
+			path = "Order Location Picker";
+			sourceTree = "<group>";
+		};
+		44472DD123E17A98009259C5 /* Dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				44472DD223E17AAB009259C5 /* BUDialogsViewController.swift */,
+				44472DD323E17AAB009259C5 /* BUDialogsViewController.xib */,
+			);
+			path = Dialogs;
+			sourceTree = "<group>";
+		};
+		44472DD623E17AB4009259C5 /* Client Profile */ = {
+			isa = PBXGroup;
+			children = (
+				44472DD723E17AC7009259C5 /* BUClientProfileViewController.swift */,
+				44472DD823E17AC7009259C5 /* BUClientProfileViewController.xib */,
+			);
+			path = "Client Profile";
+			sourceTree = "<group>";
+		};
+		44472DDB23E1D03B009259C5 /* Order Date Picker */ = {
+			isa = PBXGroup;
+			children = (
+				44472DDC23E1D054009259C5 /* BUOrderDatePickerViewController.swift */,
+				44472DDD23E1D054009259C5 /* BUOrderDatePickerViewController.xib */,
+			);
+			path = "Order Date Picker";
+			sourceTree = "<group>";
+		};
+		44472DE023E1D131009259C5 /* Label Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44472DE123E1D1EB009259C5 /* BULabelTableViewCell.swift */,
+				44472DE223E1D1EB009259C5 /* BULabelTableViewCell.xib */,
+			);
+			path = "Label Cell";
+			sourceTree = "<group>";
+		};
 		44499FA7233B556200467073 /* ChangeClientSettingsViewController */ = {
 			isa = PBXGroup;
 			children = (
 				44499FA8233B55B000467073 /* ChangeClientSettingsViewController.swift */,
 			);
 			path = ChangeClientSettingsViewController;
+			sourceTree = "<group>";
+		};
+		4459EC4F23CCA33D00FE6292 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				4459EC5023CCA34700FE6292 /* ViewControllers */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		4459EC5023CCA34700FE6292 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4446828323ED4D590016167C /* Detail Order */,
+				44687BFB23E7FB7300F759F4 /* My Orders */,
+				4477AE7323E42C8E00295BC9 /* Choose Barber */,
+				44472DDB23E1D03B009259C5 /* Order Date Picker */,
+				44472DD623E17AB4009259C5 /* Client Profile */,
+				44472DD123E17A98009259C5 /* Dialogs */,
+				44472DCC23E17A1D009259C5 /* Order Location Picker */,
+				44472DC723E17697009259C5 /* Client Main Tab Bar */,
+				44472DA323DDAA74009259C5 /* Create User */,
+				44A12B0C23D46D1F00912FFB /* Choose Role */,
+				44A12B0023D0669900912FFB /* Signup Via Phone */,
+				4459EC5123CCA44300FE6292 /* Login */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4459EC5123CCA44300FE6292 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4459EC5223CCA46500FE6292 /* BULoginViewController.swift */,
+				4459EC5323CCA46500FE6292 /* BULoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4459EC5623CCA8D200FE6292 /* old */ = {
+			isa = PBXGroup;
+			children = (
+				44B9F70A234248E500FC6210 /* UserAvatarCell.xib */,
+				44B9F709234248E500FC6210 /* UserAvatarCell.swift */,
+				44B9F70F23424B8F00FC6210 /* NameUserCell.xib */,
+				44B9F70E23424B8F00FC6210 /* NameUserCell.swift */,
+				44B9F71223424F0A00FC6210 /* PhoneNumberCell.swift */,
+				44B9F71323424F0A00FC6210 /* PhoneNumberCell.xib */,
+				44B9F716234269AA00FC6210 /* CommonSettingsLabelCell.swift */,
+				44B9F717234269AA00FC6210 /* CommonSettingsLabelCell.xib */,
+				44B9F71A23426D4600FC6210 /* WeaponCell.swift */,
+				44B9F71B23426D4600FC6210 /* WeaponCell.xib */,
+				44B9F71E2342884400FC6210 /* BarberEducationCell.swift */,
+				44B9F72223428C6A00FC6210 /* PhilosophyCell.swift */,
+				44B9F72323428C6A00FC6210 /* PhilosophyCell.xib */,
+				44B9F71F2342884400FC6210 /* BarberEducationCell.xib */,
+				44B9F7262342941500FC6210 /* ReminderCell.swift */,
+				44B9F7272342941500FC6210 /* ReminderCell.xib */,
+				443877BE23434D14008AD69F /* NotificationsCell.swift */,
+				443877BF23434D14008AD69F /* NotificationsCell.xib */,
+				443877C22343510C008AD69F /* HidePhoneNumberCell.swift */,
+				443877C32343510C008AD69F /* HidePhoneNumberCell.xib */,
+				443877CA2343D69C008AD69F /* SignOutCell.swift */,
+				443877CB2343D69C008AD69F /* SignOutCell.xib */,
+			);
+			path = old;
+			sourceTree = "<group>";
+		};
+		4459EC5723CCA90600FE6292 /* Logo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4459EC5823CCA92800FE6292 /* LogoTableViewCell.swift */,
+				4459EC5923CCA92800FE6292 /* LogoTableViewCell.xib */,
+			);
+			path = "Logo Cell";
+			sourceTree = "<group>";
+		};
+		4459EC5C23CCACF800FE6292 /* Button Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44A12AF923D0557F00912FFB /* BUButtonTableViewCell.swift */,
+				44A12AFA23D0557F00912FFB /* BUButtonTableViewCell.xib */,
+			);
+			path = "Button Cell";
+			sourceTree = "<group>";
+		};
+		4459EC6123CCB64800FE6292 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4459EC6223CCB65A00FE6292 /* StartRouter.swift */,
+				44A12AFD23D065AA00912FFB /* LoginRouter.swift */,
+				44A12B0A23D0AA1C00912FFB /* SignupPhoneRouter.swift */,
+				44472DB623DDB5FB009259C5 /* ChooseRoleRouter.swift */,
+				44472DB923DDC42C009259C5 /* CreateUserRouter.swift */,
+				44687C0923E9523A00F759F4 /* LocationPickerRouter.swift */,
+				44687C1723EAFBC700F759F4 /* ConfirmTimeRouter.swift */,
+				4446829123ED90400016167C /* MyOrdersRouter.swift */,
+				444682A223F0003C0016167C /* ChooseBarberRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		445A4A6223322F0500DE0417 /* ClientTabbarViewController */ = {
@@ -383,6 +779,87 @@
 				4466C5E5231EB135004CA831 /* MessageViewCell.swift */,
 			);
 			path = CurrentDialogViewControoler;
+			sourceTree = "<group>";
+		};
+		44687BFB23E7FB7300F759F4 /* My Orders */ = {
+			isa = PBXGroup;
+			children = (
+				44687BFC23E7FB9800F759F4 /* BUMyOrdersViewController.swift */,
+				44687BFD23E7FB9800F759F4 /* BUMyOrdersViewController.xib */,
+			);
+			path = "My Orders";
+			sourceTree = "<group>";
+		};
+		44687C0023E7FCA400F759F4 /* Order Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44687C0523E81F1900F759F4 /* OrderCollectionViewCell.swift */,
+				44687C0623E81F1900F759F4 /* OrderCollectionViewCell.xib */,
+			);
+			path = "Order Cell";
+			sourceTree = "<group>";
+		};
+		44687C1E23EBF8B000F759F4 /* Tumbler Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44687C1F23EBF8CC00F759F4 /* TumblerTableViewCell.swift */,
+				44687C2023EBF8CC00F759F4 /* TumblerTableViewCell.xib */,
+			);
+			path = "Tumbler Cell";
+			sourceTree = "<group>";
+		};
+		44687C2323EBFE8200F759F4 /* Avatar Profile Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44687C2423EBFE9B00F759F4 /* AvatarProfileTableViewCell.swift */,
+				44687C2523EBFE9B00F759F4 /* AvatarProfileTableViewCell.xib */,
+			);
+			path = "Avatar Profile Cell";
+			sourceTree = "<group>";
+		};
+		44687C2823EC05D500F759F4 /* Header Title View */ = {
+			isa = PBXGroup;
+			children = (
+				44687C2923EC060000F759F4 /* HeaderTitleView.swift */,
+				44687C2B23EC060E00F759F4 /* HeaderTitleView.xib */,
+			);
+			path = "Header Title View";
+			sourceTree = "<group>";
+		};
+		44687C2D23EC389A00F759F4 /* Label with Button Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44687C2E23EC38E500F759F4 /* LabelButtonTableViewCell.swift */,
+				44687C2F23EC38E500F759F4 /* LabelButtonTableViewCell.xib */,
+			);
+			path = "Label with Button Cell";
+			sourceTree = "<group>";
+		};
+		4477AE7323E42C8E00295BC9 /* Choose Barber */ = {
+			isa = PBXGroup;
+			children = (
+				4477AE7423E42CB800295BC9 /* BUChooseBarberViewController.swift */,
+				4477AE7523E42CB800295BC9 /* BUChooseBarberViewController.xib */,
+			);
+			path = "Choose Barber";
+			sourceTree = "<group>";
+		};
+		4477AE7823E45A1A00295BC9 /* Barber Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4477AE7923E45A3F00295BC9 /* BarberCollectionViewCell.swift */,
+				4477AE7A23E45A3F00295BC9 /* BarberCollectionViewCell.xib */,
+			);
+			path = "Barber Cell";
+			sourceTree = "<group>";
+		};
+		4477AE7D23E45ABF00295BC9 /* Cell with CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4477AE7E23E45B0C00295BC9 /* BUCVTableViewCell.swift */,
+				4477AE7F23E45B0C00295BC9 /* BUCVTableViewCell.xib */,
+			);
+			path = "Cell with CollectionView";
 			sourceTree = "<group>";
 		};
 		4481D30D2316F1A400F823F2 /* BarbersViewController */ = {
@@ -438,6 +915,77 @@
 			path = ClientOrderViewController;
 			sourceTree = "<group>";
 		};
+		44A0BCDB23E2B14F00B52D62 /* Date Picker Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44A0BCDC23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift */,
+				44A0BCDD23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib */,
+			);
+			path = "Date Picker Cell";
+			sourceTree = "<group>";
+		};
+		44A12AF323D045DF00912FFB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				44687C2823EC05D500F759F4 /* Header Title View */,
+				44A12AF423D045E500912FFB /* Header View */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		44A12AF423D045E500912FFB /* Header View */ = {
+			isa = PBXGroup;
+			children = (
+				44A12AF523D0471300912FFB /* HeaderView.swift */,
+				44A12AF723D0493F00912FFB /* HeaderView.xib */,
+			);
+			path = "Header View";
+			sourceTree = "<group>";
+		};
+		44A12B0023D0669900912FFB /* Signup Via Phone */ = {
+			isa = PBXGroup;
+			children = (
+				44A12B0123D066BC00912FFB /* BUSignupViaPhoneViewController.swift */,
+				44A12B0223D066BC00912FFB /* BUSignupViaPhoneViewController.xib */,
+			);
+			path = "Signup Via Phone";
+			sourceTree = "<group>";
+		};
+		44A12B0523D07F4600912FFB /* Phone number Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44A12B0623D07F6200912FFB /* PhoneNumberCollectionViewCell.swift */,
+				44A12B0723D07F6200912FFB /* PhoneNumberCollectionViewCell.xib */,
+			);
+			path = "Phone number Cell";
+			sourceTree = "<group>";
+		};
+		44A12B0C23D46D1F00912FFB /* Choose Role */ = {
+			isa = PBXGroup;
+			children = (
+				44A12B0D23D46D4600912FFB /* BUChooseRoleViewController.swift */,
+				44A12B0E23D46D4600912FFB /* BUChooseRoleViewController.xib */,
+			);
+			path = "Choose Role";
+			sourceTree = "<group>";
+		};
+		44A12B1123D47C8600912FFB /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				44A12B1223D47CB100912FFB /* SignupPhoneInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		44A12B1423D4912A00912FFB /* Role Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44A12B1523D4915300912FFB /* RoleCollectionViewCell.swift */,
+				44A12B1623D4915300912FFB /* RoleCollectionViewCell.xib */,
+			);
+			path = "Role Cell";
+			sourceTree = "<group>";
+		};
 		44B9F7012341ED6F00FC6210 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -455,33 +1003,30 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		44B9F70D23424B6C00FC6210 /* Burb Cells */ = {
+		44B9F70D23424B6C00FC6210 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
-				44B9F70A234248E500FC6210 /* UserAvatarCell.xib */,
-				44B9F709234248E500FC6210 /* UserAvatarCell.swift */,
-				44B9F70F23424B8F00FC6210 /* NameUserCell.xib */,
-				44B9F70E23424B8F00FC6210 /* NameUserCell.swift */,
-				44B9F71223424F0A00FC6210 /* PhoneNumberCell.swift */,
-				44B9F71323424F0A00FC6210 /* PhoneNumberCell.xib */,
-				44B9F716234269AA00FC6210 /* CommonSettingsLabelCell.swift */,
-				44B9F717234269AA00FC6210 /* CommonSettingsLabelCell.xib */,
-				44B9F71A23426D4600FC6210 /* WeaponCell.swift */,
-				44B9F71B23426D4600FC6210 /* WeaponCell.xib */,
-				44B9F71E2342884400FC6210 /* BarberEducationCell.swift */,
-				44B9F72223428C6A00FC6210 /* PhilosophyCell.swift */,
-				44B9F72323428C6A00FC6210 /* PhilosophyCell.xib */,
-				44B9F71F2342884400FC6210 /* BarberEducationCell.xib */,
-				44B9F7262342941500FC6210 /* ReminderCell.swift */,
-				44B9F7272342941500FC6210 /* ReminderCell.xib */,
-				443877BE23434D14008AD69F /* NotificationsCell.swift */,
-				443877BF23434D14008AD69F /* NotificationsCell.xib */,
-				443877C22343510C008AD69F /* HidePhoneNumberCell.swift */,
-				443877C32343510C008AD69F /* HidePhoneNumberCell.xib */,
-				443877CA2343D69C008AD69F /* SignOutCell.swift */,
-				443877CB2343D69C008AD69F /* SignOutCell.xib */,
+				4446829D23EEBE2F0016167C /* MapView Cell */,
+				4446829823EEBCD40016167C /* TextView Cell */,
+				4446829323EEB9F60016167C /* Two buttons Cell */,
+				4446828823ED874B0016167C /* Avatar Header Cell */,
+				44687C2D23EC389A00F759F4 /* Label with Button Cell */,
+				44687C2323EBFE8200F759F4 /* Avatar Profile Cell */,
+				44687C1E23EBF8B000F759F4 /* Tumbler Cell */,
+				44687C0023E7FCA400F759F4 /* Order Cell */,
+				4477AE7D23E45ABF00295BC9 /* Cell with CollectionView */,
+				4477AE7823E45A1A00295BC9 /* Barber Cell */,
+				44A0BCDB23E2B14F00B52D62 /* Date Picker Cell */,
+				44472DE023E1D131009259C5 /* Label Cell */,
+				44472DAD23DDAE46009259C5 /* Avatar Cell */,
+				44472DA823DDAC28009259C5 /* TextField Cell */,
+				44A12B1423D4912A00912FFB /* Role Cell */,
+				44A12B0523D07F4600912FFB /* Phone number Cell */,
+				4459EC5C23CCACF800FE6292 /* Button Cell */,
+				4459EC5723CCA90600FE6292 /* Logo Cell */,
+				4459EC5623CCA8D200FE6292 /* old */,
 			);
-			path = "Burb Cells";
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 		44F92516230FDC1F00B23454 /* CreateUserViewController */ = {
@@ -507,14 +1052,15 @@
 		44F9251E231028DA00B23454 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				44472DBB23DEBF50009259C5 /* Extension+String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		63DDA3F291D4F9641AD0494A /* Frameworks */ = {
+		4D5D534FFE24ABD0202B4248 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EE859DC4C5202E15324B7C43 /* Pods_Burb.framework */,
+				2FCB1C46D0F3F673A87A316C /* Pods_Burb.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -522,8 +1068,8 @@
 		ED8ABD633D083DBE3510159A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				29B24A415BBA8FCFBCFFDA94 /* Pods-Burb.debug.xcconfig */,
-				39EC30B489133BFC8B8BBEC8 /* Pods-Burb.release.xcconfig */,
+				2148A2AB4DA30897D7385B62 /* Pods-Burb.debug.xcconfig */,
+				A9C46CE89C9CA332E6F5ED24 /* Pods-Burb.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -535,11 +1081,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4418B73B230D31B10093BF3C /* Build configuration list for PBXNativeTarget "Burb" */;
 			buildPhases = (
-				6CF6E4E8273E76CE9B1B142E /* [CP] Check Pods Manifest.lock */,
+				40867E19101DA1E8D22DA586 /* [CP] Check Pods Manifest.lock */,
 				4418B722230D31AF0093BF3C /* Sources */,
 				4418B723230D31AF0093BF3C /* Frameworks */,
 				4418B724230D31AF0093BF3C /* Resources */,
-				6E47CC8525F4656D13E69BFA /* [CP] Embed Pods Frameworks */,
+				98568E408301C48F107FE057 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -596,33 +1142,66 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44A12B1823D4915300912FFB /* RoleCollectionViewCell.xib in Resources */,
+				44A12AFC23D0557F00912FFB /* BUButtonTableViewCell.xib in Resources */,
+				4459EC5B23CCA92800FE6292 /* LogoTableViewCell.xib in Resources */,
+				44687C1C23EB0A8300F759F4 /* TextFieldTableViewCell.xib in Resources */,
+				44687C0823E81F1900F759F4 /* OrderCollectionViewCell.xib in Resources */,
+				44472DCB23E17704009259C5 /* BUClientTabBarController.xib in Resources */,
 				448D50DD23228FD300F401AE /* OpenSans-Light.ttf in Resources */,
+				44472DE423E1D1EB009259C5 /* BULabelTableViewCell.xib in Resources */,
 				4418B737230D31B10093BF3C /* LaunchScreen.storyboard in Resources */,
+				44A12AF823D0493F00912FFB /* HeaderView.xib in Resources */,
+				4446829C23EEBCE90016167C /* BUTextViewTableViewCell.xib in Resources */,
+				44472DA723DDAAA0009259C5 /* BUCreateUserViewController.xib in Resources */,
 				44B9F71123424B8F00FC6210 /* NameUserCell.xib in Resources */,
+				44A0BCDF23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib in Resources */,
 				444A90C623363322000C9D15 /* BarberDetailViewCell.xib in Resources */,
+				44472DB523DDAE83009259C5 /* AvatarTableViewCell.xib in Resources */,
 				440E41A0230DABE9000FD5FD /* GoogleService-Info.plist in Resources */,
+				4446829723EEBA180016167C /* TwoButtonTableViewCell.xib in Resources */,
 				44B9F7082341FD8400FC6210 /* PhotoView.xib in Resources */,
+				4459EC5523CCA46500FE6292 /* BULoginViewController.xib in Resources */,
+				44687BFF23E7FB9800F759F4 /* BUMyOrdersViewController.xib in Resources */,
+				44687C2C23EC060E00F759F4 /* HeaderTitleView.xib in Resources */,
+				44472DAC23DDAC6F009259C5 /* BUTextFieldTableViewCell.xib in Resources */,
 				44B9F70C234248E500FC6210 /* UserAvatarCell.xib in Resources */,
 				448D50D923228FD300F401AE /* OpenSans-ExtraBold.ttf in Resources */,
 				448D50D623228FD300F401AE /* OpenSans-Bold.ttf in Resources */,
 				448D50D723228FD300F401AE /* OpenSans-BoldItalic.ttf in Resources */,
+				44472DD523E17AAB009259C5 /* BUDialogsViewController.xib in Resources */,
 				4418B734230D31B10093BF3C /* Assets.xcassets in Resources */,
 				4418B72F230D31AF0093BF3C /* Main.storyboard in Resources */,
 				448D50DA23228FD300F401AE /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				44B9F71D23426D4600FC6210 /* WeaponCell.xib in Resources */,
+				44A12B1023D46D4600912FFB /* BUChooseRoleViewController.xib in Resources */,
+				44A12B0423D066BC00912FFB /* BUSignupViaPhoneViewController.xib in Resources */,
 				44B9F7212342884400FC6210 /* BarberEducationCell.xib in Resources */,
 				448D50D823228FD300F401AE /* OpenSans-LightItalic.ttf in Resources */,
 				448D50DE23228FD300F401AE /* OpenSans-Regular.ttf in Resources */,
+				4477AE7723E42CB800295BC9 /* BUChooseBarberViewController.xib in Resources */,
 				4412CD052327A0C8005961C0 /* burb_IOS_icons-01.png in Resources */,
 				44B9F72523428C6A00FC6210 /* PhilosophyCell.xib in Resources */,
+				4477AE7C23E45A3F00295BC9 /* BarberCollectionViewCell.xib in Resources */,
 				44B9F719234269AA00FC6210 /* CommonSettingsLabelCell.xib in Resources */,
+				44472DDA23E17AC7009259C5 /* BUClientProfileViewController.xib in Resources */,
+				4446828F23ED8C460016167C /* AvatarOrderTableViewCell.xib in Resources */,
+				44472DD023E17A6D009259C5 /* BUOrderLocationPickerViewController.xib in Resources */,
 				448D50DC23228FD300F401AE /* OpenSans-Italic.ttf in Resources */,
+				44687C2223EBF8CC00F759F4 /* TumblerTableViewCell.xib in Resources */,
+				444682A123EEBE4F0016167C /* MapViewTableViewCell.xib in Resources */,
+				4446828723ED4DA60016167C /* BUDetailOrderViewController.xib in Resources */,
+				44687C3123EC38E500F759F4 /* LabelButtonTableViewCell.xib in Resources */,
 				443877CD2343D69C008AD69F /* SignOutCell.xib in Resources */,
+				4477AE8123E45B0C00295BC9 /* BUCVTableViewCell.xib in Resources */,
 				448D50D523228FD300F401AE /* OpenSans-Semibold.ttf in Resources */,
 				443877C123434D14008AD69F /* NotificationsCell.xib in Resources */,
 				44B9F7292342941500FC6210 /* ReminderCell.xib in Resources */,
+				44687C2723EBFE9B00F759F4 /* AvatarProfileTableViewCell.xib in Resources */,
+				44A12B0923D07F6200912FFB /* PhoneNumberCollectionViewCell.xib in Resources */,
 				443877C52343510C008AD69F /* HidePhoneNumberCell.xib in Resources */,
 				448D50DB23228FD300F401AE /* OpenSans-SemiboldItalic.ttf in Resources */,
+				44472DDF23E1D054009259C5 /* BUOrderDatePickerViewController.xib in Resources */,
 				44B9F71523424F0A00FC6210 /* PhoneNumberCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,7 +1209,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6CF6E4E8273E76CE9B1B142E /* [CP] Check Pods Manifest.lock */ = {
+		40867E19101DA1E8D22DA586 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -652,7 +1231,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6E47CC8525F4656D13E69BFA /* [CP] Embed Pods Frameworks */ = {
+		98568E408301C48F107FE057 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -676,31 +1255,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44687C1823EAFBC700F759F4 /* ConfirmTimeRouter.swift in Sources */,
+				4459EC6323CCB65A00FE6292 /* StartRouter.swift in Sources */,
 				440E4194230D3E6D000FD5FD /* SignupViaPhoneViewController.swift in Sources */,
+				44A12B1723D4915300912FFB /* RoleCollectionViewCell.swift in Sources */,
 				44B9F71C23426D4600FC6210 /* WeaponCell.swift in Sources */,
+				4446829223ED90400016167C /* MyOrdersRouter.swift in Sources */,
+				44A12B0323D066BC00912FFB /* BUSignupViaPhoneViewController.swift in Sources */,
+				44687C2A23EC060000F759F4 /* HeaderTitleView.swift in Sources */,
+				44A12B0F23D46D4600912FFB /* BUChooseRoleViewController.swift in Sources */,
+				4459EC5A23CCA92800FE6292 /* LogoTableViewCell.swift in Sources */,
 				44B9F71023424B8F00FC6210 /* NameUserCell.swift in Sources */,
+				44472DA623DDAAA0009259C5 /* BUCreateUserViewController.swift in Sources */,
+				4446829B23EEBCE90016167C /* BUTextViewTableViewCell.swift in Sources */,
 				444A90C523363322000C9D15 /* BarberDetailViewCell.swift in Sources */,
 				440E41A3230DAECA000FD5FD /* Extensions.swift in Sources */,
 				44B9F7202342884400FC6210 /* BarberEducationCell.swift in Sources */,
 				440E41A6230DC1F4000FD5FD /* ChooseRoleViewController.swift in Sources */,
+				4477AE7B23E45A3F00295BC9 /* BarberCollectionViewCell.swift in Sources */,
 				441745602340D44E00088C9F /* BarberSettingsViewController.swift in Sources */,
+				4446828623ED4DA60016167C /* BUDetailOrderViewController.swift in Sources */,
 				4411C5EF23158FB1004A51FE /* ClientSettingsViewController.swift in Sources */,
 				449E731A2317C3F3004771E8 /* ClientOrderViewController.swift in Sources */,
 				44B9F71423424F0A00FC6210 /* PhoneNumberCell.swift in Sources */,
+				444682A023EEBE4F0016167C /* MapViewTableViewCell.swift in Sources */,
 				443877CC2343D69C008AD69F /* SignOutCell.swift in Sources */,
+				44A12B0B23D0AA1C00912FFB /* SignupPhoneRouter.swift in Sources */,
+				44A12AFE23D065AA00912FFB /* LoginRouter.swift in Sources */,
 				445A4A6423322F5500DE0417 /* ClientTabbarController.swift in Sources */,
+				44472DBA23DDC42C009259C5 /* CreateUserRouter.swift in Sources */,
+				4459EC5423CCA46500FE6292 /* BULoginViewController.swift in Sources */,
 				44319F1A2328E61700C8DD7D /* ConfirmOrderTimeViewController.swift in Sources */,
 				44323DC1232A481400C622E7 /* Order.swift in Sources */,
 				44F92518230FDC4300B23454 /* CreateUserViewController.swift in Sources */,
 				4431E9BD2340877D00A152D0 /* CallendarViewController.swift in Sources */,
+				44472DE323E1D1EB009259C5 /* BULabelTableViewCell.swift in Sources */,
+				444682A323F0003C0016167C /* ChooseBarberRouter.swift in Sources */,
+				44472DDE23E1D054009259C5 /* BUOrderDatePickerViewController.swift in Sources */,
 				4466C5E6231EB135004CA831 /* MessageViewCell.swift in Sources */,
 				445A4A672332B93900DE0417 /* DetailOrderViewController.swift in Sources */,
 				44B9F7282342941500FC6210 /* ReminderCell.swift in Sources */,
+				44687C1B23EB0A8300F759F4 /* TextFieldTableViewCell.swift in Sources */,
 				44EE1DC5232F82E1007FACED /* CommonSettingsCell.swift in Sources */,
 				448D50B323222E3300F401AE /* ChatLogViewController.swift in Sources */,
+				44687C3023EC38E500F759F4 /* LabelButtonTableViewCell.swift in Sources */,
+				44472DAB23DDAC6F009259C5 /* BUTextFieldTableViewCell.swift in Sources */,
+				44687C0A23E9523A00F759F4 /* LocationPickerRouter.swift in Sources */,
+				44A12B1323D47CB100912FFB /* SignupPhoneInteractor.swift in Sources */,
 				44B9F7032341ED8C00FC6210 /* NiBLoadable.swift in Sources */,
 				443877C42343510C008AD69F /* HidePhoneNumberCell.swift in Sources */,
 				448E79B82334E6E000BA2B04 /* DetailBarberViewController.swift in Sources */,
+				44472DB423DDAE83009259C5 /* AvatarTableViewCell.swift in Sources */,
+				44472DBC23DEBF50009259C5 /* Extension+String.swift in Sources */,
 				44323DBD232A2CD500C622E7 /* OrdersViewController.swift in Sources */,
 				440E4191230D3482000FD5FD /* LoginViewController.swift in Sources */,
 				4418B732230D31AF0093BF3C /* Burb.xcdatamodeld in Sources */,
@@ -710,23 +1316,41 @@
 				4466C5DF231E5AD3004CA831 /* DialogUserCell.swift in Sources */,
 				44B9F72423428C6A00FC6210 /* PhilosophyCell.swift in Sources */,
 				443877C023434D14008AD69F /* NotificationsCell.swift in Sources */,
+				44472DD423E17AAB009259C5 /* BUDialogsViewController.swift in Sources */,
+				44687C2623EBFE9B00F759F4 /* AvatarProfileTableViewCell.swift in Sources */,
 				440E4197230D47F6000FD5FD /* ConfirmSignupViewController.swift in Sources */,
 				4481D30C2316D3EE00F823F2 /* UserInfoCell.swift in Sources */,
+				44472DBF23DEBFD3009259C5 /* ValidationHelper.swift in Sources */,
 				44EE1DC3232F7AC9007FACED /* CommonSettingsTitleCell.swift in Sources */,
 				449E73172317B07A004771E8 /* User.swift in Sources */,
 				4418B72A230D31AF0093BF3C /* AppDelegate.swift in Sources */,
+				44472DB723DDB5FB009259C5 /* ChooseRoleRouter.swift in Sources */,
 				449E73152317A499004771E8 /* BarberViewCell.swift in Sources */,
+				44687C2123EBF8CC00F759F4 /* TumblerTableViewCell.swift in Sources */,
 				44F9251B230FE2FC00B23454 /* RegisterModel.swift in Sources */,
+				44A12AFB23D0557F00912FFB /* BUButtonTableViewCell.swift in Sources */,
 				44B9F70B234248E500FC6210 /* UserAvatarCell.swift in Sources */,
+				44472DD923E17AC7009259C5 /* BUClientProfileViewController.swift in Sources */,
+				44687BFE23E7FB9800F759F4 /* BUMyOrdersViewController.swift in Sources */,
 				448D50B5232237D900F401AE /* ChatMessageCell.swift in Sources */,
+				44687C0723E81F1900F759F4 /* OrderCollectionViewCell.swift in Sources */,
+				44A0BCDE23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift in Sources */,
 				4466C5DD231E3F83004CA831 /* DialogsViewController.swift in Sources */,
+				44472DCF23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift in Sources */,
 				4466C5E4231EAC0F004CA831 /* Message.swift in Sources */,
+				4477AE8023E45B0C00295BC9 /* BUCVTableViewCell.swift in Sources */,
 				44499FA9233B55B000467073 /* ChangeClientSettingsViewController.swift in Sources */,
 				4436FE482323A25F00E8A322 /* TermsOfUseViewController.swift in Sources */,
 				4481D3112316F1F700F823F2 /* BarbersViewController.swift in Sources */,
 				44B9F718234269AA00FC6210 /* CommonSettingsLabelCell.swift in Sources */,
 				4411C5EA23153C46004A51FE /* Role.swift in Sources */,
+				4446829023ED8C460016167C /* AvatarOrderTableViewCell.swift in Sources */,
 				447B13EB2344A57F004D9275 /* Typealiases.swift in Sources */,
+				4446829623EEBA180016167C /* TwoButtonTableViewCell.swift in Sources */,
+				44472DCA23E17704009259C5 /* BUClientTabBarController.swift in Sources */,
+				44A12B0823D07F6200912FFB /* PhoneNumberCollectionViewCell.swift in Sources */,
+				4477AE7623E42CB800295BC9 /* BUChooseBarberViewController.swift in Sources */,
+				44A12AF623D0471300912FFB /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,7 +1427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -858,7 +1482,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -870,14 +1494,15 @@
 		};
 		4418B73C230D31B10093BF3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29B24A415BBA8FCFBCFFDA94 /* Pods-Burb.debug.xcconfig */;
+			baseConfigurationReference = 2148A2AB4DA30897D7385B62 /* Pods-Burb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Burb/Burb.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRM2AY4252;
 				INFOPLIST_FILE = Burb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -892,14 +1517,15 @@
 		};
 		4418B73D230D31B10093BF3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 39EC30B489133BFC8B8BBEC8 /* Pods-Burb.release.xcconfig */;
+			baseConfigurationReference = A9C46CE89C9CA332E6F5ED24 /* Pods-Burb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Burb/Burb.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WRM2AY4252;
 				INFOPLIST_FILE = Burb/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

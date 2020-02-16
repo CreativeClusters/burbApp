@@ -1,13 +1,12 @@
 ![Karmadust](https://github.com/Tobaloidee/CalendarView/blob/master/Assets/logotype.png)
 
-[![Language](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://swift.org)
-[![Licence](https://img.shields.io/dub/l/vibe-d.svg?maxAge=2592000)](https://opensource.org/licenses/MIT)
+[![Language](https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat)](https://swift.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![CocoaPods](https://img.shields.io/cocoapods/v/KDCalendar.svg?style=flat)](https://cocoapods.org/pods/KDCalendar)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/vsouza/awesome-ios)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-This is an implementation of a calendar component for iOS written in Swift 4.0. 
-It features both vertical and horizontal layout (and scrolling) and the display of native calendar events.
+This is an easy to use, "just drag and drop it in your code" type of calendar for iOS. It supports both **vertical** and **horizontal** scrolling, as well as native **calendar events**.
 
 ![Calendar Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/screenshots.png)
 
@@ -22,7 +21,7 @@ It features both vertical and horizontal layout (and scrolling) and the display 
 #### CocoaPods
 
 ```
-pod 'KDCalendar', '~> 1.6.2'
+pod 'KDCalendar', '~> 1.8.9'
 ```
 
 #### Carthage
@@ -32,15 +31,31 @@ Add this to your Cartfile, and then run `carthage update`:
 github "mmick66/CalendarView" "master"
 ```
 
+#### Swift Package Manager
+
+Go to Project -> Swift Packages and add the repository:
+```
+https://github.com/mmick66/CalendarView.git
+```
+
+
+Add this to your Package.swift:
+```
+dependencies: [
+    .Package(url: "https://github.com/mmick66/CalendarView")
+]
+```
+
+
 #### Manual
 
-The files needed to be included are in the **CalendarView** subfolder of this project.
+Just the files from the **CalendarView/** subfolder to your project.
 
 # Setup
 
-The calendar is a `UIView` and can be added **either programmatically or via a XIB/Storyboard**. 
+The calendar is a `UIView` and can be added either programmatically or via a XIB/Storyboard. **If doing the latter, make sure that the Module is selected to be 'KDCalendar'**.
 
-![IB Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screen%20Shot%202017-10-30%20at%2014.45.28.png)
+![IB Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screenshot.png)
 
 It needs a delegate and data source that comply with:
 
@@ -50,15 +65,15 @@ protocol CalendarViewDataSource {
     func endDate() -> NSDate   // UTC Date
 }
 protocol CalendarViewDelegate {
-    func calendar(_ calendar : CalendarView, canSelectDate date : Date) -> Bool /* optional */ 
+    func calendar(_ calendar : CalendarView, canSelectDate date : Date) -> Bool /* optional */
     func calendar(_ calendar : CalendarView, didScrollToMonth date : Date) -> Void
     func calendar(_ calendar : CalendarView, didSelectDate date : Date, withEvents events: [CalendarEvent]) -> Void
-    func calendar(_ calendar : CalendarView, didDeselectDate date : Date) -> Void /* optional */ 
-    func calendar(_ calendar : CalendarView, didLongPressDate date : Date) -> Void /* optional */ 
+    func calendar(_ calendar : CalendarView, didDeselectDate date : Date) -> Void /* optional */
+    func calendar(_ calendar : CalendarView, didLongPressDate date : Date, withEvents events: [CalendarEvent]?) -> Void /* optional */
 }
 ```
 
-The data source will provide the **start date** and the **end date** of the calendar. The methods have a default implementation that will return `Date()` resulting in a single-page calendar displaying the current month. 
+The data source will provide the **start date** and the **end date** of the calendar. The methods have a default implementation that will return `Date()` resulting in a single-page calendar displaying the current month.
 
 The delegate responds to events such as scrolling and the selection of specific dates.
 
@@ -131,26 +146,20 @@ calendarView.direction = .horizontal
 
 ### Styling
 
-The look of this calendar component is based on a small set of static variables defined in the `CalendarView+Style.swift` file and in the `CalanderView.Style` structure. Set values for these variables anywhere in your code, before the CalendarView gets rendered on screen, for example on the viewDidLoad() of the controller that owns it. One of the styles seen above is defined like so:
+The look of this calendar can be set using the `CalendarView.Style` structure. There is an "out of the box" style that can be accessed statically through `CalendarView.Style.Default`. To change it, instantiatia a new Style object and set the variables in their desired value anywhere in your code.
 
 ```Swift
 override func viewDidLoad() {
-    
+
     super.viewDidLoad()
-    
-    CalendarView.Style.cellShape                = .bevel(8.0)
-    CalendarView.Style.cellColorDefault         = UIColor.clear
-    CalendarView.Style.cellColorToday           = UIColor(red:1.00, green:0.84, blue:0.64, alpha:1.00)
-    CalendarView.Style.cellSelectedBorderColor  = UIColor(red:1.00, green:0.63, blue:0.24, alpha:1.00)
-    CalendarView.Style.cellEventColor           = UIColor(red:1.00, green:0.63, blue:0.24, alpha:1.00)
-    CalendarView.Style.headerTextColor          = UIColor.white
-    CalendarView.Style.cellTextColorDefault     = UIColor.white
-    CalendarView.Style.cellTextColorToday       = UIColor(red:0.31, green:0.44, blue:0.47, alpha:1.00)
-    
-    // complete init
+
+    let myStyle = CalendarView.Style()
+    // set your values
+    calendarView.style = myStyle
 }
 ```
 
+For more information have a look at our [wiki](https://github.com/mmick66/CalendarView/wiki/Styling).
 #### Marking Weekends
 
 Some calendars will want to display weekends as special and mark them with a different text color. To do that, first set the marksWeekends variable on the calendarView itself and (optionally) define the color to use.
@@ -160,9 +169,19 @@ CalendarView.Style.cellTextColorWeekend = UIColor.red
 calendarView.marksWeekends = true
 ```
 
-![IB Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screen%20Shot%202018-02-05%20at%2012.17.38.png)
+![IB Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screen%20Shot%20Mark%20Weekends.png)
 
 The `CellShape` will define whether the dates are displayed in a circle or square with bevel or not.
+
+#### Graying out days
+
+If you want the days that lie outside of the rage set by `startDate` and `endDate`, you can set the color in:
+
+```Swift
+CalendarView.Style.cellColorOutOfRange = UIColor(white: 0.0, alpha: 0.5)
+```
+
+![IB Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screen%20Shot%20Out%20of%20Range.png)
 
 #### First Day of the Week
 
@@ -172,13 +191,40 @@ Depending on the culture weeks are considered to start either on a Monday or on 
 CalendarView.Style.firstWeekday = .sunday
 ```
 
-![IB Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screen%20Shot%202018-05-04%20at%2009.31.08.png)
+![IB Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screen%20Shot%20First%20Day.png)
 
 The calendar defaults to Monday which is standard in Europe.
 
+#### Set locale of calendar
+
+Set the locale for header labels of Weekdays and Month. Use:
+
+```Swift
+CalendarView.Style.locale = Locale(identifier: "en_US")
+```
+
+![IB Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screen%20Shots%20Locale.png)
+
+The locale default is Locale.current of your device.
+
+#### Custom Headers
+
+Depending on the language, you might experience problems displaying the month strings in the header. There is however a method you can implement that will return any string you wish according to the date passed.
+
+```Swift
+public protocol CalendarViewDataSource {
+    /* other methods */
+    func headerString(_ date: Date) -> String?
+}
+```
+
 # Events
 
-This component has the ability to sync events from the system's `EKEventStore` which is common with the native calendar provided in iOS. 
+This component has the ability to sync events from the system's `EKEventStore`, which is shared with the native calendar provided in iOS. This ability is optional and (in order to keep the calendar's footprint low) needs to be activated seperatly via a custom flag in the build settings as shown below:
+
+![Events Screenshot](https://github.com/mmick66/CalendarView/blob/master/Assets/Screen%20Shot%20Add%20Events.png)
+
+In the "Build Settings," under the "Swift Compiler - Custom Flags" and "Active Compilation Conditions," simply add the `KDCALENDAR_EVENT_MANAGER_ENABLED` flag for both debug and release. The events will be enabled.
 
 #### Loading Events
 

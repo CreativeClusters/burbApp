@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ucq-ht-Ked">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vkd-Xu-6Zd">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -92,17 +92,10 @@
                                             <constraint firstAttribute="height" constant="28" id="1Hw-vl-lT2"/>
                                         </constraints>
                                         <attributedString key="attributedText">
-                                            <fragment content="I agree with ">
+                                            <fragment content="I agree with terms os use">
                                                 <attributes>
-                                                    <font key="NSFont" size="17" name="OpenSans-Light"/>
-                                                    <font key="NSOriginalFont" size="17" name="OpenSans"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                            <fragment content="terms os use">
-                                                <attributes>
-                                                    <font key="NSFont" size="17" name="OpenSans-Semibold"/>
-                                                    <font key="NSOriginalFont" size="17" name="OpenSans-Semibold"/>
+                                                    <font key="NSFont" metaFont="system" size="17"/>
+                                                    <font key="NSOriginalFont" metaFont="system" size="17"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -303,6 +296,7 @@ is encrypted.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                         <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="+7 (000) 000-00 00"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="+7 (000) 000-00 00"/>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -899,7 +893,7 @@ is encrypted.</string>
                                                         <constraint firstAttribute="width" constant="204" id="G3n-9Z-t3w"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="17:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjJ-qj-tgX">
@@ -1766,7 +1760,7 @@ is encrypted.</string>
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="163"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="100" height="163"/>
                                     </collectionViewCell>
                                 </cells>
@@ -2458,7 +2452,7 @@ is encrypted.</string>
         <scene sceneID="Exk-rQ-CBp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="L4M-ho-PQR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Order" image="anchor" id="jGa-7R-RuO">
+                    <tabBarItem key="tabBarItem" title="Order" image="anchor_burb" id="jGa-7R-RuO">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -2535,6 +2529,7 @@ is encrypted.</string>
     </scenes>
     <resources>
         <image name="anchor" width="25" height="25"/>
+        <image name="anchor_burb" width="257" height="287"/>
         <image name="barber_b" width="240" height="240"/>
         <image name="blur" width="414" height="414"/>
         <image name="burbLogo" width="145" height="129"/>

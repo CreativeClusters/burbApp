@@ -31,14 +31,19 @@ extension CalendarView: UICollectionViewDelegateFlowLayout {
         
         guard let date = self.dateFromIndexPath(indexPath) else { return }
         
-        if let index = selectedIndexPaths.index(of: indexPath) {
+        if let index = selectedIndexPaths.firstIndex(of: indexPath) {
             
             delegate?.calendar(self, didDeselectDate: date)
-            
-            selectedIndexPaths.remove(at: index)
-            selectedDates.remove(at: index)
+            if enableDeslection {
+                selectedIndexPaths.remove(at: index)
+                selectedDates.remove(at: index)
+            }
             
         } else {
+            if let currentCell = collectionView.cellForItem(at: indexPath) as? CalendarDayCell, currentCell.isOutOfRange || currentCell.isAdjacent {
+                self.reloadData()
+                return
+            }
             
             if !multipleSelectionEnable {
                 selectedIndexPaths.removeAll()
@@ -91,8 +96,16 @@ extension CalendarView: UICollectionViewDelegateFlowLayout {
         var page: Int = 0
         
         switch self.direction {
-        case .horizontal:   page = Int(floor(self.collectionView.contentOffset.x / self.collectionView.bounds.size.width))
-        case .vertical:     page = Int(floor(self.collectionView.contentOffset.y / self.collectionView.bounds.size.height))
+        case .horizontal:
+            let offsetX = ceilf(Float(self.collectionView.contentOffset.x))
+            let width = self.collectionView.bounds.size.width
+            page = Int(floor(offsetX / Float(width)))
+        case .vertical:
+            let offsetY = ceilf(Float(self.collectionView.contentOffset.y))
+            let height = self.collectionView.bounds.size.height
+            page = Int(floor(offsetY / Float(height)))
+        @unknown default:
+            fatalError()
         }
         
         page = page > 0 ? page : 0
@@ -100,17 +113,21 @@ extension CalendarView: UICollectionViewDelegateFlowLayout {
         var monthsOffsetComponents = DateComponents()
         monthsOffsetComponents.month = page
         
-        return self.calendar.date(byAdding: monthsOffsetComponents, to: self.startOfMonthCache);
+        return self.calendar.date(byAdding: monthsOffsetComponents, to: self.firstDayCache);
     }
     
     func displayDateOnHeader(_ date: Date) {
         let month = self.calendar.component(.month, from: date) // get month
         
-        let monthName = DateFormatter().monthSymbols[(month-1) % 12] // 0 indexed array
+        let formatter = DateFormatter()
+        formatter.locale = style.locale
+        formatter.timeZone = style.calendar.timeZone
+        
+        let monthName = formatter.monthSymbols[(month-1) % 12].capitalized // 0 indexed array
         
         let year = self.calendar.component(.year, from: date)
 
-        self.headerView.monthLabel.text = monthName + " " + String(year)
+        self.headerView.monthLabel.text = dataSource?.headerString(date) ?? monthName + " " + String(year)
         
         self.displayDate = date
     }

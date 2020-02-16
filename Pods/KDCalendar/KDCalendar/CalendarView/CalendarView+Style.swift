@@ -10,7 +10,9 @@ import UIKit
 
 extension CalendarView {
     
-    public struct Style {
+    public class Style {
+        
+        public static var Default: Style = Style()
         
         public enum CellShapeOptions {
             case round
@@ -31,38 +33,76 @@ extension CalendarView {
             case monday
         }
         
+        public enum CellOutOfRangeDisplayOptions {
+            case normal
+            case hidden
+            case grayed
+        }
+        
+        public enum WeekDaysTransform {
+            case capitalized, uppercase
+        }
+        
+        public init()
+        {
+        }
+        
         //Event
-        public static var cellEventColor = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.8)
+        public var cellEventColor            = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.8)
         
         //Header
-        public static var headerHeight: CGFloat = 80.0
-        public static var headerTextColor = UIColor.gray
-        public static var headerFontName: String = "Helvetica"
-        public static var headerFontSize: CGFloat = 20.0
-
-        //Common
-        public static var cellShape                 = CellShapeOptions.bevel(4.0)
+        public var headerHeight: CGFloat     = 80.0
+        public var headerTopMargin: CGFloat  = 5.0
+        public var headerTextColor           = UIColor.gray
+        public var headerBackgroundColor     = UIColor.white
+        public var headerFont                = UIFont.systemFont(ofSize: 20) // Used for the month
         
-        public static var firstWeekday              = FirstWeekdayOptions.monday
+        public var weekdaysTopMargin: CGFloat     = 5.0
+        public var weekdaysBottomMargin: CGFloat  = 5.0
+        public var weekdaysHeight: CGFloat        = 35.0
+        public var weekdaysTextColor              = UIColor.gray
+        public var weekdaysBackgroundColor        = UIColor.white
+        public var weekdaysFont                   = UIFont.systemFont(ofSize: 14) // Used for days of the week
+        
+        //Common
+        public var cellShape                 = CellShapeOptions.bevel(4.0)
+        
+        public var firstWeekday              = FirstWeekdayOptions.monday
+        public var showAdjacentDays          = false
         
         //Default Style
-        public static var cellColorDefault          = UIColor(white: 0.0, alpha: 0.1)
-        public static var cellTextColorDefault      = UIColor.gray
-        public static var cellBorderColor           = UIColor.clear
-        public static var cellBorderWidth           = CGFloat(0.0)
+        public var cellColorDefault          = UIColor(white: 0.0, alpha: 0.1)
+        public var cellTextColorDefault      = UIColor.gray
+        public var cellBorderColor           = UIColor.clear
+        public var cellBorderWidth           = CGFloat(0.0)
+        public var cellFont                  = UIFont.systemFont(ofSize: 17)
         
         //Today Style
-        public static var cellTextColorToday        = UIColor.gray
-        public static var cellColorToday            = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.3)
+        public var cellTextColorToday        = UIColor.gray
+        public var cellColorToday            = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.3)
+        public var cellColorOutOfRange       = UIColor(white: 0.0, alpha: 0.5)
+        public var cellColorAdjacent         = UIColor.clear
         
         //Selected Style
-        public static var cellSelectedBorderColor   = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.8)
-        public static var cellSelectedBorderWidth   = CGFloat(2.0)
-        public static var cellSelectedColor         = UIColor.clear
-        public static var cellSelectedTextColor     = UIColor.black
+        public var cellSelectedBorderColor   = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.8)
+        public var cellSelectedBorderWidth   = CGFloat(2.0)
+        public var cellSelectedColor         = UIColor.clear
+        public var cellSelectedTextColor     = UIColor.black
         
         //Weekend Style
-        public static var cellTextColorWeekend      = UIColor(red:1.00, green:0.84, blue:0.65, alpha:1.00)
+        public var cellTextColorWeekend      = UIColor(red:1.00, green:0.84, blue:0.65, alpha:1.00)
+        
+        //Locale Style
+        public var locale                    = Locale.current
+        
+        //Calendar Identifier Style
+        public lazy var calendar: Calendar   = {
+            var calendar = Calendar(identifier: .gregorian)
+            calendar.timeZone = TimeZone(abbreviation: "UTC")!
+            return calendar
+        }()
+        
+        public var weekDayTransform = WeekDaysTransform.capitalized
         
         
     }

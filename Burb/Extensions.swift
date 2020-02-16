@@ -12,6 +12,9 @@ import UIKit
 
 let burbColor = UIColor(red: 205.0/255.0, green: 87.0/255.0, blue: 87.0/255.0, alpha: 1.0)
 let blackburbColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
+let lightGrayBurbColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 1.0)
+let grayBurbColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 0.6)
+
 
 
 extension UIViewController {

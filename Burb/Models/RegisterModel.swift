@@ -10,14 +10,14 @@ import UIKit
 
 
 class RegisterModel {
-    var photoView: UIImage?
+    
     var phoneNumber: String?
     var securityCode: String?
-    var name: String?
-    var role: Role? = .client
+    var userID: String?
+    var facebookId: String?
  
     var isFilled: Bool {
-        guard !(phoneNumber ?? "").isEmpty, !(securityCode ?? "").isEmpty, !(name ?? "").isEmpty, role != nil else {
+        guard !(phoneNumber ?? "").isEmpty, !(securityCode ?? "").isEmpty, !(userID ?? "").isEmpty else {
             return false
         }
         return true

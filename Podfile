@@ -6,13 +6,16 @@ target 'Burb' do
   use_frameworks!
 
   # Pods for Burb
- pod 'Firebase'
- pod 'Firebase/Core'
- pod 'Firebase/Auth'
- pod 'Firebase/Database'
- pod 'Firebase/Storage'
- pod "JMMaskTextField-Swift"
- pod 'KDCalendar'
- pod 'RaisePlaceholder'
+
+  pod 'FlagPhoneNumber'
+  pod 'Firebase'
+  pod 'Firebase/Auth'
+  pod 'RaisePlaceholder'
+  pod 'FirebaseDatabase'
+  pod 'SPStorkController'
+  pod 'FirebaseStorage'
+  pod 'FirebaseFirestore'
+  pod 'CVCalendar', '~> 1.6.2'
+  pod 'ARSLineProgress'
 
 end

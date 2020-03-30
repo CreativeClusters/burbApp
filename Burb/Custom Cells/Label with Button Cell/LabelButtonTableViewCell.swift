@@ -13,8 +13,6 @@ class LabelButtonTableViewCell: UITableViewCell, NiBLoadable {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var button: UIButton!
     
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         Decorator.decorate(self)
@@ -43,8 +41,6 @@ class LabelButtonTableViewCell: UITableViewCell, NiBLoadable {
     func setButtonTextFont(font: UIFont) {
         button.titleLabel?.font = font
     }
-    
-    
 }
 
 extension LabelButtonTableViewCell {

@@ -19,7 +19,7 @@ class BUChooseBarberViewController: UIViewController {
     
     
     // MARK: - переписать на barber вместо users
-    var users = [User]()
+    var users = [Customer]()
     
     
     fileprivate var models: [CellModel] = [.adress, .date, .barbers, .button]

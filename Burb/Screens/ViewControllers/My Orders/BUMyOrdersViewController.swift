@@ -40,7 +40,7 @@ class BUMyOrdersViewController: UIViewController {
     private func registerCells() {
         self.collectionView.register(OrderCollectionViewCell.nib, forCellWithReuseIdentifier:OrderCollectionViewCell.name)
     }
-
+    
 }
 
 extension BUMyOrdersViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -77,9 +77,11 @@ extension BUMyOrdersViewController {
     fileprivate class Decorator {
         private init() {}
         static func decorate(_ vc: BUMyOrdersViewController) {
+            
             vc.view.backgroundColor = vc.greyColor
             vc.hideKeyboardWhenTappedAround()
             vc.title = "_MYORDERS"
+            
             
         }
         

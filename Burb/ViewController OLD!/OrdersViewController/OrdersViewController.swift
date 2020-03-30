@@ -17,13 +17,8 @@ class OrdersViewController: UIViewController {
     var orders = [Order]()
     var currentOrder: Order?
 
-
     @IBOutlet weak var cancelButton: UIBarButtonItem!
-    
     @IBOutlet weak var tableView: UITableView!
-    
-    
-    
     
     override func viewDidLoad() {
         print("init class")

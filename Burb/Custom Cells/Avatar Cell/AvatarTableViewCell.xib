@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O10-3i-5Mu">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O10-3i-5Mu" customClass="SVUploader" customModule="Burb" customModuleProvider="target">
                         <rect key="frame" x="80" y="35" width="160" height="160"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -24,8 +24,8 @@
                             <constraint firstAttribute="width" constant="160" id="aIn-wd-LgI"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-Pr-6Wz">
-                        <rect key="frame" x="88" y="43" width="144" height="144"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-Pr-6Wz">
+                        <rect key="frame" x="84" y="39" width="152" height="152"/>
                     </imageView>
                 </subviews>
                 <constraints>
@@ -33,8 +33,8 @@
                     <constraint firstItem="5dU-Pr-6Wz" firstAttribute="centerY" secondItem="O10-3i-5Mu" secondAttribute="centerY" id="6KK-To-9nV"/>
                     <constraint firstItem="O10-3i-5Mu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Jls-m4-jDb"/>
                     <constraint firstItem="5dU-Pr-6Wz" firstAttribute="centerX" secondItem="O10-3i-5Mu" secondAttribute="centerX" id="TXG-lu-KJa"/>
-                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="height" secondItem="O10-3i-5Mu" secondAttribute="height" multiplier="0.9" id="ZLG-C5-DyK"/>
-                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="width" secondItem="O10-3i-5Mu" secondAttribute="width" multiplier="0.9" id="uIa-bZ-um7"/>
+                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="height" secondItem="O10-3i-5Mu" secondAttribute="height" multiplier="0.95" id="ZLG-C5-DyK"/>
+                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="width" secondItem="O10-3i-5Mu" secondAttribute="width" multiplier="0.95" id="uIa-bZ-um7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

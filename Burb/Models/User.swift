@@ -8,23 +8,33 @@
 
 import UIKit
 
-class User: NSObject {
-    var id: String?
-    var phone: String?
+class Customer: NSObject {
+    var id: String
+    var phoneNumber: String?
     var name: String?
     var photo: UIImage?
     var avatarReference: String?
-    var notifications: String?
-    var language: String?
-    var type: Role = .barber    
     
+    var dict: [String: Any] {
+        return [
+            "id": id ,
+            "phone": phoneNumber ?? "",
+            "name": name ?? "",
+            "avatarReference": avatarReference ?? ""
+        ]}
     
-    init(dictionary: [String: Any]) {
-        self.id = dictionary["id"] as? String
-        self.phone = dictionary["phone"] as? String
-        self.name = dictionary["name"] as? String
-        self.avatarReference = dictionary["avatarReference"] as? String
-        self.notifications = dictionary["notifications"] as? String
-        self.language = dictionary["language"] as? String
+    init(id: String, name: String, photo:UIImage, phoneNumber: String, avatarReference: String) {
+        self.id = id
+        self.name = name
+        self.phoneNumber = phoneNumber
+        self.photo = photo
+        self.avatarReference = avatarReference
+    }
+    
+    var isFilled: Bool {
+        guard !(name ?? "").isEmpty,!(phoneNumber ?? "").isEmpty, photo != nil else {
+            return false
+        }
+        return true
     }
 }

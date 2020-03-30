@@ -16,8 +16,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="394" height="256"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PK8-nf-VtM" customClass="JMMaskTextField" customModule="JMMaskTextField_Swift">
-                        <rect key="frame" x="30" y="141.5" width="334" height="17"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PK8-nf-VtM" customClass="FPNTextField" customModule="FlagPhoneNumber">
+                        <rect key="frame" x="30" y="137.5" width="334" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="adO-TJ-ULX"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                         <userDefinedRuntimeAttributes>
@@ -25,20 +28,20 @@
                         </userDefinedRuntimeAttributes>
                     </textField>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gg-T7-lHK">
-                        <rect key="frame" x="30" y="163.5" width="334" height="2"/>
+                        <rect key="frame" x="30" y="167.5" width="334" height="2"/>
                         <color key="backgroundColor" red="0.80392156862745101" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="2" id="7H4-wb-pLY"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEi-Z0-ing">
-                        <rect key="frame" x="30" y="177.5" width="334" height="21"/>
+                        <rect key="frame" x="30" y="181.5" width="334" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZZ-1t-CeC">
-                        <rect key="frame" x="30" y="95.5" width="334" height="36"/>
+                        <rect key="frame" x="30" y="91.5" width="334" height="36"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="36" id="bBs-5w-vFg"/>
                         </constraints>
@@ -67,7 +70,7 @@
             <size key="customSize" width="394" height="256"/>
             <connections>
                 <outlet property="phoneLabel" destination="VZZ-1t-CeC" id="MOE-cO-3WA"/>
-                <outlet property="phoneNumberTextField" destination="PK8-nf-VtM" id="K5M-aJ-VuV"/>
+                <outlet property="phoneNumberTextField" destination="PK8-nf-VtM" id="eTJ-zj-sGy"/>
                 <outlet property="securityLabel" destination="VEi-Z0-ing" id="DM1-Ul-Mm4"/>
             </connections>
             <point key="canvasLocation" x="60.869565217391312" y="237.72321428571428"/>

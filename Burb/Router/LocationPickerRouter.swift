@@ -24,5 +24,5 @@ final class LocationPickerRouter {
             let destinationVC = BUOrderDatePickerViewController()
         source.navigationController?.pushViewController(destinationVC, animated: true)
     }
-    
 }
+

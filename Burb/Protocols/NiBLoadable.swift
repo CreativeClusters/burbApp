@@ -14,7 +14,6 @@ protocol NiBLoadable: class {
     
 }
 
-
 extension NiBLoadable {
     
     static var nib: UINib {

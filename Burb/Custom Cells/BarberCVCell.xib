@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BarberCVCell" customModule="Burb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="419"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="419"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzP-V6-sid" customClass="BarberAnimView" customModule="Burb" customModuleProvider="target">
+                        <rect key="frame" x="104.5" y="156.5" width="150" height="150"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3v0-10-gLq">
+                        <rect key="frame" x="91.5" y="361.5" width="176" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="176" id="rk8-Vj-b2U"/>
+                            <constraint firstAttribute="height" constant="50" id="w3H-df-1sx"/>
+                        </constraints>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUl-a8-Whd">
+                        <rect key="frame" x="16" y="322.5" width="327" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="zJv-Lc-nUf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="fzP-V6-sid" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Gdf-Ia-Y3Q"/>
+                <constraint firstItem="fzP-V6-sid" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="Hmi-wW-T3k"/>
+                <constraint firstItem="fzP-V6-sid" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.357995" id="MCo-R8-1Wu"/>
+                <constraint firstItem="sUl-a8-Whd" firstAttribute="top" secondItem="fzP-V6-sid" secondAttribute="bottom" constant="16" id="OlQ-06-aGm"/>
+                <constraint firstItem="3v0-10-gLq" firstAttribute="top" secondItem="sUl-a8-Whd" secondAttribute="bottom" constant="6" id="R10-5K-xWV"/>
+                <constraint firstItem="3v0-10-gLq" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="XRd-uH-AX6"/>
+                <constraint firstAttribute="trailing" secondItem="sUl-a8-Whd" secondAttribute="trailing" constant="16" id="btF-xW-ohL"/>
+                <constraint firstItem="fzP-V6-sid" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="150:419" id="hgx-hT-81D"/>
+                <constraint firstItem="sUl-a8-Whd" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="sRI-0y-ZXE"/>
+                <constraint firstItem="sUl-a8-Whd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="yqn-Ps-IQJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="359" height="419"/>
+            <connections>
+                <outlet property="barberView" destination="fzP-V6-sid" id="9ug-ye-RXG"/>
+                <outlet property="descriptionTextView" destination="3v0-10-gLq" id="TIE-5B-aH9"/>
+                <outlet property="roleLabel" destination="sUl-a8-Whd" id="dMf-ia-18Q"/>
+            </connections>
+            <point key="canvasLocation" x="339.85507246376812" y="276.22767857142856"/>
+        </collectionViewCell>
+    </objects>
+</document>

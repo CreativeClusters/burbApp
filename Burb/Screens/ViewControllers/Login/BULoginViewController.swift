@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BULoginViewController: UIViewController {
+class BULoginViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     
     fileprivate enum CellModel {
         case logo
@@ -51,7 +51,6 @@ class BULoginViewController: UIViewController {
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    
     private func delegating() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
@@ -62,12 +61,8 @@ class BULoginViewController: UIViewController {
         tableView.register(BUButtonTableViewCell.nib, forCellReuseIdentifier: BUButtonTableViewCell.name)
     }
     
-    @objc private func goToSignUpViaPhone() {
-        LoginRouter.shared.goToSignupViaPhoneViewController(from: self)
-    }
-    
-    
 }
+
 
 extension BULoginViewController: UITableViewDelegate, UITableViewDataSource {
     
@@ -115,7 +110,7 @@ extension BULoginViewController: UITableViewDelegate, UITableViewDataSource {
         case .signupAsFacebook:
             if let cell = tableView.dequeueReusableCell(withIdentifier: BUButtonTableViewCell.name, for: indexPath) as? BUButtonTableViewCell {
                 cell.setTitle(text: "_LOGINVIAFACEBOOK")
-                cell.setColor(color: burbColor)
+                cell.setColor(color: .black)
                 cell.setTitleColor(color: .white)
                 cell.setFont(font: UIFont(name: "OpenSans-Semibold", size: 15)!)
                 return cell
@@ -123,10 +118,12 @@ extension BULoginViewController: UITableViewDelegate, UITableViewDataSource {
         case .signupViaPhone:
             if let cell = tableView.dequeueReusableCell(withIdentifier: BUButtonTableViewCell.name, for: indexPath) as? BUButtonTableViewCell {
                 cell.setTitle(text: "_LOGINVIAPHONE")
-                cell.setColor(color: .black)
+                cell.setColor(color: burbColor)
                 cell.setTitleColor(color: .white)
                 cell.setFont(font: UIFont(name: "OpenSans-Semibold", size: 15)!)
-                cell.button.addTarget(self, action: #selector(goToSignUpViaPhone), for: .touchUpInside)
+                cell.buttonHandler = { [unowned self]  in
+                    LoginRouter.shared.goToSignupViaPhoneViewController(from: self)
+                }
                 return cell
             }
         case .termsOfUse:
@@ -136,9 +133,12 @@ extension BULoginViewController: UITableViewDelegate, UITableViewDataSource {
                 let attributedString = NSMutableAttributedString(string: "I agree with terms of use", attributes: [
                     .font: UIFont(name: "OpenSans-Light", size: 12.0)!,
                     .foregroundColor: UIColor(white: 50.0 / 255.0, alpha: 1.0)
-                    ])
+                ])
                 attributedString.addAttribute(.font, value: UIFont(name: "OpenSans-Semibold", size: 12.0)!, range: NSRange(location: 13, length: 12))
                 cell.setTitle(text: attributedString.string)
+                cell.buttonHandler = { [unowned self ] in
+                    LoginRouter.shared.goToTermsOfUseViewController(from: self)
+                }
                 return cell
             }
         }
@@ -162,5 +162,24 @@ extension BULoginViewController {
         static func decorate(_ vc: BULoginViewController) {
             
         }
+    }
+}
+
+
+class HalfSizePresentationController : UIPresentationController {
+    override var frameOfPresentedViewInContainerView: CGRect {
+        get {
+            guard let theView = containerView else {
+                return CGRect.zero
+            }
+            
+            return CGRect(x: 0, y: theView.bounds.height / 2, width: theView.bounds.width, height: theView.bounds.height / 2)
+        }
+    }
+}
+
+extension BULoginViewController : UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return HalfSizePresentationController(presentedViewController: presented, presenting: presenting)
     }
 }

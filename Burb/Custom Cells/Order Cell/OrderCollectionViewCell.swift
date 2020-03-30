@@ -31,13 +31,7 @@ class OrderCollectionViewCell: UICollectionViewCell, NiBLoadable {
         
         Decorator.decorate(self)
     }
-
-    
-    
-    
-    
 }
-
 
 extension OrderCollectionViewCell {
     fileprivate class Decorator {

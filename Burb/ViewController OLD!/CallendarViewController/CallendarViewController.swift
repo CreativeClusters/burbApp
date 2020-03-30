@@ -7,13 +7,9 @@
 //
 
 import UIKit
-import KDCalendar
 
 class CallendarViewController: UIViewController {
 
-    
-    
-    @IBOutlet weak var calendarView: CalendarView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +18,8 @@ class CallendarViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         let today = Date()
-        self.calendarView.setDisplayDate(today, animated: true)
     }
 
 

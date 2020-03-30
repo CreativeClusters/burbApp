@@ -20,10 +20,10 @@ class BUOrderLocationPickerViewController: UIViewController {
     var longitude: Double?
     var latitude: Double?
     var city: String?
-    
+    var adress: String?
     
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var showLocationView: UIView!
+    @IBOutlet weak var locationView: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var handleButton: UIButton!
     @IBOutlet weak var goNextButton: UIButton!
@@ -37,17 +37,12 @@ class BUOrderLocationPickerViewController: UIViewController {
         super.viewDidLoad()
         
         setupSubviews()
-        setupPin()
         startManager()
         Decorator.decorate(self)
         setupNextButton()
         addRightBarButton()
         setupSearchBar()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        navigationController?.isNavigationBarHidden = false
+        
     }
     
     @objc func handleSettings() {
@@ -55,12 +50,17 @@ class BUOrderLocationPickerViewController: UIViewController {
     }
     
     @objc func handleDatePicker() {
+        guard let city = self.city, let adress = self.adress, let long = self.longitude, let lati = self.latitude  else { return }
+        OrderLocationPickerInteractor.shared.saveLocationToUserDefaults(city: city, adress: adress, longitude: String(long), latitude: String(lati))
         LocationPickerRouter.shared.goToDatePickerViewController(from: self)
     }
     
     fileprivate func setupSearchBar() {
         let searchImage = UIImage(named: "icPinS")
         searchBar.setImage(searchImage, for: .search, state: .normal)
+        searchBar.searchTextField.backgroundColor = .white
+        locationView.layer.cornerRadius = self.locationView.layer.frame.height / 4
+        locationView.applyShadowOnView(locationView)
     }
     
     fileprivate func addRightBarButton() {
@@ -78,15 +78,6 @@ class BUOrderLocationPickerViewController: UIViewController {
         mapView.delegate = self 
         mapView.showsUserLocation = true
         mapView.showsCompass = true
-    }
-
-    fileprivate func setupPin() {
-        
-        if let pinImage = UIImage(named: "pin.png") {
-            pinImageView = UIImageView(image: pinImage)
-            pinImageView?.center = CGPoint(x: mapView.center.x, y: mapView.center.y - 100)
-            self.view.addSubview(pinImageView!)
-        }
     }
     
     fileprivate func startManager() {
@@ -118,12 +109,12 @@ class BUOrderLocationPickerViewController: UIViewController {
                 let city = place.locality ?? ""
                 let long = place.location!.coordinate.longitude
                 let lati = place.location!.coordinate.latitude
-                
                     
-                print("\(place.location!.coordinate.latitude) + \(place.location!.coordinate.longitude)")
+                print("\(city) + \(street) + \(place.location!.coordinate.latitude) + \(place.location!.coordinate.longitude)")
                 
 
                 self.city = "\(city)"
+                self.adress = street
                 self.longitude = long
                 self.latitude = lati
                 self.searchBar.text = "\(street)"
@@ -179,22 +170,12 @@ extension BUOrderLocationPickerViewController {
         private init() {}
         
         static func decorate(_ vc: BUOrderLocationPickerViewController) {
-            vc.showLocationView.layer.masksToBounds = true
-            vc.showLocationView.clipsToBounds = true
+            
             vc.searchBar.layer.masksToBounds = true
-            vc.searchBar.clipsToBounds = true
-            vc.showLocationView.backgroundColor = .white
-            
-            vc.showLocationView.layer.cornerRadius = vc.showLocationView.frame.height / 4
-            vc.searchBar.layer.cornerRadius = vc.searchBar.frame.height / 4
-            
-            vc.searchBar.backgroundImage = UIImage()
-            vc.searchBar.backgroundColor = .clear
-            vc.searchBar.barTintColor = .clear
-            
-            vc.showLocationView.applyShadowOnView(vc.showLocationView)
-            
-            
+            vc.navigationController?.isNavigationBarHidden = false
+
+            vc.searchBar.layer.cornerRadius = vc.searchBar.frame.height / 2
+                        
             vc.hideKeyboardWhenTappedAround()
             vc.title = "_LOCATIONPICKER"
             vc.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)

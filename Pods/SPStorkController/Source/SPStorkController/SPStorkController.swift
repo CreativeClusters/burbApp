@@ -23,7 +23,7 @@ import UIKit
 
 public enum SPStorkController {
     
-    static public func scrollViewDidScroll(_ scrollView: UIScrollView, indicatorInset: CGFloat? = nil) {
+    static public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if let controller = self.controller(for: scrollView) {
             if let presentationController = self.presentationController(for: controller) {
                 let translation = -(scrollView.contentOffset.y + scrollView.contentInset.top)
@@ -61,7 +61,7 @@ public enum SPStorkController {
     static public func dismissWithConfirmation(controller: UIViewController, completion: (()->())?) {
         if let controller = self.presentationController(for: controller) {
             controller.dismissWithConfirmation(prepare: nil, completion: {
-                print("Custom completion for confirmation. Confirmation is optional.")
+                completion?()
             })
         }
     }
@@ -83,6 +83,8 @@ public enum SPStorkController {
     }
     
     static private func presentationController(for controller: UIViewController) -> SPStorkPresentationController? {
+        guard controller.modalPresentationStyle == .custom else { return nil }
+        
         if let presentationController = controller.presentationController as? SPStorkPresentationController {
             return presentationController
         }
@@ -90,7 +92,6 @@ public enum SPStorkController {
         if let presentationController = controller.parent?.presentationController as? SPStorkPresentationController {
             return presentationController
         }
-        
         return nil
     }
     

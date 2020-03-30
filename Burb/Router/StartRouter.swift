@@ -14,11 +14,12 @@ class StartRouter {
     
     private init() {}
     
-    private let rootViewController: UIViewController = BULoginViewController()
+    private let rootViewController: UIViewController = BUCustomerTabbarController()
     
     func root(_ window: inout UIWindow?) {
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)
     }
 }
+
 

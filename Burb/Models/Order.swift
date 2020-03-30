@@ -11,6 +11,7 @@ import Foundation
 
 
 class Order: NSObject {
+    
     var orderId: String?
     var userId: String?
     var descriptionOrder: String?
@@ -22,6 +23,9 @@ class Order: NSObject {
     var city: String?
     var longitude: Double?
     var latitude: Double?
+    
+
+    
     
     init(dictionary: [String: Any]) {
         self.orderId = dictionary["orderId"] as? String

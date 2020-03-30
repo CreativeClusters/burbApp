@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		371C3F9D4290E5A5021245DE /* Pods_Burb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCB1C46D0F3F673A87A316C /* Pods_Burb.framework */; };
+		440738092431E263008ABBB7 /* BUBarberOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440738072431E263008ABBB7 /* BUBarberOrdersViewController.swift */; };
+		4407380A2431E263008ABBB7 /* BUBarberOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440738082431E263008ABBB7 /* BUBarberOrdersViewController.xib */; };
+		4407380E2431F336008ABBB7 /* InboxOrderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407380C2431F336008ABBB7 /* InboxOrderCVCell.swift */; };
+		4407380F2431F336008ABBB7 /* InboxOrderCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4407380D2431F336008ABBB7 /* InboxOrderCVCell.xib */; };
+		4407381124320898008ABBB7 /* BUOrdersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407381024320898008ABBB7 /* BUOrdersDataManager.swift */; };
+		4407381324320B51008ABBB7 /* BarberOrdersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407381224320B51008ABBB7 /* BarberOrdersInteractor.swift */; };
+		4407381524322462008ABBB7 /* OrderLocationPickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407381424322462008ABBB7 /* OrderLocationPickerInteractor.swift */; };
+		44073819243244D6008ABBB7 /* BUBarberProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44073817243244D6008ABBB7 /* BUBarberProfileViewController.swift */; };
+		4407381A243244D6008ABBB7 /* BUBarberProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44073818243244D6008ABBB7 /* BUBarberProfileViewController.xib */; };
 		440E4191230D3482000FD5FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4190230D3482000FD5FD /* LoginViewController.swift */; };
 		440E4194230D3E6D000FD5FD /* SignupViaPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4193230D3E6D000FD5FD /* SignupViaPhoneViewController.swift */; };
 		440E4197230D47F6000FD5FD /* ConfirmSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4196230D47F6000FD5FD /* ConfirmSignupViewController.swift */; };
@@ -35,6 +43,13 @@
 		443877C52343510C008AD69F /* HidePhoneNumberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443877C32343510C008AD69F /* HidePhoneNumberCell.xib */; };
 		443877CC2343D69C008AD69F /* SignOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443877CA2343D69C008AD69F /* SignOutCell.swift */; };
 		443877CD2343D69C008AD69F /* SignOutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443877CB2343D69C008AD69F /* SignOutCell.xib */; };
+		444022852406BCA100DE5DB8 /* Extension+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444022842406BCA100DE5DB8 /* Extension+Decodable.swift */; };
+		444022872406C87300DE5DB8 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444022862406C87300DE5DB8 /* AuthManager.swift */; };
+		4440544A2407EAA700A19220 /* Extension+TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444054492407EAA700A19220 /* Extension+TextView.swift */; };
+		4440545724080BF500A19220 /* BUSpecifyDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440545524080BF500A19220 /* BUSpecifyDatesViewController.swift */; };
+		4440545824080BF500A19220 /* BUSpecifyDatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4440545624080BF500A19220 /* BUSpecifyDatesViewController.xib */; };
+		4440545C2408148C00A19220 /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4440545A2408148C00A19220 /* CalendarTableViewCell.swift */; };
+		4440545D2408148C00A19220 /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4440545B2408148C00A19220 /* CalendarTableViewCell.xib */; };
 		4446828623ED4DA60016167C /* BUDetailOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4446828423ED4DA60016167C /* BUDetailOrderViewController.swift */; };
 		4446828723ED4DA60016167C /* BUDetailOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4446828523ED4DA60016167C /* BUDetailOrderViewController.xib */; };
 		4446828F23ED8C460016167C /* AvatarOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4446828D23ED8C460016167C /* AvatarOrderTableViewCell.xib */; };
@@ -72,6 +87,9 @@
 		44499FA9233B55B000467073 /* ChangeClientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44499FA8233B55B000467073 /* ChangeClientSettingsViewController.swift */; };
 		444A90C523363322000C9D15 /* BarberDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A90C323363322000C9D15 /* BarberDetailViewCell.swift */; };
 		444A90C623363322000C9D15 /* BarberDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444A90C423363322000C9D15 /* BarberDetailViewCell.xib */; };
+		444EF2C62421FF6800ED5AC9 /* ChooseRoleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF2C52421FF6800ED5AC9 /* ChooseRoleInteractor.swift */; };
+		444EF2CA24222B6300ED5AC9 /* CreateCustomerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF2C924222B6300ED5AC9 /* CreateCustomerInteractor.swift */; };
+		444EF2CC24225F8F00ED5AC9 /* Barber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF2CB24225F8F00ED5AC9 /* Barber.swift */; };
 		4459EC5423CCA46500FE6292 /* BULoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459EC5223CCA46500FE6292 /* BULoginViewController.swift */; };
 		4459EC5523CCA46500FE6292 /* BULoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4459EC5323CCA46500FE6292 /* BULoginViewController.xib */; };
 		4459EC5A23CCA92800FE6292 /* LogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459EC5823CCA92800FE6292 /* LogoTableViewCell.swift */; };
@@ -79,17 +97,24 @@
 		4459EC6323CCB65A00FE6292 /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459EC6223CCB65A00FE6292 /* StartRouter.swift */; };
 		445A4A6423322F5500DE0417 /* ClientTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445A4A6323322F5500DE0417 /* ClientTabbarController.swift */; };
 		445A4A672332B93900DE0417 /* DetailOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445A4A662332B93900DE0417 /* DetailOrderViewController.swift */; };
+		445FDF8B2421021000DF314B /* BarberAnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FDF8A2421021000DF314B /* BarberAnimView.swift */; };
+		445FDF8D242102A000DF314B /* QC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FDF8C242102A000DF314B /* QC.swift */; };
+		445FDF8F2421054400DF314B /* ClientAnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FDF8E2421054400DF314B /* ClientAnimView.swift */; };
+		445FDF97242117A400DF314B /* BarberCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FDF95242117A400DF314B /* BarberCVCell.swift */; };
+		445FDF98242117A400DF314B /* BarberCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445FDF96242117A400DF314B /* BarberCVCell.xib */; };
 		4466C5DD231E3F83004CA831 /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5DC231E3F83004CA831 /* DialogsViewController.swift */; };
 		4466C5DF231E5AD3004CA831 /* DialogUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5DE231E5AD3004CA831 /* DialogUserCell.swift */; };
 		4466C5E2231E62C7004CA831 /* CurrentDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E1231E62C7004CA831 /* CurrentDialogViewController.swift */; };
 		4466C5E4231EAC0F004CA831 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E3231EAC0F004CA831 /* Message.swift */; };
 		4466C5E6231EB135004CA831 /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E5231EB135004CA831 /* MessageViewCell.swift */; };
+		4466FC3B2432514A00591C4B /* BUCustomerTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466FC392432514A00591C4B /* BUCustomerTabbarController.swift */; };
+		4466FC3C2432514A00591C4B /* BUCustomerTabbarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4466FC3A2432514A00591C4B /* BUCustomerTabbarController.xib */; };
 		44687BFE23E7FB9800F759F4 /* BUMyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687BFC23E7FB9800F759F4 /* BUMyOrdersViewController.swift */; };
 		44687BFF23E7FB9800F759F4 /* BUMyOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687BFD23E7FB9800F759F4 /* BUMyOrdersViewController.xib */; };
 		44687C0723E81F1900F759F4 /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C0523E81F1900F759F4 /* OrderCollectionViewCell.swift */; };
 		44687C0823E81F1900F759F4 /* OrderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687C0623E81F1900F759F4 /* OrderCollectionViewCell.xib */; };
 		44687C0A23E9523A00F759F4 /* LocationPickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C0923E9523A00F759F4 /* LocationPickerRouter.swift */; };
-		44687C1823EAFBC700F759F4 /* ConfirmTimeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C1723EAFBC700F759F4 /* ConfirmTimeRouter.swift */; };
+		44687C1823EAFBC700F759F4 /* OrderDatePickerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C1723EAFBC700F759F4 /* OrderDatePickerRouter.swift */; };
 		44687C1B23EB0A8300F759F4 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C1923EB0A8300F759F4 /* TextFieldTableViewCell.swift */; };
 		44687C1C23EB0A8300F759F4 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687C1A23EB0A8300F759F4 /* TextFieldTableViewCell.xib */; };
 		44687C2123EBF8CC00F759F4 /* TumblerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C1F23EBF8CC00F759F4 /* TumblerTableViewCell.swift */; };
@@ -122,6 +147,8 @@
 		448D50DD23228FD300F401AE /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448D50D323228FD300F401AE /* OpenSans-Light.ttf */; };
 		448D50DE23228FD300F401AE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448D50D423228FD300F401AE /* OpenSans-Regular.ttf */; };
 		448E79B82334E6E000BA2B04 /* DetailBarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E79B72334E6E000BA2B04 /* DetailBarberViewController.swift */; };
+		44968B9D2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968B9B2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift */; };
+		44968B9E2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44968B9C2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib */; };
 		449E73152317A499004771E8 /* BarberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73142317A499004771E8 /* BarberViewCell.swift */; };
 		449E73172317B07A004771E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73162317B07A004771E8 /* User.swift */; };
 		449E731A2317C3F3004771E8 /* ClientOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73192317C3F3004771E8 /* ClientOrderViewController.swift */; };
@@ -142,6 +169,22 @@
 		44A12B1323D47CB100912FFB /* SignupPhoneInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12B1223D47CB100912FFB /* SignupPhoneInteractor.swift */; };
 		44A12B1723D4915300912FFB /* RoleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12B1523D4915300912FFB /* RoleCollectionViewCell.swift */; };
 		44A12B1823D4915300912FFB /* RoleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A12B1623D4915300912FFB /* RoleCollectionViewCell.xib */; };
+		44B34FB6242B5359003FDA16 /* SegmentControllTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FB4242B5359003FDA16 /* SegmentControllTableViewCell.swift */; };
+		44B34FB7242B5359003FDA16 /* SegmentControllTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B34FB5242B5359003FDA16 /* SegmentControllTableViewCell.xib */; };
+		44B34FB9242B58C0003FDA16 /* Curency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FB8242B58C0003FDA16 /* Curency.swift */; };
+		44B34FBB242B5B78003FDA16 /* CreateBarberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FBA242B5B78003FDA16 /* CreateBarberInteractor.swift */; };
+		44B34FBD242B626A003FDA16 /* PricingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FBC242B626A003FDA16 /* PricingModel.swift */; };
+		44B34FC2242CD210003FDA16 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FC1242CD210003FDA16 /* File.swift */; };
+		44B34FC4242CD449003FDA16 /* extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FC3242CD449003FDA16 /* extension+UIView.swift */; };
+		44B34FC7242DE81A003FDA16 /* BUTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FC6242DE81A003FDA16 /* BUTableView.swift */; };
+		44B34FC9242DEB73003FDA16 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FC8242DEB73003FDA16 /* Extension+UIImageView.swift */; };
+		44B34FD9242F3EAD003FDA16 /* BUOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FD7242F3EAD003FDA16 /* BUOnboardingViewController.swift */; };
+		44B34FDA242F3EAD003FDA16 /* BUOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B34FD8242F3EAD003FDA16 /* BUOnboardingViewController.xib */; };
+		44B34FDE242F45AF003FDA16 /* OnboardingCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FDC242F45AF003FDA16 /* OnboardingCVCell.swift */; };
+		44B34FDF242F45AF003FDA16 /* OnboardingCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B34FDD242F45AF003FDA16 /* OnboardingCVCell.xib */; };
+		44B8594B24068D0B00A5E733 /* FirebaseMager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594A24068D0B00A5E733 /* FirebaseMager.swift */; };
+		44B8594D24068F1800A5E733 /* ChooseBarberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594C24068F1800A5E733 /* ChooseBarberInteractor.swift */; };
+		44B8594F2406B22E00A5E733 /* Extension+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594E2406B22E00A5E733 /* Extension+Encodable.swift */; };
 		44B9F7032341ED8C00FC6210 /* NiBLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7022341ED8C00FC6210 /* NiBLoadable.swift */; };
 		44B9F7062341FD7500FC6210 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7052341FD7500FC6210 /* PhotoView.swift */; };
 		44B9F7082341FD8400FC6210 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B9F7072341FD8400FC6210 /* PhotoView.xib */; };
@@ -161,15 +204,41 @@
 		44B9F72523428C6A00FC6210 /* PhilosophyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B9F72323428C6A00FC6210 /* PhilosophyCell.xib */; };
 		44B9F7282342941500FC6210 /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7262342941500FC6210 /* ReminderCell.swift */; };
 		44B9F7292342941500FC6210 /* ReminderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B9F7272342941500FC6210 /* ReminderCell.xib */; };
+		44BD7F432428CCA80033D983 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD7F422428CCA80033D983 /* CurrentUser.swift */; };
+		44BD7F462428DA020033D983 /* BUEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD7F452428DA020033D983 /* BUEmptyView.swift */; };
+		44BD7F482428DA130033D983 /* BUEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BD7F472428DA130033D983 /* BUEmptyView.xib */; };
+		44BD7F4A242A50220033D983 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD7F49242A50220033D983 /* StorageManager.swift */; };
 		44EE1DC3232F7AC9007FACED /* CommonSettingsTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE1DC2232F7AC9007FACED /* CommonSettingsTitleCell.swift */; };
 		44EE1DC5232F82E1007FACED /* CommonSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE1DC4232F82E1007FACED /* CommonSettingsCell.swift */; };
+		44F433C3240125760044C000 /* BUCreateBarberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433C1240125730044C000 /* BUCreateBarberViewController.xib */; };
+		44F433C4240125760044C000 /* BUCreateBarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433C2240125760044C000 /* BUCreateBarberViewController.swift */; };
+		44F433C82401259C0044C000 /* BUBarberPricingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433C62401259C0044C000 /* BUBarberPricingViewController.xib */; };
+		44F433C92401259C0044C000 /* BUBarberPricingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433C72401259C0044C000 /* BUBarberPricingViewController.swift */; };
+		44F433D3240125D20044C000 /* SetPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433CB240125CF0044C000 /* SetPriceTableViewCell.swift */; };
+		44F433D4240125D20044C000 /* SetPriceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433CC240125CF0044C000 /* SetPriceTableViewCell.xib */; };
+		44F433D5240125D20044C000 /* PricingLabelsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433CE240125D00044C000 /* PricingLabelsTableViewCell.xib */; };
+		44F433D6240125D20044C000 /* PricingLabelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433CF240125D00044C000 /* PricingLabelsTableViewCell.swift */; };
+		44F433D7240125D20044C000 /* ConfirmCodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433D1240125D20044C000 /* ConfirmCodeCollectionViewCell.swift */; };
+		44F433D8240125D20044C000 /* ConfirmCodeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433D2240125D20044C000 /* ConfirmCodeCollectionViewCell.xib */; };
+		44F433DA240127FC0044C000 /* CreateBarberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433D9240127FC0044C000 /* CreateBarberRouter.swift */; };
+		44F433DC240170A10044C000 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433DB240170A10044C000 /* Service.swift */; };
+		44F433E0240172D80044C000 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433DE240172D80044C000 /* ServiceCollectionViewCell.swift */; };
+		44F433E1240172D80044C000 /* ServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433DF240172D80044C000 /* ServiceCollectionViewCell.xib */; };
 		44F92518230FDC4300B23454 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92517230FDC4300B23454 /* CreateUserViewController.swift */; };
 		44F9251B230FE2FC00B23454 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9251A230FE2FC00B23454 /* RegisterModel.swift */; };
+		BEEB601998CF5E1E05E1B4E1 /* Pods_Burb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A505F22BCD84FD237A35A8 /* Pods_Burb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2148A2AB4DA30897D7385B62 /* Pods-Burb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.debug.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.debug.xcconfig"; sourceTree = "<group>"; };
-		2FCB1C46D0F3F673A87A316C /* Pods_Burb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Burb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		440738072431E263008ABBB7 /* BUBarberOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUBarberOrdersViewController.swift; sourceTree = "<group>"; };
+		440738082431E263008ABBB7 /* BUBarberOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUBarberOrdersViewController.xib; sourceTree = "<group>"; };
+		4407380C2431F336008ABBB7 /* InboxOrderCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxOrderCVCell.swift; sourceTree = "<group>"; };
+		4407380D2431F336008ABBB7 /* InboxOrderCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxOrderCVCell.xib; sourceTree = "<group>"; };
+		4407381024320898008ABBB7 /* BUOrdersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUOrdersDataManager.swift; sourceTree = "<group>"; };
+		4407381224320B51008ABBB7 /* BarberOrdersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberOrdersInteractor.swift; sourceTree = "<group>"; };
+		4407381424322462008ABBB7 /* OrderLocationPickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLocationPickerInteractor.swift; sourceTree = "<group>"; };
+		44073817243244D6008ABBB7 /* BUBarberProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUBarberProfileViewController.swift; sourceTree = "<group>"; };
+		44073818243244D6008ABBB7 /* BUBarberProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUBarberProfileViewController.xib; sourceTree = "<group>"; };
 		440E4190230D3482000FD5FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		440E4193230D3E6D000FD5FD /* SignupViaPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViaPhoneViewController.swift; sourceTree = "<group>"; };
 		440E4196230D47F6000FD5FD /* ConfirmSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignupViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +269,13 @@
 		443877C32343510C008AD69F /* HidePhoneNumberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HidePhoneNumberCell.xib; sourceTree = "<group>"; };
 		443877CA2343D69C008AD69F /* SignOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutCell.swift; sourceTree = "<group>"; };
 		443877CB2343D69C008AD69F /* SignOutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignOutCell.xib; sourceTree = "<group>"; };
+		444022842406BCA100DE5DB8 /* Extension+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Decodable.swift"; sourceTree = "<group>"; };
+		444022862406C87300DE5DB8 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		444054492407EAA700A19220 /* Extension+TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextView.swift"; sourceTree = "<group>"; };
+		4440545524080BF500A19220 /* BUSpecifyDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUSpecifyDatesViewController.swift; sourceTree = "<group>"; };
+		4440545624080BF500A19220 /* BUSpecifyDatesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUSpecifyDatesViewController.xib; sourceTree = "<group>"; };
+		4440545A2408148C00A19220 /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		4440545B2408148C00A19220 /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
 		4446828423ED4DA60016167C /* BUDetailOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUDetailOrderViewController.swift; sourceTree = "<group>"; };
 		4446828523ED4DA60016167C /* BUDetailOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUDetailOrderViewController.xib; sourceTree = "<group>"; };
 		4446828D23ED8C460016167C /* AvatarOrderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvatarOrderTableViewCell.xib; sourceTree = "<group>"; };
@@ -237,6 +313,9 @@
 		44499FA8233B55B000467073 /* ChangeClientSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClientSettingsViewController.swift; sourceTree = "<group>"; };
 		444A90C323363322000C9D15 /* BarberDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberDetailViewCell.swift; sourceTree = "<group>"; };
 		444A90C423363322000C9D15 /* BarberDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberDetailViewCell.xib; sourceTree = "<group>"; };
+		444EF2C52421FF6800ED5AC9 /* ChooseRoleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRoleInteractor.swift; sourceTree = "<group>"; };
+		444EF2C924222B6300ED5AC9 /* CreateCustomerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomerInteractor.swift; sourceTree = "<group>"; };
+		444EF2CB24225F8F00ED5AC9 /* Barber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barber.swift; sourceTree = "<group>"; };
 		4459EC5223CCA46500FE6292 /* BULoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BULoginViewController.swift; sourceTree = "<group>"; };
 		4459EC5323CCA46500FE6292 /* BULoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BULoginViewController.xib; sourceTree = "<group>"; };
 		4459EC5823CCA92800FE6292 /* LogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewCell.swift; sourceTree = "<group>"; };
@@ -244,17 +323,24 @@
 		4459EC6223CCB65A00FE6292 /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
 		445A4A6323322F5500DE0417 /* ClientTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTabbarController.swift; sourceTree = "<group>"; };
 		445A4A662332B93900DE0417 /* DetailOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOrderViewController.swift; sourceTree = "<group>"; };
+		445FDF8A2421021000DF314B /* BarberAnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberAnimView.swift; sourceTree = "<group>"; };
+		445FDF8C242102A000DF314B /* QC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QC.swift; sourceTree = "<group>"; };
+		445FDF8E2421054400DF314B /* ClientAnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAnimView.swift; sourceTree = "<group>"; };
+		445FDF95242117A400DF314B /* BarberCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberCVCell.swift; sourceTree = "<group>"; };
+		445FDF96242117A400DF314B /* BarberCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberCVCell.xib; sourceTree = "<group>"; };
 		4466C5DC231E3F83004CA831 /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
 		4466C5DE231E5AD3004CA831 /* DialogUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogUserCell.swift; sourceTree = "<group>"; };
 		4466C5E1231E62C7004CA831 /* CurrentDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDialogViewController.swift; sourceTree = "<group>"; };
 		4466C5E3231EAC0F004CA831 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		4466C5E5231EB135004CA831 /* MessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
+		4466FC392432514A00591C4B /* BUCustomerTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUCustomerTabbarController.swift; sourceTree = "<group>"; };
+		4466FC3A2432514A00591C4B /* BUCustomerTabbarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUCustomerTabbarController.xib; sourceTree = "<group>"; };
 		44687BFC23E7FB9800F759F4 /* BUMyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUMyOrdersViewController.swift; sourceTree = "<group>"; };
 		44687BFD23E7FB9800F759F4 /* BUMyOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUMyOrdersViewController.xib; sourceTree = "<group>"; };
 		44687C0523E81F1900F759F4 /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
 		44687C0623E81F1900F759F4 /* OrderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCollectionViewCell.xib; sourceTree = "<group>"; };
 		44687C0923E9523A00F759F4 /* LocationPickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerRouter.swift; sourceTree = "<group>"; };
-		44687C1723EAFBC700F759F4 /* ConfirmTimeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmTimeRouter.swift; sourceTree = "<group>"; };
+		44687C1723EAFBC700F759F4 /* OrderDatePickerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDatePickerRouter.swift; sourceTree = "<group>"; };
 		44687C1923EB0A8300F759F4 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		44687C1A23EB0A8300F759F4 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		44687C1F23EBF8CC00F759F4 /* TumblerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TumblerTableViewCell.swift; sourceTree = "<group>"; };
@@ -287,6 +373,8 @@
 		448D50D323228FD300F401AE /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		448D50D423228FD300F401AE /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		448E79B72334E6E000BA2B04 /* DetailBarberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBarberViewController.swift; sourceTree = "<group>"; };
+		44968B9B2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUTermsOfUseViewController.swift; sourceTree = "<group>"; };
+		44968B9C2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUTermsOfUseViewController.xib; sourceTree = "<group>"; };
 		449E73142317A499004771E8 /* BarberViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberViewCell.swift; sourceTree = "<group>"; };
 		449E73162317B07A004771E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		449E73192317C3F3004771E8 /* ClientOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +395,22 @@
 		44A12B1223D47CB100912FFB /* SignupPhoneInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPhoneInteractor.swift; sourceTree = "<group>"; };
 		44A12B1523D4915300912FFB /* RoleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleCollectionViewCell.swift; sourceTree = "<group>"; };
 		44A12B1623D4915300912FFB /* RoleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoleCollectionViewCell.xib; sourceTree = "<group>"; };
+		44B34FB4242B5359003FDA16 /* SegmentControllTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControllTableViewCell.swift; sourceTree = "<group>"; };
+		44B34FB5242B5359003FDA16 /* SegmentControllTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentControllTableViewCell.xib; sourceTree = "<group>"; };
+		44B34FB8242B58C0003FDA16 /* Curency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curency.swift; sourceTree = "<group>"; };
+		44B34FBA242B5B78003FDA16 /* CreateBarberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBarberInteractor.swift; sourceTree = "<group>"; };
+		44B34FBC242B626A003FDA16 /* PricingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricingModel.swift; sourceTree = "<group>"; };
+		44B34FC1242CD210003FDA16 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		44B34FC3242CD449003FDA16 /* extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIView.swift"; sourceTree = "<group>"; };
+		44B34FC6242DE81A003FDA16 /* BUTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUTableView.swift; sourceTree = "<group>"; };
+		44B34FC8242DEB73003FDA16 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		44B34FD7242F3EAD003FDA16 /* BUOnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUOnboardingViewController.swift; sourceTree = "<group>"; };
+		44B34FD8242F3EAD003FDA16 /* BUOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUOnboardingViewController.xib; sourceTree = "<group>"; };
+		44B34FDC242F45AF003FDA16 /* OnboardingCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCVCell.swift; sourceTree = "<group>"; };
+		44B34FDD242F45AF003FDA16 /* OnboardingCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCVCell.xib; sourceTree = "<group>"; };
+		44B8594A24068D0B00A5E733 /* FirebaseMager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMager.swift; sourceTree = "<group>"; };
+		44B8594C24068F1800A5E733 /* ChooseBarberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBarberInteractor.swift; sourceTree = "<group>"; };
+		44B8594E2406B22E00A5E733 /* Extension+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Encodable.swift"; sourceTree = "<group>"; };
 		44B9F7022341ED8C00FC6210 /* NiBLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiBLoadable.swift; sourceTree = "<group>"; };
 		44B9F7052341FD7500FC6210 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		44B9F7072341FD8400FC6210 /* PhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
@@ -326,11 +430,31 @@
 		44B9F72323428C6A00FC6210 /* PhilosophyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhilosophyCell.xib; sourceTree = "<group>"; };
 		44B9F7262342941500FC6210 /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
 		44B9F7272342941500FC6210 /* ReminderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderCell.xib; sourceTree = "<group>"; };
+		44BD7F422428CCA80033D983 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
+		44BD7F452428DA020033D983 /* BUEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUEmptyView.swift; sourceTree = "<group>"; };
+		44BD7F472428DA130033D983 /* BUEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUEmptyView.xib; sourceTree = "<group>"; };
+		44BD7F49242A50220033D983 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		44EE1DC2232F7AC9007FACED /* CommonSettingsTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSettingsTitleCell.swift; sourceTree = "<group>"; };
 		44EE1DC4232F82E1007FACED /* CommonSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSettingsCell.swift; sourceTree = "<group>"; };
+		44F433C1240125730044C000 /* BUCreateBarberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BUCreateBarberViewController.xib; sourceTree = "<group>"; };
+		44F433C2240125760044C000 /* BUCreateBarberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUCreateBarberViewController.swift; sourceTree = "<group>"; };
+		44F433C62401259C0044C000 /* BUBarberPricingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BUBarberPricingViewController.xib; sourceTree = "<group>"; };
+		44F433C72401259C0044C000 /* BUBarberPricingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUBarberPricingViewController.swift; sourceTree = "<group>"; };
+		44F433CB240125CF0044C000 /* SetPriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPriceTableViewCell.swift; sourceTree = "<group>"; };
+		44F433CC240125CF0044C000 /* SetPriceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SetPriceTableViewCell.xib; sourceTree = "<group>"; };
+		44F433CE240125D00044C000 /* PricingLabelsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PricingLabelsTableViewCell.xib; sourceTree = "<group>"; };
+		44F433CF240125D00044C000 /* PricingLabelsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PricingLabelsTableViewCell.swift; sourceTree = "<group>"; };
+		44F433D1240125D20044C000 /* ConfirmCodeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmCodeCollectionViewCell.swift; sourceTree = "<group>"; };
+		44F433D2240125D20044C000 /* ConfirmCodeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmCodeCollectionViewCell.xib; sourceTree = "<group>"; };
+		44F433D9240127FC0044C000 /* CreateBarberRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBarberRouter.swift; sourceTree = "<group>"; };
+		44F433DB240170A10044C000 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		44F433DE240172D80044C000 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		44F433DF240172D80044C000 /* ServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		44F92517230FDC4300B23454 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		44F9251A230FE2FC00B23454 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
-		A9C46CE89C9CA332E6F5ED24 /* Pods-Burb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.release.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.release.xcconfig"; sourceTree = "<group>"; };
+		5BF85E4D343F9B93789287BC /* Pods-Burb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.debug.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.debug.xcconfig"; sourceTree = "<group>"; };
+		6A23F94E0DAEE25EC28BB43B /* Pods-Burb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.release.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.release.xcconfig"; sourceTree = "<group>"; };
+		D4A505F22BCD84FD237A35A8 /* Pods_Burb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Burb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,13 +462,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371C3F9D4290E5A5021245DE /* Pods_Burb.framework in Frameworks */,
+				BEEB601998CF5E1E05E1B4E1 /* Pods_Burb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		440738062431E235008ABBB7 /* Barber Orders */ = {
+			isa = PBXGroup;
+			children = (
+				440738072431E263008ABBB7 /* BUBarberOrdersViewController.swift */,
+				440738082431E263008ABBB7 /* BUBarberOrdersViewController.xib */,
+				4407381024320898008ABBB7 /* BUOrdersDataManager.swift */,
+				4407381224320B51008ABBB7 /* BarberOrdersInteractor.swift */,
+			);
+			path = "Barber Orders";
+			sourceTree = "<group>";
+		};
+		4407380B2431F311008ABBB7 /* Inbox Order Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4407380C2431F336008ABBB7 /* InboxOrderCVCell.swift */,
+				4407380D2431F336008ABBB7 /* InboxOrderCVCell.xib */,
+			);
+			path = "Inbox Order Cell";
+			sourceTree = "<group>";
+		};
+		4407381624324497008ABBB7 /* Barber profile */ = {
+			isa = PBXGroup;
+			children = (
+				44073817243244D6008ABBB7 /* BUBarberProfileViewController.swift */,
+				44073818243244D6008ABBB7 /* BUBarberProfileViewController.xib */,
+			);
+			path = "Barber profile";
+			sourceTree = "<group>";
+		};
 		440E418E230D3461000FD5FD /* ViewController OLD! */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,7 +583,7 @@
 				4418B728230D31AF0093BF3C /* Burb */,
 				4418B727230D31AF0093BF3C /* Products */,
 				ED8ABD633D083DBE3510159A /* Pods */,
-				4D5D534FFE24ABD0202B4248 /* Frameworks */,
+				7619733B57B2950D4AAFF8ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -445,6 +598,8 @@
 		4418B728230D31AF0093BF3C /* Burb */ = {
 			isa = PBXGroup;
 			children = (
+				44B34FC5242DE7FE003FDA16 /* Custom Classes */,
+				445FDF89242101FB00DF314B /* Animations */,
 				44472DBD23DEBFC6009259C5 /* Helpers */,
 				44A12AF323D045DF00912FFB /* Custom Views */,
 				4459EC4F23CCA33D00FE6292 /* Screens */,
@@ -455,7 +610,7 @@
 				44B9F70D23424B6C00FC6210 /* Custom Cells */,
 				44F9251E231028DA00B23454 /* Extensions */,
 				44F92519230FE2ED00B23454 /* Models */,
-				44A12B1123D47C8600912FFB /* Interactor */,
+				44B8594924068CE100A5E733 /* Managers */,
 				4459EC6123CCB64800FE6292 /* Router */,
 				448D50B62322898700F401AE /* Fonts */,
 				44B9F7012341ED6F00FC6210 /* Protocols */,
@@ -502,6 +657,24 @@
 				4436FE472323A25F00E8A322 /* TermsOfUseViewController.swift */,
 			);
 			path = TermsOfUseViewController;
+			sourceTree = "<group>";
+		};
+		4440545424080BC400A19220 /* Specify Date */ = {
+			isa = PBXGroup;
+			children = (
+				4440545524080BF500A19220 /* BUSpecifyDatesViewController.swift */,
+				4440545624080BF500A19220 /* BUSpecifyDatesViewController.xib */,
+			);
+			path = "Specify Date";
+			sourceTree = "<group>";
+		};
+		444054592408146F00A19220 /* Calendar Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4440545A2408148C00A19220 /* CalendarTableViewCell.swift */,
+				4440545B2408148C00A19220 /* CalendarTableViewCell.xib */,
+			);
+			path = "Calendar Cell";
 			sourceTree = "<group>";
 		};
 		4446828323ED4D590016167C /* Detail Order */ = {
@@ -552,8 +725,9 @@
 		44472DA323DDAA74009259C5 /* Create User */ = {
 			isa = PBXGroup;
 			children = (
-				44472DA423DDAAA0009259C5 /* BUCreateUserViewController.swift */,
-				44472DA523DDAAA0009259C5 /* BUCreateUserViewController.xib */,
+				44F433C52401259C0044C000 /* barber pricing */,
+				44F433C0240125620044C000 /* Create barber */,
+				44F433BF2401253F0044C000 /* Create client */,
 			);
 			path = "Create User";
 			sourceTree = "<group>";
@@ -600,6 +774,7 @@
 			children = (
 				44472DCD23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift */,
 				44472DCE23E17A6D009259C5 /* BUOrderLocationPickerViewController.xib */,
+				4407381424322462008ABBB7 /* OrderLocationPickerInteractor.swift */,
 			);
 			path = "Order Location Picker";
 			sourceTree = "<group>";
@@ -625,6 +800,7 @@
 		44472DDB23E1D03B009259C5 /* Order Date Picker */ = {
 			isa = PBXGroup;
 			children = (
+				44687C1723EAFBC700F759F4 /* OrderDatePickerRouter.swift */,
 				44472DDC23E1D054009259C5 /* BUOrderDatePickerViewController.swift */,
 				44472DDD23E1D054009259C5 /* BUOrderDatePickerViewController.xib */,
 			);
@@ -659,6 +835,13 @@
 		4459EC5023CCA34700FE6292 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4466FC382432507E00591C4B /* barber tabbar */,
+				4466FC372432506F00591C4B /* Client tabbar */,
+				4407381624324497008ABBB7 /* Barber profile */,
+				440738062431E235008ABBB7 /* Barber Orders */,
+				44B34FD2242F3E51003FDA16 /* Onboarding */,
+				4440545424080BC400A19220 /* Specify Date */,
+				44968B9A2403B3B300ABAD83 /* Terms of use */,
 				4446828323ED4D590016167C /* Detail Order */,
 				44687BFB23E7FB7300F759F4 /* My Orders */,
 				4477AE7323E42C8E00295BC9 /* Choose Barber */,
@@ -678,6 +861,7 @@
 		4459EC5123CCA44300FE6292 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				44A12AFD23D065AA00912FFB /* LoginRouter.swift */,
 				4459EC5223CCA46500FE6292 /* BULoginViewController.swift */,
 				4459EC5323CCA46500FE6292 /* BULoginViewController.xib */,
 			);
@@ -735,14 +919,11 @@
 			isa = PBXGroup;
 			children = (
 				4459EC6223CCB65A00FE6292 /* StartRouter.swift */,
-				44A12AFD23D065AA00912FFB /* LoginRouter.swift */,
 				44A12B0A23D0AA1C00912FFB /* SignupPhoneRouter.swift */,
-				44472DB623DDB5FB009259C5 /* ChooseRoleRouter.swift */,
-				44472DB923DDC42C009259C5 /* CreateUserRouter.swift */,
 				44687C0923E9523A00F759F4 /* LocationPickerRouter.swift */,
-				44687C1723EAFBC700F759F4 /* ConfirmTimeRouter.swift */,
 				4446829123ED90400016167C /* MyOrdersRouter.swift */,
 				444682A223F0003C0016167C /* ChooseBarberRouter.swift */,
+				44F433D9240127FC0044C000 /* CreateBarberRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -763,6 +944,25 @@
 			path = DetailOrderViewController;
 			sourceTree = "<group>";
 		};
+		445FDF89242101FB00DF314B /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				445FDF8A2421021000DF314B /* BarberAnimView.swift */,
+				445FDF8C242102A000DF314B /* QC.swift */,
+				445FDF8E2421054400DF314B /* ClientAnimView.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		445FDF942421177400DF314B /* Barber Roll Cell */ = {
+			isa = PBXGroup;
+			children = (
+				445FDF95242117A400DF314B /* BarberCVCell.swift */,
+				445FDF96242117A400DF314B /* BarberCVCell.xib */,
+			);
+			name = "Barber Roll Cell";
+			sourceTree = "<group>";
+		};
 		4466C5DB231E3F5A004CA831 /* DialogsViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +979,22 @@
 				4466C5E5231EB135004CA831 /* MessageViewCell.swift */,
 			);
 			path = CurrentDialogViewControoler;
+			sourceTree = "<group>";
+		};
+		4466FC372432506F00591C4B /* Client tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				4466FC392432514A00591C4B /* BUCustomerTabbarController.swift */,
+				4466FC3A2432514A00591C4B /* BUCustomerTabbarController.xib */,
+			);
+			path = "Client tabbar";
+			sourceTree = "<group>";
+		};
+		4466FC382432507E00591C4B /* barber tabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "barber tabbar";
 			sourceTree = "<group>";
 		};
 		44687BFB23E7FB7300F759F4 /* My Orders */ = {
@@ -840,6 +1056,7 @@
 			children = (
 				4477AE7423E42CB800295BC9 /* BUChooseBarberViewController.swift */,
 				4477AE7523E42CB800295BC9 /* BUChooseBarberViewController.xib */,
+				44B8594C24068F1800A5E733 /* ChooseBarberInteractor.swift */,
 			);
 			path = "Choose Barber";
 			sourceTree = "<group>";
@@ -907,6 +1124,15 @@
 			path = DetailBarberViewController;
 			sourceTree = "<group>";
 		};
+		44968B9A2403B3B300ABAD83 /* Terms of use */ = {
+			isa = PBXGroup;
+			children = (
+				44968B9B2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift */,
+				44968B9C2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib */,
+			);
+			path = "Terms of use";
+			sourceTree = "<group>";
+		};
 		449E73182317C3C6004771E8 /* ClientOrderViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -927,6 +1153,8 @@
 		44A12AF323D045DF00912FFB /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				44B34FC0242CD1F5003FDA16 /* Search bar */,
+				44BD7F442428D9D40033D983 /* Empty View */,
 				44687C2823EC05D500F759F4 /* Header Title View */,
 				44A12AF423D045E500912FFB /* Header View */,
 			);
@@ -945,6 +1173,7 @@
 		44A12B0023D0669900912FFB /* Signup Via Phone */ = {
 			isa = PBXGroup;
 			children = (
+				44A12B1223D47CB100912FFB /* SignupPhoneInteractor.swift */,
 				44A12B0123D066BC00912FFB /* BUSignupViaPhoneViewController.swift */,
 				44A12B0223D066BC00912FFB /* BUSignupViaPhoneViewController.xib */,
 			);
@@ -965,16 +1194,10 @@
 			children = (
 				44A12B0D23D46D4600912FFB /* BUChooseRoleViewController.swift */,
 				44A12B0E23D46D4600912FFB /* BUChooseRoleViewController.xib */,
+				444EF2C52421FF6800ED5AC9 /* ChooseRoleInteractor.swift */,
+				44472DB623DDB5FB009259C5 /* ChooseRoleRouter.swift */,
 			);
 			path = "Choose Role";
-			sourceTree = "<group>";
-		};
-		44A12B1123D47C8600912FFB /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				44A12B1223D47CB100912FFB /* SignupPhoneInteractor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		44A12B1423D4912A00912FFB /* Role Cell */ = {
@@ -984,6 +1207,60 @@
 				44A12B1623D4915300912FFB /* RoleCollectionViewCell.xib */,
 			);
 			path = "Role Cell";
+			sourceTree = "<group>";
+		};
+		44B34FB3242B532F003FDA16 /* Segment Control Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44B34FB4242B5359003FDA16 /* SegmentControllTableViewCell.swift */,
+				44B34FB5242B5359003FDA16 /* SegmentControllTableViewCell.xib */,
+			);
+			path = "Segment Control Cell";
+			sourceTree = "<group>";
+		};
+		44B34FC0242CD1F5003FDA16 /* Search bar */ = {
+			isa = PBXGroup;
+			children = (
+				44B34FC1242CD210003FDA16 /* File.swift */,
+			);
+			path = "Search bar";
+			sourceTree = "<group>";
+		};
+		44B34FC5242DE7FE003FDA16 /* Custom Classes */ = {
+			isa = PBXGroup;
+			children = (
+				44B34FC6242DE81A003FDA16 /* BUTableView.swift */,
+			);
+			path = "Custom Classes";
+			sourceTree = "<group>";
+		};
+		44B34FD2242F3E51003FDA16 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				44B34FDB242F4587003FDA16 /* Onboarding Cell */,
+				44B34FD7242F3EAD003FDA16 /* BUOnboardingViewController.swift */,
+				44B34FD8242F3EAD003FDA16 /* BUOnboardingViewController.xib */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		44B34FDB242F4587003FDA16 /* Onboarding Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44B34FDC242F45AF003FDA16 /* OnboardingCVCell.swift */,
+				44B34FDD242F45AF003FDA16 /* OnboardingCVCell.xib */,
+			);
+			path = "Onboarding Cell";
+			sourceTree = "<group>";
+		};
+		44B8594924068CE100A5E733 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				44B8594A24068D0B00A5E733 /* FirebaseMager.swift */,
+				444022862406C87300DE5DB8 /* AuthManager.swift */,
+				44BD7F49242A50220033D983 /* StorageManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		44B9F7012341ED6F00FC6210 /* Protocols */ = {
@@ -1006,6 +1283,13 @@
 		44B9F70D23424B6C00FC6210 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4407380B2431F311008ABBB7 /* Inbox Order Cell */,
+				44B34FB3242B532F003FDA16 /* Segment Control Cell */,
+				444054592408146F00A19220 /* Calendar Cell */,
+				44F433DD240172BD0044C000 /* Service Cell */,
+				44F433D0240125D20044C000 /* Confirm Code Cell */,
+				44F433CD240125D00044C000 /* Pricing labels Cell */,
+				44F433CA240125CF0044C000 /* Set price Cell */,
 				4446829D23EEBE2F0016167C /* MapView Cell */,
 				4446829823EEBCD40016167C /* TextView Cell */,
 				4446829323EEB9F60016167C /* Two buttons Cell */,
@@ -1021,12 +1305,88 @@
 				44472DAD23DDAE46009259C5 /* Avatar Cell */,
 				44472DA823DDAC28009259C5 /* TextField Cell */,
 				44A12B1423D4912A00912FFB /* Role Cell */,
+				445FDF942421177400DF314B /* Barber Roll Cell */,
 				44A12B0523D07F4600912FFB /* Phone number Cell */,
 				4459EC5C23CCACF800FE6292 /* Button Cell */,
 				4459EC5723CCA90600FE6292 /* Logo Cell */,
 				4459EC5623CCA8D200FE6292 /* old */,
 			);
 			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		44BD7F442428D9D40033D983 /* Empty View */ = {
+			isa = PBXGroup;
+			children = (
+				44BD7F452428DA020033D983 /* BUEmptyView.swift */,
+				44BD7F472428DA130033D983 /* BUEmptyView.xib */,
+			);
+			path = "Empty View";
+			sourceTree = "<group>";
+		};
+		44F433BF2401253F0044C000 /* Create client */ = {
+			isa = PBXGroup;
+			children = (
+				44472DB923DDC42C009259C5 /* CreateUserRouter.swift */,
+				44472DA423DDAAA0009259C5 /* BUCreateUserViewController.swift */,
+				44472DA523DDAAA0009259C5 /* BUCreateUserViewController.xib */,
+				444EF2C924222B6300ED5AC9 /* CreateCustomerInteractor.swift */,
+			);
+			path = "Create client";
+			sourceTree = "<group>";
+		};
+		44F433C0240125620044C000 /* Create barber */ = {
+			isa = PBXGroup;
+			children = (
+				44F433C2240125760044C000 /* BUCreateBarberViewController.swift */,
+				44F433C1240125730044C000 /* BUCreateBarberViewController.xib */,
+				44B34FBA242B5B78003FDA16 /* CreateBarberInteractor.swift */,
+			);
+			path = "Create barber";
+			sourceTree = "<group>";
+		};
+		44F433C52401259C0044C000 /* barber pricing */ = {
+			isa = PBXGroup;
+			children = (
+				44F433C72401259C0044C000 /* BUBarberPricingViewController.swift */,
+				44F433C62401259C0044C000 /* BUBarberPricingViewController.xib */,
+			);
+			path = "barber pricing";
+			sourceTree = "<group>";
+		};
+		44F433CA240125CF0044C000 /* Set price Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44F433CB240125CF0044C000 /* SetPriceTableViewCell.swift */,
+				44F433CC240125CF0044C000 /* SetPriceTableViewCell.xib */,
+			);
+			path = "Set price Cell";
+			sourceTree = "<group>";
+		};
+		44F433CD240125D00044C000 /* Pricing labels Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44F433CE240125D00044C000 /* PricingLabelsTableViewCell.xib */,
+				44F433CF240125D00044C000 /* PricingLabelsTableViewCell.swift */,
+			);
+			path = "Pricing labels Cell";
+			sourceTree = "<group>";
+		};
+		44F433D0240125D20044C000 /* Confirm Code Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44F433D1240125D20044C000 /* ConfirmCodeCollectionViewCell.swift */,
+				44F433D2240125D20044C000 /* ConfirmCodeCollectionViewCell.xib */,
+			);
+			path = "Confirm Code Cell";
+			sourceTree = "<group>";
+		};
+		44F433DD240172BD0044C000 /* Service Cell */ = {
+			isa = PBXGroup;
+			children = (
+				44F433DE240172D80044C000 /* ServiceCollectionViewCell.swift */,
+				44F433DF240172D80044C000 /* ServiceCollectionViewCell.xib */,
+			);
+			path = "Service Cell";
 			sourceTree = "<group>";
 		};
 		44F92516230FDC1F00B23454 /* CreateUserViewController */ = {
@@ -1045,6 +1405,11 @@
 				449E73162317B07A004771E8 /* User.swift */,
 				4466C5E3231EAC0F004CA831 /* Message.swift */,
 				44323DC0232A481400C622E7 /* Order.swift */,
+				44F433DB240170A10044C000 /* Service.swift */,
+				444EF2CB24225F8F00ED5AC9 /* Barber.swift */,
+				44BD7F422428CCA80033D983 /* CurrentUser.swift */,
+				44B34FB8242B58C0003FDA16 /* Curency.swift */,
+				44B34FBC242B626A003FDA16 /* PricingModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1053,14 +1418,19 @@
 			isa = PBXGroup;
 			children = (
 				44472DBB23DEBF50009259C5 /* Extension+String.swift */,
+				44B8594E2406B22E00A5E733 /* Extension+Encodable.swift */,
+				444022842406BCA100DE5DB8 /* Extension+Decodable.swift */,
+				444054492407EAA700A19220 /* Extension+TextView.swift */,
+				44B34FC3242CD449003FDA16 /* extension+UIView.swift */,
+				44B34FC8242DEB73003FDA16 /* Extension+UIImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		4D5D534FFE24ABD0202B4248 /* Frameworks */ = {
+		7619733B57B2950D4AAFF8ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2FCB1C46D0F3F673A87A316C /* Pods_Burb.framework */,
+				D4A505F22BCD84FD237A35A8 /* Pods_Burb.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1068,8 +1438,8 @@
 		ED8ABD633D083DBE3510159A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2148A2AB4DA30897D7385B62 /* Pods-Burb.debug.xcconfig */,
-				A9C46CE89C9CA332E6F5ED24 /* Pods-Burb.release.xcconfig */,
+				5BF85E4D343F9B93789287BC /* Pods-Burb.debug.xcconfig */,
+				6A23F94E0DAEE25EC28BB43B /* Pods-Burb.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -1081,11 +1451,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4418B73B230D31B10093BF3C /* Build configuration list for PBXNativeTarget "Burb" */;
 			buildPhases = (
-				40867E19101DA1E8D22DA586 /* [CP] Check Pods Manifest.lock */,
+				D09C7376321C2D22FDBE8C20 /* [CP] Check Pods Manifest.lock */,
 				4418B722230D31AF0093BF3C /* Sources */,
 				4418B723230D31AF0093BF3C /* Frameworks */,
 				4418B724230D31AF0093BF3C /* Resources */,
-				98568E408301C48F107FE057 /* [CP] Embed Pods Frameworks */,
+				9ED09AF77CCC8E1B1CE296F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1147,21 +1517,30 @@
 				4459EC5B23CCA92800FE6292 /* LogoTableViewCell.xib in Resources */,
 				44687C1C23EB0A8300F759F4 /* TextFieldTableViewCell.xib in Resources */,
 				44687C0823E81F1900F759F4 /* OrderCollectionViewCell.xib in Resources */,
+				44B34FDA242F3EAD003FDA16 /* BUOnboardingViewController.xib in Resources */,
 				44472DCB23E17704009259C5 /* BUClientTabBarController.xib in Resources */,
 				448D50DD23228FD300F401AE /* OpenSans-Light.ttf in Resources */,
 				44472DE423E1D1EB009259C5 /* BULabelTableViewCell.xib in Resources */,
+				4440545824080BF500A19220 /* BUSpecifyDatesViewController.xib in Resources */,
 				4418B737230D31B10093BF3C /* LaunchScreen.storyboard in Resources */,
 				44A12AF823D0493F00912FFB /* HeaderView.xib in Resources */,
+				44968B9E2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib in Resources */,
 				4446829C23EEBCE90016167C /* BUTextViewTableViewCell.xib in Resources */,
 				44472DA723DDAAA0009259C5 /* BUCreateUserViewController.xib in Resources */,
+				44F433E1240172D80044C000 /* ServiceCollectionViewCell.xib in Resources */,
+				44BD7F482428DA130033D983 /* BUEmptyView.xib in Resources */,
 				44B9F71123424B8F00FC6210 /* NameUserCell.xib in Resources */,
 				44A0BCDF23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib in Resources */,
 				444A90C623363322000C9D15 /* BarberDetailViewCell.xib in Resources */,
+				44F433D5240125D20044C000 /* PricingLabelsTableViewCell.xib in Resources */,
+				4407381A243244D6008ABBB7 /* BUBarberProfileViewController.xib in Resources */,
 				44472DB523DDAE83009259C5 /* AvatarTableViewCell.xib in Resources */,
 				440E41A0230DABE9000FD5FD /* GoogleService-Info.plist in Resources */,
+				44B34FB7242B5359003FDA16 /* SegmentControllTableViewCell.xib in Resources */,
 				4446829723EEBA180016167C /* TwoButtonTableViewCell.xib in Resources */,
 				44B9F7082341FD8400FC6210 /* PhotoView.xib in Resources */,
 				4459EC5523CCA46500FE6292 /* BULoginViewController.xib in Resources */,
+				44F433C82401259C0044C000 /* BUBarberPricingViewController.xib in Resources */,
 				44687BFF23E7FB9800F759F4 /* BUMyOrdersViewController.xib in Resources */,
 				44687C2C23EC060E00F759F4 /* HeaderTitleView.xib in Resources */,
 				44472DAC23DDAC6F009259C5 /* BUTextFieldTableViewCell.xib in Resources */,
@@ -1183,9 +1562,12 @@
 				4412CD052327A0C8005961C0 /* burb_IOS_icons-01.png in Resources */,
 				44B9F72523428C6A00FC6210 /* PhilosophyCell.xib in Resources */,
 				4477AE7C23E45A3F00295BC9 /* BarberCollectionViewCell.xib in Resources */,
+				4407380F2431F336008ABBB7 /* InboxOrderCVCell.xib in Resources */,
 				44B9F719234269AA00FC6210 /* CommonSettingsLabelCell.xib in Resources */,
 				44472DDA23E17AC7009259C5 /* BUClientProfileViewController.xib in Resources */,
+				44F433D4240125D20044C000 /* SetPriceTableViewCell.xib in Resources */,
 				4446828F23ED8C460016167C /* AvatarOrderTableViewCell.xib in Resources */,
+				4466FC3C2432514A00591C4B /* BUCustomerTabbarController.xib in Resources */,
 				44472DD023E17A6D009259C5 /* BUOrderLocationPickerViewController.xib in Resources */,
 				448D50DC23228FD300F401AE /* OpenSans-Italic.ttf in Resources */,
 				44687C2223EBF8CC00F759F4 /* TumblerTableViewCell.xib in Resources */,
@@ -1198,10 +1580,16 @@
 				443877C123434D14008AD69F /* NotificationsCell.xib in Resources */,
 				44B9F7292342941500FC6210 /* ReminderCell.xib in Resources */,
 				44687C2723EBFE9B00F759F4 /* AvatarProfileTableViewCell.xib in Resources */,
+				44F433C3240125760044C000 /* BUCreateBarberViewController.xib in Resources */,
+				445FDF98242117A400DF314B /* BarberCVCell.xib in Resources */,
+				4440545D2408148C00A19220 /* CalendarTableViewCell.xib in Resources */,
+				44B34FDF242F45AF003FDA16 /* OnboardingCVCell.xib in Resources */,
+				44F433D8240125D20044C000 /* ConfirmCodeCollectionViewCell.xib in Resources */,
 				44A12B0923D07F6200912FFB /* PhoneNumberCollectionViewCell.xib in Resources */,
 				443877C52343510C008AD69F /* HidePhoneNumberCell.xib in Resources */,
 				448D50DB23228FD300F401AE /* OpenSans-SemiboldItalic.ttf in Resources */,
 				44472DDF23E1D054009259C5 /* BUOrderDatePickerViewController.xib in Resources */,
+				4407380A2431E263008ABBB7 /* BUBarberOrdersViewController.xib in Resources */,
 				44B9F71523424F0A00FC6210 /* PhoneNumberCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1209,7 +1597,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		40867E19101DA1E8D22DA586 /* [CP] Check Pods Manifest.lock */ = {
+		9ED09AF77CCC8E1B1CE296F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Burb/Pods-Burb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Burb/Pods-Burb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Burb/Pods-Burb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D09C7376321C2D22FDBE8C20 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1231,23 +1636,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98568E408301C48F107FE057 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Burb/Pods-Burb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Burb/Pods-Burb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Burb/Pods-Burb-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1255,13 +1643,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44687C1823EAFBC700F759F4 /* ConfirmTimeRouter.swift in Sources */,
+				4440545724080BF500A19220 /* BUSpecifyDatesViewController.swift in Sources */,
+				4407381124320898008ABBB7 /* BUOrdersDataManager.swift in Sources */,
+				444EF2C62421FF6800ED5AC9 /* ChooseRoleInteractor.swift in Sources */,
+				44687C1823EAFBC700F759F4 /* OrderDatePickerRouter.swift in Sources */,
 				4459EC6323CCB65A00FE6292 /* StartRouter.swift in Sources */,
+				445FDF8D242102A000DF314B /* QC.swift in Sources */,
 				440E4194230D3E6D000FD5FD /* SignupViaPhoneViewController.swift in Sources */,
 				44A12B1723D4915300912FFB /* RoleCollectionViewCell.swift in Sources */,
 				44B9F71C23426D4600FC6210 /* WeaponCell.swift in Sources */,
 				4446829223ED90400016167C /* MyOrdersRouter.swift in Sources */,
+				440738092431E263008ABBB7 /* BUBarberOrdersViewController.swift in Sources */,
 				44A12B0323D066BC00912FFB /* BUSignupViaPhoneViewController.swift in Sources */,
+				445FDF8B2421021000DF314B /* BarberAnimView.swift in Sources */,
 				44687C2A23EC060000F759F4 /* HeaderTitleView.swift in Sources */,
 				44A12B0F23D46D4600912FFB /* BUChooseRoleViewController.swift in Sources */,
 				4459EC5A23CCA92800FE6292 /* LogoTableViewCell.swift in Sources */,
@@ -1271,19 +1665,33 @@
 				444A90C523363322000C9D15 /* BarberDetailViewCell.swift in Sources */,
 				440E41A3230DAECA000FD5FD /* Extensions.swift in Sources */,
 				44B9F7202342884400FC6210 /* BarberEducationCell.swift in Sources */,
+				44F433D7240125D20044C000 /* ConfirmCodeCollectionViewCell.swift in Sources */,
+				44B8594F2406B22E00A5E733 /* Extension+Encodable.swift in Sources */,
 				440E41A6230DC1F4000FD5FD /* ChooseRoleViewController.swift in Sources */,
+				444022872406C87300DE5DB8 /* AuthManager.swift in Sources */,
 				4477AE7B23E45A3F00295BC9 /* BarberCollectionViewCell.swift in Sources */,
+				44B34FB9242B58C0003FDA16 /* Curency.swift in Sources */,
 				441745602340D44E00088C9F /* BarberSettingsViewController.swift in Sources */,
+				4440545C2408148C00A19220 /* CalendarTableViewCell.swift in Sources */,
 				4446828623ED4DA60016167C /* BUDetailOrderViewController.swift in Sources */,
 				4411C5EF23158FB1004A51FE /* ClientSettingsViewController.swift in Sources */,
 				449E731A2317C3F3004771E8 /* ClientOrderViewController.swift in Sources */,
 				44B9F71423424F0A00FC6210 /* PhoneNumberCell.swift in Sources */,
 				444682A023EEBE4F0016167C /* MapViewTableViewCell.swift in Sources */,
+				4407381524322462008ABBB7 /* OrderLocationPickerInteractor.swift in Sources */,
 				443877CC2343D69C008AD69F /* SignOutCell.swift in Sources */,
 				44A12B0B23D0AA1C00912FFB /* SignupPhoneRouter.swift in Sources */,
+				44B34FDE242F45AF003FDA16 /* OnboardingCVCell.swift in Sources */,
+				444EF2CA24222B6300ED5AC9 /* CreateCustomerInteractor.swift in Sources */,
+				4407380E2431F336008ABBB7 /* InboxOrderCVCell.swift in Sources */,
+				44F433C92401259C0044C000 /* BUBarberPricingViewController.swift in Sources */,
+				44B34FC2242CD210003FDA16 /* File.swift in Sources */,
 				44A12AFE23D065AA00912FFB /* LoginRouter.swift in Sources */,
 				445A4A6423322F5500DE0417 /* ClientTabbarController.swift in Sources */,
 				44472DBA23DDC42C009259C5 /* CreateUserRouter.swift in Sources */,
+				44F433D6240125D20044C000 /* PricingLabelsTableViewCell.swift in Sources */,
+				44B34FBD242B626A003FDA16 /* PricingModel.swift in Sources */,
+				4466FC3B2432514A00591C4B /* BUCustomerTabbarController.swift in Sources */,
 				4459EC5423CCA46500FE6292 /* BULoginViewController.swift in Sources */,
 				44319F1A2328E61700C8DD7D /* ConfirmOrderTimeViewController.swift in Sources */,
 				44323DC1232A481400C622E7 /* Order.swift in Sources */,
@@ -1293,26 +1701,38 @@
 				444682A323F0003C0016167C /* ChooseBarberRouter.swift in Sources */,
 				44472DDE23E1D054009259C5 /* BUOrderDatePickerViewController.swift in Sources */,
 				4466C5E6231EB135004CA831 /* MessageViewCell.swift in Sources */,
+				4440544A2407EAA700A19220 /* Extension+TextView.swift in Sources */,
 				445A4A672332B93900DE0417 /* DetailOrderViewController.swift in Sources */,
 				44B9F7282342941500FC6210 /* ReminderCell.swift in Sources */,
 				44687C1B23EB0A8300F759F4 /* TextFieldTableViewCell.swift in Sources */,
+				44B34FC7242DE81A003FDA16 /* BUTableView.swift in Sources */,
+				44073819243244D6008ABBB7 /* BUBarberProfileViewController.swift in Sources */,
+				44BD7F432428CCA80033D983 /* CurrentUser.swift in Sources */,
 				44EE1DC5232F82E1007FACED /* CommonSettingsCell.swift in Sources */,
+				44F433C4240125760044C000 /* BUCreateBarberViewController.swift in Sources */,
 				448D50B323222E3300F401AE /* ChatLogViewController.swift in Sources */,
 				44687C3023EC38E500F759F4 /* LabelButtonTableViewCell.swift in Sources */,
 				44472DAB23DDAC6F009259C5 /* BUTextFieldTableViewCell.swift in Sources */,
+				44B8594B24068D0B00A5E733 /* FirebaseMager.swift in Sources */,
 				44687C0A23E9523A00F759F4 /* LocationPickerRouter.swift in Sources */,
 				44A12B1323D47CB100912FFB /* SignupPhoneInteractor.swift in Sources */,
+				44B34FC4242CD449003FDA16 /* extension+UIView.swift in Sources */,
 				44B9F7032341ED8C00FC6210 /* NiBLoadable.swift in Sources */,
 				443877C42343510C008AD69F /* HidePhoneNumberCell.swift in Sources */,
+				44B34FC9242DEB73003FDA16 /* Extension+UIImageView.swift in Sources */,
 				448E79B82334E6E000BA2B04 /* DetailBarberViewController.swift in Sources */,
 				44472DB423DDAE83009259C5 /* AvatarTableViewCell.swift in Sources */,
 				44472DBC23DEBF50009259C5 /* Extension+String.swift in Sources */,
+				44968B9D2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift in Sources */,
 				44323DBD232A2CD500C622E7 /* OrdersViewController.swift in Sources */,
 				440E4191230D3482000FD5FD /* LoginViewController.swift in Sources */,
+				44F433DA240127FC0044C000 /* CreateBarberRouter.swift in Sources */,
 				4418B732230D31AF0093BF3C /* Burb.xcdatamodeld in Sources */,
+				44B8594D24068F1800A5E733 /* ChooseBarberInteractor.swift in Sources */,
 				4466C5E2231E62C7004CA831 /* CurrentDialogViewController.swift in Sources */,
 				44323DBF232A2E8E00C622E7 /* OrderCell.swift in Sources */,
 				44B9F7062341FD7500FC6210 /* PhotoView.swift in Sources */,
+				444EF2CC24225F8F00ED5AC9 /* Barber.swift in Sources */,
 				4466C5DF231E5AD3004CA831 /* DialogUserCell.swift in Sources */,
 				44B9F72423428C6A00FC6210 /* PhilosophyCell.swift in Sources */,
 				443877C023434D14008AD69F /* NotificationsCell.swift in Sources */,
@@ -1324,13 +1744,19 @@
 				44EE1DC3232F7AC9007FACED /* CommonSettingsTitleCell.swift in Sources */,
 				449E73172317B07A004771E8 /* User.swift in Sources */,
 				4418B72A230D31AF0093BF3C /* AppDelegate.swift in Sources */,
+				44F433D3240125D20044C000 /* SetPriceTableViewCell.swift in Sources */,
 				44472DB723DDB5FB009259C5 /* ChooseRoleRouter.swift in Sources */,
 				449E73152317A499004771E8 /* BarberViewCell.swift in Sources */,
 				44687C2123EBF8CC00F759F4 /* TumblerTableViewCell.swift in Sources */,
 				44F9251B230FE2FC00B23454 /* RegisterModel.swift in Sources */,
+				44B34FB6242B5359003FDA16 /* SegmentControllTableViewCell.swift in Sources */,
 				44A12AFB23D0557F00912FFB /* BUButtonTableViewCell.swift in Sources */,
+				444022852406BCA100DE5DB8 /* Extension+Decodable.swift in Sources */,
+				4407381324320B51008ABBB7 /* BarberOrdersInteractor.swift in Sources */,
 				44B9F70B234248E500FC6210 /* UserAvatarCell.swift in Sources */,
+				44F433DC240170A10044C000 /* Service.swift in Sources */,
 				44472DD923E17AC7009259C5 /* BUClientProfileViewController.swift in Sources */,
+				44B34FBB242B5B78003FDA16 /* CreateBarberInteractor.swift in Sources */,
 				44687BFE23E7FB9800F759F4 /* BUMyOrdersViewController.swift in Sources */,
 				448D50B5232237D900F401AE /* ChatMessageCell.swift in Sources */,
 				44687C0723E81F1900F759F4 /* OrderCollectionViewCell.swift in Sources */,
@@ -1338,14 +1764,20 @@
 				4466C5DD231E3F83004CA831 /* DialogsViewController.swift in Sources */,
 				44472DCF23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift in Sources */,
 				4466C5E4231EAC0F004CA831 /* Message.swift in Sources */,
+				44B34FD9242F3EAD003FDA16 /* BUOnboardingViewController.swift in Sources */,
+				44BD7F462428DA020033D983 /* BUEmptyView.swift in Sources */,
 				4477AE8023E45B0C00295BC9 /* BUCVTableViewCell.swift in Sources */,
 				44499FA9233B55B000467073 /* ChangeClientSettingsViewController.swift in Sources */,
+				445FDF97242117A400DF314B /* BarberCVCell.swift in Sources */,
 				4436FE482323A25F00E8A322 /* TermsOfUseViewController.swift in Sources */,
 				4481D3112316F1F700F823F2 /* BarbersViewController.swift in Sources */,
 				44B9F718234269AA00FC6210 /* CommonSettingsLabelCell.swift in Sources */,
+				445FDF8F2421054400DF314B /* ClientAnimView.swift in Sources */,
 				4411C5EA23153C46004A51FE /* Role.swift in Sources */,
+				44BD7F4A242A50220033D983 /* StorageManager.swift in Sources */,
 				4446829023ED8C460016167C /* AvatarOrderTableViewCell.swift in Sources */,
 				447B13EB2344A57F004D9275 /* Typealiases.swift in Sources */,
+				44F433E0240172D80044C000 /* ServiceCollectionViewCell.swift in Sources */,
 				4446829623EEBA180016167C /* TwoButtonTableViewCell.swift in Sources */,
 				44472DCA23E17704009259C5 /* BUClientTabBarController.swift in Sources */,
 				44A12B0823D07F6200912FFB /* PhoneNumberCollectionViewCell.swift in Sources */,
@@ -1494,7 +1926,7 @@
 		};
 		4418B73C230D31B10093BF3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2148A2AB4DA30897D7385B62 /* Pods-Burb.debug.xcconfig */;
+			baseConfigurationReference = 5BF85E4D343F9B93789287BC /* Pods-Burb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Burb/Burb.entitlements;
@@ -1517,7 +1949,7 @@
 		};
 		4418B73D230D31B10093BF3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9C46CE89C9CA332E6F5ED24 /* Pods-Burb.release.xcconfig */;
+			baseConfigurationReference = 6A23F94E0DAEE25EC28BB43B /* Pods-Burb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Burb/Burb.entitlements;

@@ -17,8 +17,8 @@ class BarbersViewController: UIViewController {
     let segmentControl = UISegmentedControl()
     var orderTime: NSNumber =  NSNumber(value: Date().timeIntervalSince1970)
     var orderAdress: String?
-    var users = [User]()
-    var selectedBarber: User?
+    var users = [Customer]()
+    var selectedBarber: Customer?
     
     @IBOutlet weak var informationView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -65,15 +65,15 @@ class BarbersViewController: UIViewController {
     
     func fetchUsers() {
         Database.database().reference().child("users").observe(.childAdded) { (snapshot) in
-           
+
             if let dictionary = snapshot.value as? [String: AnyObject] {
-                let user = User(dictionary: dictionary)
+              //  let user = Customer.
                 let names = dictionary["name"] as? String
                 let avatars = dictionary["avatarReference"] as? String
-                user.id = snapshot.key
-                user.name = names
-                user.avatarReference = avatars
-                self.users.append(user)
+//                user.id = snapshot.key
+//                user.name = names
+//                user.avatarReference = avatars
+//                self.users.append(user)
                 DispatchQueue.main.async {
                 self.collectionView.reloadData()
                 }
@@ -139,7 +139,7 @@ class BarbersViewController: UIViewController {
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {
         if self.selectedBarber !=  nil {
-           showCurrentOrder(self.selectedBarber!)
+      //     showCurrentOrder(self.selectedBarber!)
         } else {
             print("we get nil, Milord!")
         }

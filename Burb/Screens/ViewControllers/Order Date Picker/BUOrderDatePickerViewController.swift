@@ -13,6 +13,7 @@ class BUOrderDatePickerViewController: UIViewController {
     fileprivate enum CellModel {
         case adressLabel
         case datePicker
+        case servicePicker
         case button
     }
     
@@ -20,20 +21,22 @@ class BUOrderDatePickerViewController: UIViewController {
         typealias CellType = CellModel
         case adressLabel
         case datePicker
+        case servicePicker
         case button
         
         var cellModels: [BUOrderDatePickerViewController.CellModel] {
             switch self {
             case .adressLabel: return [.adressLabel]
             case .datePicker: return [.datePicker]
+            case .servicePicker: return [.servicePicker]
             case .button: return [.button]
             }
         }
     }
     
-    private let models: [HeaderModel] = [.adressLabel, .datePicker, .button]
-    private let HeaderModels: [HeaderModel] = [.adressLabel, .datePicker, .button]
-    
+    private let models: [HeaderModel] = [.adressLabel, .datePicker, .servicePicker, .button]
+    private let HeaderModels: [HeaderModel] = [.adressLabel, .datePicker, .servicePicker, .button]
+    private var services: [Service] = []
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -43,6 +46,8 @@ class BUOrderDatePickerViewController: UIViewController {
         
         delegate()
         registerCells()
+        setupBackBarItem()
+        addingServices()
 
     }
     
@@ -63,12 +68,34 @@ class BUOrderDatePickerViewController: UIViewController {
         self.tableView.register(BULabelTableViewCell.nib, forCellReuseIdentifier: BULabelTableViewCell.name)
         self.tableView.register(BUDatePickerTableViewCell.nib, forCellReuseIdentifier: BUDatePickerTableViewCell.name)
         self.tableView.register(BUButtonTableViewCell.nib, forCellReuseIdentifier: BUButtonTableViewCell.name)
+        self.tableView.register(BUCVTableViewCell.nib, forCellReuseIdentifier: BUCVTableViewCell.name)
     }
     
     @objc func handleNext() {
-        ConfirmTimeRouter.shared.goToChooseBarberViewController(from: self)
+        OrderDatePickerRouter.shared.goToChooseBarberViewController(from: self)
     }
     
+    @objc func goBack() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    private func addingServices() {
+        let haidcut = Service(serviceId: "1", serviceName: "_HAIRCUT")
+        let beardHaidcut = Service(serviceId: "1", serviceName: "_BEARDHAIRCUT")
+        let babyHaidcut = Service(serviceId: "1", serviceName: "_BABYHAIRCUT")
+        let dangerousShave = Service(serviceId: "1", serviceName: "_DANGEROUSSAVE")
+        let clipper = Service(serviceId: "1", serviceName: "_CLIPPER")
+        let stacking = Service(serviceId: "1", serviceName: "_STACKING")
+        self.services.append(contentsOf: [haidcut, beardHaidcut, babyHaidcut, dangerousShave, clipper, stacking])
+        
+    }
+    
+    private func setupBackBarItem() {
+        var barButton = UIBarButtonItem(customView: UIImageView(image: UIImage(named: "icBack")))
+        barButton = UIBarButtonItem(image: UIImage(named: "icBack"), style: .plain, target: self, action: #selector(goBack))
+        barButton.tintColor = UIColor.black
+        navigationItem.leftBarButtonItem = barButton
+    }
     
 }
 
@@ -91,15 +118,23 @@ extension BUOrderDatePickerViewController: UITableViewDelegate, UITableViewDataS
             if let cell = self.tableView.dequeueReusableCell(withIdentifier: BULabelTableViewCell.name, for: indexPath) as? BULabelTableViewCell {
                 cell.setFont(font: UIFont(name: "OpenSans-Light", size: 18)!)
                 cell.textLabel?.textColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
-
+                
                 return cell
             }
         case .datePicker:
                 if let cell = self.tableView.dequeueReusableCell(withIdentifier: BUDatePickerTableViewCell.name, for: indexPath) as? BUDatePickerTableViewCell {
                     
                     
+                    
                     return cell
                 }
+        case .servicePicker:
+            if let cell = self.tableView.dequeueReusableCell(withIdentifier: BUCVTableViewCell.name, for: indexPath) as? BUCVTableViewCell {
+                cell.collectionView.delegate = self
+                cell.collectionView.dataSource = self
+                
+                return cell
+            }
             case .button:
                 if let cell = self.tableView.dequeueReusableCell(withIdentifier: BUButtonTableViewCell.name, for: indexPath) as? BUButtonTableViewCell {
                     cell.button.setTitle("_CONFIRMTIME", for: .normal)
@@ -121,8 +156,11 @@ extension BUOrderDatePickerViewController: UITableViewDelegate, UITableViewDataS
             return 0
         case .datePicker:
             return 0
+            case .servicePicker:
+                return 0
         case .button:
-            return self.tableView.frame.height / 5
+            return 0
+
         }
     }
     
@@ -137,7 +175,9 @@ extension BUOrderDatePickerViewController: UITableViewDelegate, UITableViewDataS
           case .button:
               let view = HeaderView.loadFromNib()
               return view
-      }
+          case .servicePicker:
+            return nil
+        }
 }
     
 
@@ -147,9 +187,11 @@ extension BUOrderDatePickerViewController: UITableViewDelegate, UITableViewDataS
            let models = HeaderModels[indexPath.section].cellModels[indexPath.row]
            switch models {
            case .adressLabel:
-               return self.tableView.frame.height / 8
+               return self.tableView.frame.height / 10
            case .datePicker:
-               return self.tableView.frame.height / 2
+            return self.tableView.frame.height / 2.5
+           case .servicePicker:
+            return self.tableView.frame.height / 3
            case .button:
                return self.tableView.frame.height / 9
            }
@@ -165,4 +207,45 @@ extension BUOrderDatePickerViewController {
             
         }
     }
+}
+
+
+extension BUOrderDatePickerViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return services.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ServiceCollectionViewCell.name, for: indexPath) as? ServiceCollectionViewCell {
+            let service = self.services[indexPath.item]
+            cell.nameTitle.text = service.serviceName
+            return cell
+        }
+        return UICollectionViewCell.init()
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        return (collectionView.indexPathsForSelectedItems?.count ?? 0) < 6
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ServiceCollectionViewCell.name, for: indexPath) as? ServiceCollectionViewCell
+        
+        let width = cell?.nameTitle.frame.width
+        return CGSize(width: width!, height: 32)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 16
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets (top: 0, left: 16, bottom: 0, right: 16)
+    }
+    
+    
+    
 }

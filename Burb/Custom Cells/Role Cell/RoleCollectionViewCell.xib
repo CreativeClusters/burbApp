@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="349" height="483"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxT-C1-ym3">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxT-C1-ym3" customClass="ClientAnimView" customModule="Burb" customModuleProvider="target">
                         <rect key="frame" x="99.5" y="188.5" width="150" height="150"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -45,10 +44,6 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zer-aJ-8qQ">
-                        <rect key="frame" x="103.5" y="192.5" width="142.5" height="142.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </imageView>
                 </subviews>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,22 +51,17 @@
                 <constraint firstItem="kT2-6Q-Hyp" firstAttribute="width" secondItem="nxT-C1-ym3" secondAttribute="width" multiplier="1.18" id="06Y-nE-YN6"/>
                 <constraint firstItem="nxT-C1-ym3" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="AIT-0h-mqO"/>
                 <constraint firstItem="kT2-6Q-Hyp" firstAttribute="top" secondItem="nxT-C1-ym3" secondAttribute="bottom" constant="9.5" id="Bzx-Uj-U5e"/>
-                <constraint firstItem="Zer-aJ-8qQ" firstAttribute="centerY" secondItem="nxT-C1-ym3" secondAttribute="centerY" id="GK9-rw-CcA"/>
                 <constraint firstItem="xvt-qs-8jT" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="LhF-lp-U1D"/>
                 <constraint firstItem="kT2-6Q-Hyp" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="N6q-pK-EGn"/>
                 <constraint firstItem="xvt-qs-8jT" firstAttribute="width" secondItem="nxT-C1-ym3" secondAttribute="width" multiplier="1.17333" id="VlL-cm-KNU"/>
                 <constraint firstItem="nxT-C1-ym3" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="e4O-q6-u0F"/>
-                <constraint firstItem="Zer-aJ-8qQ" firstAttribute="height" secondItem="nxT-C1-ym3" secondAttribute="height" multiplier="0.95" id="f1f-ol-Hpu"/>
-                <constraint firstItem="Zer-aJ-8qQ" firstAttribute="centerX" secondItem="nxT-C1-ym3" secondAttribute="centerX" id="gJu-of-uth"/>
-                <constraint firstItem="Zer-aJ-8qQ" firstAttribute="width" secondItem="nxT-C1-ym3" secondAttribute="width" multiplier="0.95" id="o9h-bn-8mo"/>
                 <constraint firstItem="xvt-qs-8jT" firstAttribute="top" secondItem="kT2-6Q-Hyp" secondAttribute="bottom" constant="5" id="zAu-TQ-3rL"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="349" height="483"/>
             <connections>
-                <outlet property="circleView" destination="nxT-C1-ym3" id="cR5-2d-t2T"/>
+                <outlet property="clientView" destination="nxT-C1-ym3" id="F8n-Ax-jdC"/>
                 <outlet property="descriptionTextView" destination="xvt-qs-8jT" id="b8X-3F-SQI"/>
-                <outlet property="imageView" destination="Zer-aJ-8qQ" id="Vuo-Go-pu6"/>
                 <outlet property="roleLabel" destination="kT2-6Q-Hyp" id="Ggk-qW-iTl"/>
             </connections>
             <point key="canvasLocation" x="347.10144927536237" y="341.18303571428572"/>

@@ -18,5 +18,4 @@ final class MyOrdersRouter {
         let destinationVC = BUDetailOrderViewController()
             source.navigationController?.pushViewController(destinationVC, animated: true)
     }
-    
 }

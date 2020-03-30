@@ -25,10 +25,11 @@ class BULabelTableViewCell: UITableViewCell, NiBLoadable {
     func setFont(font: UIFont) {
         self.titleLabel.font = font
     }
+    
     func setTextColor(color: UIColor) {
         self.titleLabel.textColor = color
     }
-    
+
 }
 
 extension BULabelTableViewCell {
@@ -36,8 +37,7 @@ extension BULabelTableViewCell {
         private init() {}
         static func decorate(_ cell: BULabelTableViewCell) {
             cell.selectionStyle = .none
+            
         }
-        
     }
-    
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class BUButtonTableViewCell: UITableViewCell, NiBLoadable {
 
+    var buttonHandler: (() -> ())?
+    
     @IBOutlet weak var button: UIButton!
     
     
@@ -32,6 +34,10 @@ class BUButtonTableViewCell: UITableViewCell, NiBLoadable {
     
     func setFont(font: UIFont) {
         self.button.titleLabel?.font = font
+    }
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        buttonHandler?()
     }
     
 }

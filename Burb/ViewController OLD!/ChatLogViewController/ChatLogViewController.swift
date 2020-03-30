@@ -19,7 +19,7 @@ class ChatLogViewController: UIViewController, UITextFieldDelegate {
     
     let cellId = "cellId"
 
-    var user: User? {
+    var user: Customer? {
         didSet {
             title = "Chat with \(String(describing: (user?.name)!))"
             obseveMessages()

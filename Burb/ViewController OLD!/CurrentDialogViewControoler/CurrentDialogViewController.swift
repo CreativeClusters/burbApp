@@ -17,7 +17,7 @@ class CurrentDialogViewController: UIViewController, UITextFieldDelegate {
     var messageDictionary = [String: Message]()
     
     
-    var user: User? {
+    var user: Customer? {
         didSet {
            title = user?.name
         }
@@ -151,7 +151,7 @@ class CurrentDialogViewController: UIViewController, UITextFieldDelegate {
     func showChatController(_ user: User) {
        let chatLogViewController = self.storyboard!.instantiateViewController(withIdentifier: "chatLogViewController") as! ChatLogViewController
        self.navigationController?.pushViewController(chatLogViewController, animated: true)
-       chatLogViewController.user = user
+      // chatLogViewController.user = user
     }
     
 }
@@ -179,8 +179,8 @@ extension CurrentDialogViewController: UITableViewDelegate, UITableViewDataSourc
         let ref = Database.database().reference().child("users").child(chatPartnerId)
         ref.observeSingleEvent(of: .value, with: { (snapshot) in
             guard let dictionary = snapshot.value as? [String: AnyObject] else { return }
-            let user = User(dictionary: dictionary)
-            self.showChatController(user)
+      //      let user = Customer(dictionary: dictionary)
+         //   self.showChatController(user)
         }, withCancel: nil)
     }
 } 

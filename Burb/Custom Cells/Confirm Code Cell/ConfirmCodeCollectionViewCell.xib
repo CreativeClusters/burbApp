@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConfirmCodeCollectionViewCell" customModule="Burb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="314"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="314"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ecU-Rr-yly">
+                        <rect key="frame" x="30" y="166.5" width="292" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="rlx-VD-lfE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="maskString" value="+7 (000) 000-00 00"/>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WoU-4F-QsA">
+                        <rect key="frame" x="30" y="196.5" width="292" height="2"/>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="G80-s9-QTC"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2X8-uD-69o">
+                        <rect key="frame" x="30" y="210.5" width="292" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDV-29-pee">
+                        <rect key="frame" x="30" y="120.5" width="292" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Qdb-Ub-34l"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="WoU-4F-QsA" firstAttribute="leading" secondItem="2X8-uD-69o" secondAttribute="leading" id="1dm-nc-s4W"/>
+                <constraint firstItem="eDV-29-pee" firstAttribute="width" secondItem="ecU-Rr-yly" secondAttribute="width" id="2GB-4D-q34"/>
+                <constraint firstItem="ecU-Rr-yly" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="3dQ-rO-xSA"/>
+                <constraint firstItem="2X8-uD-69o" firstAttribute="width" secondItem="ecU-Rr-yly" secondAttribute="width" id="4jx-fx-sLR"/>
+                <constraint firstItem="2X8-uD-69o" firstAttribute="top" secondItem="WoU-4F-QsA" secondAttribute="bottom" constant="12" id="5c8-pQ-8I3"/>
+                <constraint firstItem="WoU-4F-QsA" firstAttribute="top" secondItem="ecU-Rr-yly" secondAttribute="bottom" constant="5" id="7uu-h4-rr6"/>
+                <constraint firstItem="WoU-4F-QsA" firstAttribute="width" secondItem="ecU-Rr-yly" secondAttribute="width" id="IKa-hF-Oad"/>
+                <constraint firstItem="ecU-Rr-yly" firstAttribute="leading" secondItem="WoU-4F-QsA" secondAttribute="leading" id="Wly-XC-W1a"/>
+                <constraint firstItem="eDV-29-pee" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="Y8c-Ei-Vxd"/>
+                <constraint firstItem="ecU-Rr-yly" firstAttribute="top" secondItem="eDV-29-pee" secondAttribute="bottom" constant="10" id="au0-8x-f1i"/>
+                <constraint firstItem="eDV-29-pee" firstAttribute="leading" secondItem="ecU-Rr-yly" secondAttribute="leading" id="eUd-Dc-6h8"/>
+                <constraint firstItem="ecU-Rr-yly" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="nHa-Fa-P8T"/>
+                <constraint firstItem="eDV-29-pee" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ymA-2h-R4z"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="352" height="314"/>
+            <connections>
+                <outlet property="codeLabel" destination="eDV-29-pee" id="4b5-Pv-lzZ"/>
+                <outlet property="codeTextField" destination="ecU-Rr-yly" id="Hyw-JI-1oc"/>
+                <outlet property="securityLabel" destination="2X8-uD-69o" id="Ts8-Dh-kOX"/>
+            </connections>
+            <point key="canvasLocation" x="350.72463768115944" y="241.74107142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

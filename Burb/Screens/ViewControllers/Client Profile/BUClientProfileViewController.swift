@@ -142,7 +142,7 @@ extension BUClientProfileViewController: UITableViewDelegate, UITableViewDataSou
                 cell.setlabelTextFont(font: UIFont(name: "OpenSans", size: 15)!)
                 cell.setLabelTextLabel(text: "_REMINDME")
                 cell.setLabelTextColor(color: blackburbColor)
-                
+
                 
                 return cell
             }

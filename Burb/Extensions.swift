@@ -15,7 +15,13 @@ let blackburbColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.
 let lightGrayBurbColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 1.0)
 let grayBurbColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 0.6)
 
-
+func delay(seconds: Double, completion:@escaping ()->()) {
+    let popTime = DispatchTime.now() + Double(Int64( Double(NSEC_PER_SEC) * seconds )) / Double(NSEC_PER_SEC)
+    
+    DispatchQueue.main.asyncAfter(deadline: popTime) {
+        completion()
+    }
+}
 
 extension UIViewController {
     
@@ -84,8 +90,7 @@ extension UIView {
     }
     
     func applyShadowOnView(_ view: UIView) {
-        view.layer.cornerRadius = 8
-        view.layer.shadowColor = UIColor.darkGray.cgColor
+        view.layer.shadowColor = UIColor.lightGray.cgColor
         view.layer.shadowOpacity = 1
         view.layer.shadowOffset = .zero
         view.layer.shadowRadius = 5

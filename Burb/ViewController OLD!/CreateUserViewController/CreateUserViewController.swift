@@ -13,7 +13,7 @@ import FirebaseStorage
 
 class CreateUserViewController: UIViewController {
 
-    var registerModel = RegisterModel()
+    var registerModel: RegisterModel?
     var role: String?
     
     @IBOutlet weak var avatarView: UIView!
@@ -173,9 +173,6 @@ class CreateUserViewController: UIViewController {
         }
     }
     
-    
-    
-    
   
    @objc func chooseImage() {
         let imagePickerController = UIImagePickerController()
@@ -195,7 +192,6 @@ class CreateUserViewController: UIViewController {
         self.present(actionSheet, animated: true, completion: nil)
     }
 
-    
 }
 
 extension CreateUserViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {

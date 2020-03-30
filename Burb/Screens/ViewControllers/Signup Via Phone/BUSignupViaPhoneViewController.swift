@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FlagPhoneNumber
 
 class BUSignupViaPhoneViewController: UIViewController {
     
@@ -15,10 +16,10 @@ class BUSignupViaPhoneViewController: UIViewController {
         case confirmCode
     }
     
-    var phoneNumber: String?
-    var confirmCode: String?
+    var registerModel: RegisterModel?
     
     private let model: [CellModel] = [.phoneNumber, .confirmCode]
+    private var dialCode: String? = "+7"
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -30,9 +31,8 @@ class BUSignupViaPhoneViewController: UIViewController {
         setupBackBarItem()
         Decorator.decorate(self)
         addRightBarButton()
-        
-        
-        self.title = "_SIGNUPVIAPHONE"
+        initRegisterModel()
+        updateDoneButtonStatus()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,21 +40,28 @@ class BUSignupViaPhoneViewController: UIViewController {
         navigationController?.isNavigationBarHidden = false
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    private func initRegisterModel() {
+        self.registerModel = RegisterModel(phoneNumber: "", securityCode: "", country: "unknowned")
+    }
+    
+    private func updateDoneButtonStatus() {
+        navigationItem.rightBarButtonItem?.isEnabled = self.registerModel!.phoneIsFilled
     }
 
-    
+    private func updateDoneButtonStatusForHandleCreateUser() {
+        navigationItem.rightBarButtonItem?.isEnabled = self.registerModel!.securityCodeIsFilled
+    }
     
     private func delegating() {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
     }
-
+    
     private func registerCells() {
         collectionView.register(PhoneNumberCollectionViewCell.nib, forCellWithReuseIdentifier: PhoneNumberCollectionViewCell.name)
+        collectionView.register(ConfirmCodeCollectionViewCell.nib, forCellWithReuseIdentifier: ConfirmCodeCollectionViewCell.name)
     }
-
+    
     private func setupBackBarItem() {
         var barButton = UIBarButtonItem(customView: UIImageView(image: UIImage(named: "icBack")))
         barButton = UIBarButtonItem(image: UIImage(named: "icBack"), style: .plain, target: self, action: #selector(goBack))
@@ -67,27 +74,28 @@ class BUSignupViaPhoneViewController: UIViewController {
     }
     
     @objc private func handleChooseRole() {
+        SignupPhoneInteractor.shared.sendConfirmCode(securityCode: registerModel?.securityCode ?? "", phoneNumber: registerModel?.phoneNumber ?? "")
         SignupPhoneRouter.shared.goToChooseRoleVC(from: self)
-        
     }
     
     private func addRightBarButton() {
-        let rightBarBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handleToConfirmCode))
+        let rightBarBarButton = UIBarButtonItem(title: "_DONE", style: .done, target: self, action: #selector(handleToConfirmCode))
         rightBarBarButton.tintColor = burbColor
         navigationItem.rightBarButtonItem = rightBarBarButton
     }
     
     @objc private func handleToConfirmCode() {
-      //  SignupPhoneInteractor.shared.sendPhoneNumber(phoneNumber: self.phoneNumber!)
+        guard let phoneNumber = self.registerModel?.phoneNumber, let dial = self.dialCode else { return }
+        let phoneToSend: String = "\(dial)" + "\(phoneNumber)"
+        SignupPhoneInteractor.shared.sendPhoneNumber(phoneNumber: phoneToSend)
         collectionView.scrollToItem(at: IndexPath(row: 1, section: 0), at: .centeredHorizontally, animated: true)
         let rightBarBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(handleChooseRole))
         rightBarBarButton.tintColor = burbColor
+        rightBarBarButton.isEnabled = false
         navigationItem.rightBarButtonItem = rightBarBarButton
     }
-
     
 }
-
 
 extension BUSignupViaPhoneViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
@@ -98,21 +106,33 @@ extension BUSignupViaPhoneViewController: UICollectionViewDelegate, UICollection
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let models = model[indexPath.row]
-            
+        
         switch models {
         case .phoneNumber:
             if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhoneNumberCollectionViewCell.name, for: indexPath) as? PhoneNumberCollectionViewCell {
-                cell.phoneNumberTextField.text = self.phoneNumber
+                delay(seconds: 0.5) {
+                    cell.phoneNumberTextField.becomeFirstResponder()
+                }
+                cell.phoneNumberTextField.delegate = self 
                 cell.setSecurityLabel(text: "_ALLYOURDATAISINSECUREDAREA")
                 cell.setPhoneLabelText(text: "_YOURPHONENUMBER")
+                cell.textChanged = {
+                    text in
+                   self.registerModel?.phoneNumber = text
+                   self.updateDoneButtonStatus()
+                }
                 return cell
             }
         case .confirmCode:
-            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PhoneNumberCollectionViewCell.name, for: indexPath) as? PhoneNumberCollectionViewCell {
-                cell.phoneNumberTextField.text = self.confirmCode
-                cell.setPhoneLabelText(text: "_ENTERCODEFROMSMS")
+            if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ConfirmCodeCollectionViewCell.name, for: indexPath) as? ConfirmCodeCollectionViewCell {
+                cell.setCodeLabelText(text: "_ENTERCODEFROMSMS")
                 cell.setSecurityLabel(text: "_IFYOUDIDNTRECIEVETHESMS")
-                cell.phoneNumberTextField.defaultTextAttributes.updateValue(5.0, forKey: NSAttributedString.Key(rawValue: NSAttributedString.Key.kern.rawValue))
+                cell.codeTextField.defaultTextAttributes.updateValue(5.0, forKey: NSAttributedString.Key(rawValue: NSAttributedString.Key.kern.rawValue))
+                cell.textChanged = {
+                    text in
+                    self.registerModel?.securityCode = text
+                    self.updateDoneButtonStatus()
+                }
                 return cell
             }
         }
@@ -126,9 +146,6 @@ extension BUSignupViaPhoneViewController: UICollectionViewDelegate, UICollection
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-    
-
-    
 }
 
 
@@ -140,7 +157,23 @@ extension BUSignupViaPhoneViewController {
             vc.navigationController?.navigationBar.barTintColor = UIColor.white
             vc.navigationController?.navigationBar.shadowImage = UIImage()
             vc.hideKeyboardWhenTappedAround()
+            vc.title = "_SIGNUPVIAPHONE"
         }
+    }
+}
+
+extension BUSignupViaPhoneViewController: FPNTextFieldDelegate {
+    
+    func fpnDidSelectCountry(name: String, dialCode: String, code: String) {
+        self.registerModel?.country = name
+        self.dialCode = dialCode
+    }
+    
+    func fpnDidValidatePhoneNumber(textField: FPNTextField, isValid: Bool) {
+         print("textField - \(textField)" + " isValid - \(isValid)")
+    }
+    
+    func fpnDisplayCountryList() {
         
     }
     

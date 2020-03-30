@@ -16,7 +16,7 @@ class DialogsViewController: UIViewController {
     
     
     var timer: Timer?
-    var users = [User]()
+    var users = [Customer]()
     var messages = [Message]()
     var messageDictionary = [String: Message]()
     
@@ -98,14 +98,14 @@ class DialogsViewController: UIViewController {
         Database.database().reference().child("users").observe(.childAdded) { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: AnyObject] {
-                let user = User(dictionary: dictionary)
-                let names = dictionary["name"] as? String
-                let avatars = dictionary["avatarReference"] as? String
-                let IDs = snapshot.key
-                user.id = IDs
-                user.name = names
-                user.avatarReference = avatars
-                self.users.append(user)
+         //       let user = Customer(dictionary: dictionary)
+//                let names = dictionary["name"] as? String
+//                let avatars = dictionary["avatarReference"] as? String
+//                let IDs = snapshot.key
+//                user.id = IDs
+//                user.name = names
+//                user.avatarReference = avatars
+//                self.users.append(user)
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -117,7 +117,7 @@ class DialogsViewController: UIViewController {
     func showCurrentDialog(_ user: User) {
         let chatLogViewController = self.storyboard!.instantiateViewController(withIdentifier: "chatLogViewController") as! ChatLogViewController
         self.navigationController?.pushViewController(chatLogViewController, animated: true)
-        chatLogViewController.user = user
+       // chatLogViewController.user = user
     }
 
 }
@@ -142,8 +142,8 @@ extension DialogsViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let user = self.users[indexPath.row]
-        showCurrentDialog(user)
+//        let user = self.users[indexPath.row]
+//        showCurrentDialog(user)
     }
     
 }

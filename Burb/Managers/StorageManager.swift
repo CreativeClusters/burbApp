@@ -48,7 +48,7 @@ class StorageManager {
         guard let data = photo.jpegData(compressionQuality: 0.5) else {
             return
         }
-        storageReference.child(Keys.barberAvatars.rawValue).child(model.id + "fullImage").putData(data, metadata: nil) { (metadata, error) in
+        storageReference.child(Keys.barberAvatars.rawValue).child("\(model.id)_fullImage").putData(data, metadata: nil) { (metadata, error) in
             closure?()
         }
     }
@@ -60,7 +60,7 @@ class StorageManager {
     }
     
     func loadFullBarberAvatarUrl(for model: Customer, closure: @escaping OptionalItemClosure<URL>) {
-        storageReference.child(Keys.barberAvatars.rawValue).child(model.id+"fullImage").downloadURL { (url, error) in
+        storageReference.child(Keys.barberAvatars.rawValue).child("\(model.id)_fullImage").downloadURL { (url, error) in
             closure(url)
         }
     }

@@ -35,6 +35,8 @@ class BUChooseBarberViewController: UIViewController {
         registerCells()
         setupBackBarItem()
         decorateBackground()
+        
+        chooseBarberInteratcor.shared.fetchBarbers()
     }
     
     private func delegating() {

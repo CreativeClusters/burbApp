@@ -24,7 +24,8 @@ final class CreateBarberInteractor {
             "userId": barber.id,
             "phoneNumber": barber.phoneNumber!,
             "name": barber.name!,
-            "avatarReference": barber.avatarReference!
+            "avatarReference": barber.id,
+            "avatarReferenceFull": "\(barber.id)_fullImage"
         ])
         guard let barberPhoto = barber.photo else { return }
         guard let fullBarberPhoro = barber.fullPhoto else { return }

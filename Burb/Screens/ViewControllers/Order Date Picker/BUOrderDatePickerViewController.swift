@@ -40,7 +40,6 @@ class BUOrderDatePickerViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,7 +49,6 @@ class BUOrderDatePickerViewController: UIViewController {
         addingServices()
 
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
@@ -80,14 +78,13 @@ class BUOrderDatePickerViewController: UIViewController {
     }
     
     private func addingServices() {
-        let haidcut = Service(serviceId: "1", serviceName: "_HAIRCUT")
+        let haidcut = Service(serviceId: "0", serviceName: "_HAIRCUT")
         let beardHaidcut = Service(serviceId: "1", serviceName: "_BEARDHAIRCUT")
-        let babyHaidcut = Service(serviceId: "1", serviceName: "_BABYHAIRCUT")
-        let dangerousShave = Service(serviceId: "1", serviceName: "_DANGEROUSSAVE")
-        let clipper = Service(serviceId: "1", serviceName: "_CLIPPER")
-        let stacking = Service(serviceId: "1", serviceName: "_STACKING")
+        let babyHaidcut = Service(serviceId: "2", serviceName: "_BABYHAIRCUT")
+        let dangerousShave = Service(serviceId: "3", serviceName: "_DANGEROUSSAVE")
+        let clipper = Service(serviceId: "4", serviceName: "_CLIPPER")
+        let stacking = Service(serviceId: "5", serviceName: "_STACKING")
         self.services.append(contentsOf: [haidcut, beardHaidcut, babyHaidcut, dangerousShave, clipper, stacking])
-        
     }
     
     private func setupBackBarItem() {
@@ -159,8 +156,7 @@ extension BUOrderDatePickerViewController: UITableViewDelegate, UITableViewDataS
             case .servicePicker:
                 return 0
         case .button:
-            return 0
-
+            return 44
         }
     }
     
@@ -178,9 +174,7 @@ extension BUOrderDatePickerViewController: UITableViewDelegate, UITableViewDataS
           case .servicePicker:
             return nil
         }
-}
-    
-
+    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
            
@@ -191,7 +185,7 @@ extension BUOrderDatePickerViewController: UITableViewDelegate, UITableViewDataS
            case .datePicker:
             return self.tableView.frame.height / 2.5
            case .servicePicker:
-            return self.tableView.frame.height / 3
+            return 180
            case .button:
                return self.tableView.frame.height / 9
            }
@@ -209,9 +203,7 @@ extension BUOrderDatePickerViewController {
     }
 }
 
-
 extension BUOrderDatePickerViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return services.count
@@ -226,26 +218,23 @@ extension BUOrderDatePickerViewController: UICollectionViewDelegate, UICollectio
         return UICollectionViewCell.init()
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        OrderDatePickerInteractor.shared.addServicesToUserDefaults(at: [indexPath.row])
         return (collectionView.indexPathsForSelectedItems?.count ?? 0) < 6
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ServiceCollectionViewCell.name, for: indexPath) as? ServiceCollectionViewCell
-        
         let width = cell?.nameTitle.frame.width
         return CGSize(width: width!, height: 32)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 16
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets (top: 0, left: 16, bottom: 0, right: 16)
+        return UIEdgeInsets(top: 40, left: 16, bottom: 0, right: 16)
     }
-    
-    
-    
 }
+

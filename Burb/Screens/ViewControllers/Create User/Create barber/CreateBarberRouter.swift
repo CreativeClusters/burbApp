@@ -1,16 +1,16 @@
 //
-//  CreateUserRouter.swift
+//  CreateBarberRouter.swift
 //  Burb
 //
-//  Created by Eugene on 26.01.2020.
+//  Created by Eugene on 31.03.2020.
 //  Copyright © 2020 CC_Eugene. All rights reserved.
 //
 
 import UIKit
 
-final class CreateCustomerRouter {
+final class CreateBarberRouter {
     
-    static  let shared = CreateCustomerRouter()
+    static  let shared = CreateBarberRouter()
     
     private init() {}
     
@@ -18,6 +18,5 @@ final class CreateCustomerRouter {
         let destinationVC = BUOnboardingViewController()
         source.navigationController?.pushViewController(destinationVC, animated: true)
     }
-    
-    
 }
+

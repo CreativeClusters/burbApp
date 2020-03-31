@@ -132,9 +132,9 @@ class BarbersViewController: UIViewController {
     
     
     func showCurrentOrder(_ barber: User) {
-        let OrdersViewController = self.storyboard!.instantiateViewController(withIdentifier: "OrdersViewController") as! OrdersViewController
-        self.navigationController?.pushViewController(OrdersViewController, animated: true)
-        OrdersViewController.barber = barber
+//        let OrdersViewController = self.storyboard!.instantiateViewController(withIdentifier: "OrdersViewController") as! OrdersViewController
+//        self.navigationController?.pushViewController(OrdersViewController, animated: true)
+//        OrdersViewController.barber = barber
     }
     
     @IBAction func doneButtonPressed(_ sender: UIButton) {

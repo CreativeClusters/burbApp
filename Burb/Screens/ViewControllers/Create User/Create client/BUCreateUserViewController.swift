@@ -95,15 +95,14 @@ class BUCreateUserViewController: UIViewController {
     @objc func donePressed() {
         guard let customer = self.customer else { return }
         CreateCustomerInteractor.shared.createCustomer(customer: customer)
+        CreateCustomerRouter.shared.handleOnboarding(from: self)
     }
     
     @objc private func goBack() {
         navigationController?.popViewController(animated: true)
     }
     
-    @objc private func handleOnboarding() {
-        CreateUserRouter.shared.goToChooseLocation(from: self)
-    }
+
     
     @objc func photoViewClicked() {
          let imagePickerController = UIImagePickerController()

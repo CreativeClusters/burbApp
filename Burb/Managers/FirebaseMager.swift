@@ -19,13 +19,12 @@ class FirestoreManager {
     static let register = "registerModel"
     static let customers = "customers"
     static let barbers = "barbers"
-    
+
     static let sourceReference = Firestore.firestore()
     
     static let registerReference = sourceReference.collection(register)
     static let customersReference = sourceReference.collection(customers)
     static let barbersReference = sourceReference.collection(barbers)
-    
 }
 
 

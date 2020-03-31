@@ -81,11 +81,11 @@ class BUOrderLocationPickerViewController: UIViewController {
     }
     
     fileprivate func startManager() {
-        if self.coordinate != nil {
+         if self.coordinate != nil {
             self.locationWasShown = true
             setRegion(self.coordinate!)
         }
-        
+
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self as? CLLocationManagerDelegate
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -160,7 +160,6 @@ extension BUOrderLocationPickerViewController: MKMapViewDelegate {
         pinImageView?.alpha = 0.5
         handleButton.alpha = 0.5
     }
-
 }
 
 

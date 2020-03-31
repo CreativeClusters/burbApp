@@ -18,5 +18,4 @@ final class ChooseBarberRouter {
         let destinationVC = BUClientTabBarController()
             source.navigationController?.pushViewController(destinationVC, animated: true)
     }
-    
 }

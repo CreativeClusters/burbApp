@@ -49,7 +49,7 @@ class Barber: NSObject {
     }
     
     var isFilled: Bool {
-        guard !(name ?? "").isEmpty,!(phoneNumber ?? "").isEmpty, photo != nil, fullPhoto != nil, age != nil, !(weapon ?? "").isEmpty, !(education ?? "").isEmpty, !(philosophy ?? "").isEmpty else {
+        guard !(name ?? "").isEmpty,!(phoneNumber ?? "").isEmpty, photo != nil, fullPhoto != nil, age != nil else {
             return false
         }
         return true

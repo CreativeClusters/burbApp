@@ -110,6 +110,8 @@ class BUChooseRoleViewController: UIViewController, UICollectionViewDelegate, UI
         registerCells()
         addRightBarButton()
         setupBackBarItem()
+        
+        chooseBarberInteratcor.shared.fetchBarbers()
     }
     
     private func delegating() {

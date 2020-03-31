@@ -26,13 +26,11 @@ class ServiceCollectionViewCell: UICollectionViewCell, NiBLoadable {
     }
 
     func setSelected() {
-        print("first state")
         self.backgroundColor = burbColor
         self.nameTitle.textColor = .white
     }
     
     func setUnselected() {
-        print("second state")
         self.backgroundColor = .white
         self.nameTitle.textColor = burbColor
         self.layer.borderColor = burbColor.cgColor

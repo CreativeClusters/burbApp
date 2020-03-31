@@ -8,37 +8,29 @@
 
 import Foundation
 
-
-
 class Order: NSObject {
-    
+
     var orderId: String?
     var userId: String?
+    var services: [Service]?
     var descriptionOrder: String?
     var date: NSNumber?
-    var barberId: String?
-    var barberName: String?
-    var barberAvatar: String?
+    var barber: Barber?
     var adress: String?
     var city: String?
     var longitude: Double?
     var latitude: Double?
-    
 
-    
-    
-    init(dictionary: [String: Any]) {
-        self.orderId = dictionary["orderId"] as? String
-        self.userId = dictionary["userId"] as? String
-        self.descriptionOrder = dictionary["descriptionOrder"] as? String
-        self.date = dictionary["date"] as? NSNumber
-        self.barberId = dictionary["barberId"] as? String
-        self.barberName = dictionary["barberName"] as? String
-        self.barberAvatar = dictionary["barberAvatar"] as? String
-        self.adress = dictionary["adress"] as? String
-        self.city = dictionary["city"] as? String
-        self.longitude = dictionary["longitude"] as? Double
-        self.latitude = dictionary["latitude"] as? Double
-     }
+    init(orderId: String, userId: String, services: [Service], descriptionOrder: String, date: NSNumber, barber: Barber, adress: String, city: String, longitude: Double, latitude: Double) {
+        self.orderId = orderId
+        self.userId = userId
+        self.services = services
+        self.descriptionOrder = descriptionOrder
+        self.date = date
+        self.barber = barber
+        self.adress = adress
+        self.city = city
+        self.longitude = longitude
+        self.latitude = latitude
+    }
 }
-

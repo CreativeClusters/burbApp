@@ -83,6 +83,7 @@ class BUCreateBarberViewController: UIViewController {
     @objc private func donePressed() {
         guard let barber = self.barber else { return }
         CreateBarberInteractor.shared.createBarber(barber: barber)
+        CreateBarberRouter.shared.handleOnboarding(from: self)
     }
     
     private func setupBackBarItem() {

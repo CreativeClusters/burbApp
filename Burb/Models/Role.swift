@@ -9,7 +9,6 @@
 import UIKit
 
 enum UserRole: String {
-    
     case Barber     = "barber"
     case Customer   = "customer"
     case None       = "None"

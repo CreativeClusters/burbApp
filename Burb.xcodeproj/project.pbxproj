@@ -109,6 +109,8 @@
 		4466C5E6231EB135004CA831 /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E5231EB135004CA831 /* MessageViewCell.swift */; };
 		4466FC3B2432514A00591C4B /* BUCustomerTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466FC392432514A00591C4B /* BUCustomerTabbarController.swift */; };
 		4466FC3C2432514A00591C4B /* BUCustomerTabbarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4466FC3A2432514A00591C4B /* BUCustomerTabbarController.xib */; };
+		4466FC3E2433247600591C4B /* OrderDatePickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466FC3D2433247600591C4B /* OrderDatePickerInteractor.swift */; };
+		4466FC402433315600591C4B /* CreateBarberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466FC3F2433315600591C4B /* CreateBarberRouter.swift */; };
 		44687BFE23E7FB9800F759F4 /* BUMyOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687BFC23E7FB9800F759F4 /* BUMyOrdersViewController.swift */; };
 		44687BFF23E7FB9800F759F4 /* BUMyOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44687BFD23E7FB9800F759F4 /* BUMyOrdersViewController.xib */; };
 		44687C0723E81F1900F759F4 /* OrderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44687C0523E81F1900F759F4 /* OrderCollectionViewCell.swift */; };
@@ -220,7 +222,6 @@
 		44F433D6240125D20044C000 /* PricingLabelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433CF240125D00044C000 /* PricingLabelsTableViewCell.swift */; };
 		44F433D7240125D20044C000 /* ConfirmCodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433D1240125D20044C000 /* ConfirmCodeCollectionViewCell.swift */; };
 		44F433D8240125D20044C000 /* ConfirmCodeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433D2240125D20044C000 /* ConfirmCodeCollectionViewCell.xib */; };
-		44F433DA240127FC0044C000 /* CreateBarberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433D9240127FC0044C000 /* CreateBarberRouter.swift */; };
 		44F433DC240170A10044C000 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433DB240170A10044C000 /* Service.swift */; };
 		44F433E0240172D80044C000 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433DE240172D80044C000 /* ServiceCollectionViewCell.swift */; };
 		44F433E1240172D80044C000 /* ServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433DF240172D80044C000 /* ServiceCollectionViewCell.xib */; };
@@ -335,6 +336,8 @@
 		4466C5E5231EB135004CA831 /* MessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
 		4466FC392432514A00591C4B /* BUCustomerTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUCustomerTabbarController.swift; sourceTree = "<group>"; };
 		4466FC3A2432514A00591C4B /* BUCustomerTabbarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUCustomerTabbarController.xib; sourceTree = "<group>"; };
+		4466FC3D2433247600591C4B /* OrderDatePickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDatePickerInteractor.swift; sourceTree = "<group>"; };
+		4466FC3F2433315600591C4B /* CreateBarberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBarberRouter.swift; sourceTree = "<group>"; };
 		44687BFC23E7FB9800F759F4 /* BUMyOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUMyOrdersViewController.swift; sourceTree = "<group>"; };
 		44687BFD23E7FB9800F759F4 /* BUMyOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUMyOrdersViewController.xib; sourceTree = "<group>"; };
 		44687C0523E81F1900F759F4 /* OrderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -446,7 +449,6 @@
 		44F433CF240125D00044C000 /* PricingLabelsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PricingLabelsTableViewCell.swift; sourceTree = "<group>"; };
 		44F433D1240125D20044C000 /* ConfirmCodeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmCodeCollectionViewCell.swift; sourceTree = "<group>"; };
 		44F433D2240125D20044C000 /* ConfirmCodeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmCodeCollectionViewCell.xib; sourceTree = "<group>"; };
-		44F433D9240127FC0044C000 /* CreateBarberRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBarberRouter.swift; sourceTree = "<group>"; };
 		44F433DB240170A10044C000 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		44F433DE240172D80044C000 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		44F433DF240172D80044C000 /* ServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -803,6 +805,7 @@
 				44687C1723EAFBC700F759F4 /* OrderDatePickerRouter.swift */,
 				44472DDC23E1D054009259C5 /* BUOrderDatePickerViewController.swift */,
 				44472DDD23E1D054009259C5 /* BUOrderDatePickerViewController.xib */,
+				4466FC3D2433247600591C4B /* OrderDatePickerInteractor.swift */,
 			);
 			path = "Order Date Picker";
 			sourceTree = "<group>";
@@ -923,7 +926,6 @@
 				44687C0923E9523A00F759F4 /* LocationPickerRouter.swift */,
 				4446829123ED90400016167C /* MyOrdersRouter.swift */,
 				444682A223F0003C0016167C /* ChooseBarberRouter.swift */,
-				44F433D9240127FC0044C000 /* CreateBarberRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1340,6 +1342,7 @@
 				44F433C2240125760044C000 /* BUCreateBarberViewController.swift */,
 				44F433C1240125730044C000 /* BUCreateBarberViewController.xib */,
 				44B34FBA242B5B78003FDA16 /* CreateBarberInteractor.swift */,
+				4466FC3F2433315600591C4B /* CreateBarberRouter.swift */,
 			);
 			path = "Create barber";
 			sourceTree = "<group>";
@@ -1726,16 +1729,17 @@
 				44968B9D2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift in Sources */,
 				44323DBD232A2CD500C622E7 /* OrdersViewController.swift in Sources */,
 				440E4191230D3482000FD5FD /* LoginViewController.swift in Sources */,
-				44F433DA240127FC0044C000 /* CreateBarberRouter.swift in Sources */,
 				4418B732230D31AF0093BF3C /* Burb.xcdatamodeld in Sources */,
 				44B8594D24068F1800A5E733 /* ChooseBarberInteractor.swift in Sources */,
 				4466C5E2231E62C7004CA831 /* CurrentDialogViewController.swift in Sources */,
 				44323DBF232A2E8E00C622E7 /* OrderCell.swift in Sources */,
 				44B9F7062341FD7500FC6210 /* PhotoView.swift in Sources */,
 				444EF2CC24225F8F00ED5AC9 /* Barber.swift in Sources */,
+				4466FC402433315600591C4B /* CreateBarberRouter.swift in Sources */,
 				4466C5DF231E5AD3004CA831 /* DialogUserCell.swift in Sources */,
 				44B9F72423428C6A00FC6210 /* PhilosophyCell.swift in Sources */,
 				443877C023434D14008AD69F /* NotificationsCell.swift in Sources */,
+				4466FC3E2433247600591C4B /* OrderDatePickerInteractor.swift in Sources */,
 				44472DD423E17AAB009259C5 /* BUDialogsViewController.swift in Sources */,
 				44687C2623EBFE9B00F759F4 /* AvatarProfileTableViewCell.swift in Sources */,
 				440E4197230D47F6000FD5FD /* ConfirmSignupViewController.swift in Sources */,

@@ -46,8 +46,7 @@ class BUOrderDatePickerViewController: UIViewController {
         delegate()
         registerCells()
         setupBackBarItem()
-        addingServices()
-
+        OrderDatePickerInteractor.shared.fetchServices()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -77,15 +76,6 @@ class BUOrderDatePickerViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    private func addingServices() {
-        let haidcut = Service(serviceId: "0", serviceName: "_HAIRCUT")
-        let beardHaidcut = Service(serviceId: "1", serviceName: "_BEARDHAIRCUT")
-        let babyHaidcut = Service(serviceId: "2", serviceName: "_BABYHAIRCUT")
-        let dangerousShave = Service(serviceId: "3", serviceName: "_DANGEROUSSAVE")
-        let clipper = Service(serviceId: "4", serviceName: "_CLIPPER")
-        let stacking = Service(serviceId: "5", serviceName: "_STACKING")
-        self.services.append(contentsOf: [haidcut, beardHaidcut, babyHaidcut, dangerousShave, clipper, stacking])
-    }
     
     private func setupBackBarItem() {
         var barButton = UIBarButtonItem(customView: UIImageView(image: UIImage(named: "icBack")))

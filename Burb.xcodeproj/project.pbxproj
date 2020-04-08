@@ -184,7 +184,7 @@
 		44B34FDA242F3EAD003FDA16 /* BUOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B34FD8242F3EAD003FDA16 /* BUOnboardingViewController.xib */; };
 		44B34FDE242F45AF003FDA16 /* OnboardingCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FDC242F45AF003FDA16 /* OnboardingCVCell.swift */; };
 		44B34FDF242F45AF003FDA16 /* OnboardingCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B34FDD242F45AF003FDA16 /* OnboardingCVCell.xib */; };
-		44B8594B24068D0B00A5E733 /* FirebaseMager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594A24068D0B00A5E733 /* FirebaseMager.swift */; };
+		44B8594B24068D0B00A5E733 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594A24068D0B00A5E733 /* FirestoreManager.swift */; };
 		44B8594D24068F1800A5E733 /* ChooseBarberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594C24068F1800A5E733 /* ChooseBarberInteractor.swift */; };
 		44B8594F2406B22E00A5E733 /* Extension+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594E2406B22E00A5E733 /* Extension+Encodable.swift */; };
 		44B9F7032341ED8C00FC6210 /* NiBLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7022341ED8C00FC6210 /* NiBLoadable.swift */; };
@@ -206,6 +206,8 @@
 		44B9F72523428C6A00FC6210 /* PhilosophyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B9F72323428C6A00FC6210 /* PhilosophyCell.xib */; };
 		44B9F7282342941500FC6210 /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7262342941500FC6210 /* ReminderCell.swift */; };
 		44B9F7292342941500FC6210 /* ReminderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B9F7272342941500FC6210 /* ReminderCell.xib */; };
+		44BCDF7D243A2E8400988CF5 /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BCDF7C243A2E8400988CF5 /* OrderManager.swift */; };
+		44BCDF7F243A50A400988CF5 /* OnboardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BCDF7E243A50A400988CF5 /* OnboardingRouter.swift */; };
 		44BD7F432428CCA80033D983 /* CurrentUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD7F422428CCA80033D983 /* CurrentUser.swift */; };
 		44BD7F462428DA020033D983 /* BUEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD7F452428DA020033D983 /* BUEmptyView.swift */; };
 		44BD7F482428DA130033D983 /* BUEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BD7F472428DA130033D983 /* BUEmptyView.xib */; };
@@ -411,7 +413,7 @@
 		44B34FD8242F3EAD003FDA16 /* BUOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUOnboardingViewController.xib; sourceTree = "<group>"; };
 		44B34FDC242F45AF003FDA16 /* OnboardingCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCVCell.swift; sourceTree = "<group>"; };
 		44B34FDD242F45AF003FDA16 /* OnboardingCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCVCell.xib; sourceTree = "<group>"; };
-		44B8594A24068D0B00A5E733 /* FirebaseMager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMager.swift; sourceTree = "<group>"; };
+		44B8594A24068D0B00A5E733 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		44B8594C24068F1800A5E733 /* ChooseBarberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBarberInteractor.swift; sourceTree = "<group>"; };
 		44B8594E2406B22E00A5E733 /* Extension+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Encodable.swift"; sourceTree = "<group>"; };
 		44B9F7022341ED8C00FC6210 /* NiBLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiBLoadable.swift; sourceTree = "<group>"; };
@@ -433,6 +435,8 @@
 		44B9F72323428C6A00FC6210 /* PhilosophyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhilosophyCell.xib; sourceTree = "<group>"; };
 		44B9F7262342941500FC6210 /* ReminderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
 		44B9F7272342941500FC6210 /* ReminderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReminderCell.xib; sourceTree = "<group>"; };
+		44BCDF7C243A2E8400988CF5 /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
+		44BCDF7E243A50A400988CF5 /* OnboardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingRouter.swift; sourceTree = "<group>"; };
 		44BD7F422428CCA80033D983 /* CurrentUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUser.swift; sourceTree = "<group>"; };
 		44BD7F452428DA020033D983 /* BUEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUEmptyView.swift; sourceTree = "<group>"; };
 		44BD7F472428DA130033D983 /* BUEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUEmptyView.xib; sourceTree = "<group>"; };
@@ -1242,6 +1246,7 @@
 				44B34FDB242F4587003FDA16 /* Onboarding Cell */,
 				44B34FD7242F3EAD003FDA16 /* BUOnboardingViewController.swift */,
 				44B34FD8242F3EAD003FDA16 /* BUOnboardingViewController.xib */,
+				44BCDF7E243A50A400988CF5 /* OnboardingRouter.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -1258,9 +1263,10 @@
 		44B8594924068CE100A5E733 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				44B8594A24068D0B00A5E733 /* FirebaseMager.swift */,
+				44B8594A24068D0B00A5E733 /* FirestoreManager.swift */,
 				444022862406C87300DE5DB8 /* AuthManager.swift */,
 				44BD7F49242A50220033D983 /* StorageManager.swift */,
+				44BCDF7C243A2E8400988CF5 /* OrderManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -1690,6 +1696,7 @@
 				44F433C92401259C0044C000 /* BUBarberPricingViewController.swift in Sources */,
 				44B34FC2242CD210003FDA16 /* File.swift in Sources */,
 				44A12AFE23D065AA00912FFB /* LoginRouter.swift in Sources */,
+				44BCDF7D243A2E8400988CF5 /* OrderManager.swift in Sources */,
 				445A4A6423322F5500DE0417 /* ClientTabbarController.swift in Sources */,
 				44472DBA23DDC42C009259C5 /* CreateUserRouter.swift in Sources */,
 				44F433D6240125D20044C000 /* PricingLabelsTableViewCell.swift in Sources */,
@@ -1707,6 +1714,7 @@
 				4440544A2407EAA700A19220 /* Extension+TextView.swift in Sources */,
 				445A4A672332B93900DE0417 /* DetailOrderViewController.swift in Sources */,
 				44B9F7282342941500FC6210 /* ReminderCell.swift in Sources */,
+				44BCDF7F243A50A400988CF5 /* OnboardingRouter.swift in Sources */,
 				44687C1B23EB0A8300F759F4 /* TextFieldTableViewCell.swift in Sources */,
 				44B34FC7242DE81A003FDA16 /* BUTableView.swift in Sources */,
 				44073819243244D6008ABBB7 /* BUBarberProfileViewController.swift in Sources */,
@@ -1716,7 +1724,7 @@
 				448D50B323222E3300F401AE /* ChatLogViewController.swift in Sources */,
 				44687C3023EC38E500F759F4 /* LabelButtonTableViewCell.swift in Sources */,
 				44472DAB23DDAC6F009259C5 /* BUTextFieldTableViewCell.swift in Sources */,
-				44B8594B24068D0B00A5E733 /* FirebaseMager.swift in Sources */,
+				44B8594B24068D0B00A5E733 /* FirestoreManager.swift in Sources */,
 				44687C0A23E9523A00F759F4 /* LocationPickerRouter.swift in Sources */,
 				44A12B1323D47CB100912FFB /* SignupPhoneInteractor.swift in Sources */,
 				44B34FC4242CD449003FDA16 /* extension+UIView.swift in Sources */,

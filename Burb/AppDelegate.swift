@@ -12,8 +12,8 @@ import Firebase
 import FirebaseAuth
 import UserNotifications
 
-
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -39,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             // Fallback on earlier versions
         }
-
         return true
     }
 

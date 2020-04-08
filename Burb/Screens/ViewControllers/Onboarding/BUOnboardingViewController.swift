@@ -20,18 +20,17 @@ class BUOnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         Decorator.decorate(self)
         
         fillData()
-        
+
         delegating()
         registerCells()
-        
         setupPageControl()
     }
     
     private func setupPageControl() {
-        
         pageControl!.numberOfPages = 3
         pageControl!.currentPage = 0
         pageControl!.pageIndicatorTintColor = UIColor.lightGray.withAlphaComponent(0.5)
@@ -72,12 +71,11 @@ class BUOnboardingViewController: UIViewController {
     }
     
     // MARK: ACTIONS
-      func bottomButtonPressed() {
+       @objc func bottomButtonPressed() {
         let indexPath = (self.collectionView?.indexPathsForVisibleItems.first)!
         
         if indexPath.item == dataArray.count - 1 {
-            let orderLocationVC = BUOrderLocationPickerViewController()
-            self.navigationController?.setViewControllers([orderLocationVC], animated: true)
+            OnboardingRouter.shared.handleClient(from: self)
         }
         else
         {
@@ -86,7 +84,6 @@ class BUOnboardingViewController: UIViewController {
         }
     }
 }
-
 
 extension BUOnboardingViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -132,6 +129,7 @@ extension BUOnboardingViewController: UIScrollViewDelegate {
         
         let title = ((index == dataArray.count - 1) ? NSLocalizedString("let's ride", comment: "") : NSLocalizedString("next", comment: "")).uppercased()
         self.doneButton!.setTitle(title, for: .normal)
+        
     }
 }
 
@@ -144,6 +142,8 @@ extension BUOnboardingViewController {
             vc.doneButton.titleLabel?.font = UIFont(name: "OpenSans-Semibold", size: 15)
             vc.navigationController?.navigationBar.barTintColor = UIColor.white
             vc.navigationController?.navigationBar.shadowImage = UIImage()
+            vc.doneButton.setTitle("_NEXT", for: .normal)
+            vc.doneButton.addTarget(self, action: #selector(bottomButtonPressed), for: .touchUpInside)
         }
     }
 }

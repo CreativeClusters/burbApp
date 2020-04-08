@@ -14,7 +14,7 @@ class StartRouter {
     
     private init() {}
     
-    private let rootViewController: UIViewController = BUChooseBarberViewController()
+    private let rootViewController: UIViewController = BUOrderLocationPickerViewController()
     
     func root(_ window: inout UIWindow?) {
         window?.makeKeyAndVisible()

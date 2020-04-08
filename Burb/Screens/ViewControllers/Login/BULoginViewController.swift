@@ -60,7 +60,6 @@ class BULoginViewController: UIViewController, UIPopoverPresentationControllerDe
         tableView.register(LogoTableViewCell.nib, forCellReuseIdentifier: LogoTableViewCell.name)
         tableView.register(BUButtonTableViewCell.nib, forCellReuseIdentifier: BUButtonTableViewCell.name)
     }
-    
 }
 
 

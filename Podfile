@@ -17,5 +17,5 @@ target 'Burb' do
   pod 'FirebaseFirestore'
   pod 'CVCalendar', '~> 1.6.2'
   pod 'ARSLineProgress'
-
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
 end

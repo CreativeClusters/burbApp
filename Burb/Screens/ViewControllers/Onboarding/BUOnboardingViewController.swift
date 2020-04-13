@@ -14,7 +14,7 @@ class BUOnboardingViewController: UIViewController {
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     
-    
+    fileprivate var userType: UserRole = .Customer
     typealias data = (image: UIImage, title1: String, title2: String)
     var dataArray = [data]()
     
@@ -24,7 +24,7 @@ class BUOnboardingViewController: UIViewController {
         Decorator.decorate(self)
         
         fillData()
-
+        self.doneButton.addTarget(self, action: #selector(bottomButtonPressed), for: .touchUpInside)
         delegating()
         registerCells()
         setupPageControl()
@@ -50,32 +50,44 @@ class BUOnboardingViewController: UIViewController {
     
     fileprivate func fillData() {
         var data1, data2, data3: data!
+        guard let image1 = UIImage(named: "img1"), let image2 = UIImage(named: "img2"), let image3 = UIImage(named: "img3")  else { return }
         
-//        if CurrentUser.instance.user.customer != nil {
+        
+        switch self.userType {
+        case .Customer:
             data1 = data(
-                image: UIImage.init(), title1: "_the_right_cut", title2: "_in_the_right_place_at_right_time")
+                image: image1, title1: "_the_right_cut", title2: "_in_the_right_place_at_right_time")
             data2 = data(
-                image: UIImage.init(), title1: "_enjoy_the_progress", title2: "_instead_of_wasting_time_and_finding_a_spot")
+                image: image2, title1: "_enjoy_the_progress", title2: "_instead_of_wasting_time_and_finding_a_spot")
             data3 = data(
-                image: UIImage.init(), title1: "_less_is_more", title2: "_exceptional_level_of_services_to_be_satisfied_with")
-//        }
-//        else {
-//            data1 = data(
-//                image: UIImage(named: "")!, title1: "no_middlemen", title2: "work_with_your_clients_directly")
-//            data2 = data(
-//                image: UIImage(named: "")!, title1: "_taylor-made_schedule", title2: "the_best_work_schedule_is_self-created")
-//            data3 = data(
-//                image: UIImage(named: "")!, title1: "raise_vibration", title2: "_real_pro_always_in_demand")
-//        }
+                image: image3, title1: "_less_is_more", title2: "_exceptional_level_of_services_to_be_satisfied_with")
+        case .Barber:
+            data1 = data(
+                image: image1, title1: "no_middlemen", title2: "work_with_your_clients_directly")
+            data2 = data(
+                image: image2, title1: "_taylor-made_schedule", title2: "the_best_work_schedule_is_self-created")
+            data3 = data(
+                image: image3, title1: "raise_vibration", title2: "_real_pro_always_in_demand")
+        default:
+            break
+        }
+        
         dataArray = [data1, data2, data3]
     }
     
     // MARK: ACTIONS
-       @objc func bottomButtonPressed() {
+    @objc func bottomButtonPressed() {
         let indexPath = (self.collectionView?.indexPathsForVisibleItems.first)!
         
         if indexPath.item == dataArray.count - 1 {
-            OnboardingRouter.shared.handleClient(from: self)
+            switch self.userType {
+            case .Barber:
+                OnboardingRouter.shared.handleBarber(from: self)
+            case .Customer:
+               OnboardingRouter.shared.handleClient(from: self)
+            case .None:
+                break
+            }
         }
         else
         {
@@ -143,7 +155,6 @@ extension BUOnboardingViewController {
             vc.navigationController?.navigationBar.barTintColor = UIColor.white
             vc.navigationController?.navigationBar.shadowImage = UIImage()
             vc.doneButton.setTitle("_NEXT", for: .normal)
-            vc.doneButton.addTarget(self, action: #selector(bottomButtonPressed), for: .touchUpInside)
         }
     }
 }

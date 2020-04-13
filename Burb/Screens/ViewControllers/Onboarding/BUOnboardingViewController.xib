@@ -35,7 +35,7 @@
                     <state key="normal" title="Button"/>
                 </button>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="FyW-8w-gbe">
-                    <rect key="frame" x="108" y="685" width="209" height="37"/>
+                    <rect key="frame" x="108" y="685" width="198" height="37"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="u0O-5B-Hr7"/>
                     </constraints>
@@ -47,13 +47,14 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HBV-9g-YIa" secondAttribute="bottom" constant="50" id="9yc-aC-wnh"/>
                 <constraint firstItem="GmM-At-Pr9" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" id="MTc-4C-K7t"/>
                 <constraint firstItem="FyW-8w-gbe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="108" id="NPA-YN-bn2"/>
+                <constraint firstItem="FyW-8w-gbe" firstAttribute="centerX" secondItem="GmM-At-Pr9" secondAttribute="centerX" id="UcI-fX-BIg"/>
                 <constraint firstItem="GmM-At-Pr9" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="WRW-82-STf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HBV-9g-YIa" secondAttribute="trailing" constant="20" id="Zfe-eu-fer"/>
                 <constraint firstItem="GmM-At-Pr9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aE8-Fq-3ju"/>
                 <constraint firstItem="GmM-At-Pr9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ajQ-jp-07d"/>
                 <constraint firstItem="HBV-9g-YIa" firstAttribute="top" secondItem="FyW-8w-gbe" secondAttribute="bottom" constant="60" id="ff7-Fd-1Ga"/>
+                <constraint firstItem="HBV-9g-YIa" firstAttribute="centerX" secondItem="GmM-At-Pr9" secondAttribute="centerX" id="p6T-c4-qCx"/>
                 <constraint firstItem="GmM-At-Pr9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sGw-Hu-9Zw"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FyW-8w-gbe" secondAttribute="trailing" constant="97" id="tIB-6A-1nz"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>

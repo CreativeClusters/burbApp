@@ -22,6 +22,8 @@ class BUOrderLocationPickerViewController: UIViewController {
     var city: String?
     var adress: String?
     
+    var currentCustomer: CustomerSQL?
+    
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var locationView: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -36,6 +38,7 @@ class BUOrderLocationPickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initIfavailable()
         setupSubviews()
         startManager()
         Decorator.decorate(self)
@@ -45,13 +48,19 @@ class BUOrderLocationPickerViewController: UIViewController {
         
     }
     
+    private func initIfavailable() {
+        OrderLocationPickerInteractor.shared.fetchCustomerSQL { (data) in
+            self.currentCustomer = data
+        }
+    }
+    
     @objc func handleSettings() {
         LocationPickerRouter.shared.goToSettingsViaPhoneViewController(from: self)
     }
     
     @objc func handleDatePicker() {
-        guard let city = self.city, let adress = self.adress, let long = self.longitude, let lati = self.latitude  else { return }
-        OrderLocationPickerInteractor.shared.saveLocationToUserDefaults(city: city, adress: adress, longitude: String(long), latitude: String(lati))
+        
+        
         LocationPickerRouter.shared.goToDatePickerViewController(from: self)
     }
     
@@ -64,10 +73,16 @@ class BUOrderLocationPickerViewController: UIViewController {
     }
     
     fileprivate func addRightBarButton() {
-        let buttonImage = UIImage(named: "ic_profile")
-        let button = UIBarButtonItem(image: buttonImage, style: .plain, target: self, action: #selector(handleSettings))
-        button.tintColor = .gray
-        navigationItem.rightBarButtonItem = button
+        
+        var button: UIButton = UIButton(type: .custom)
+        guard let currentCustomerPhoto = UIImage(data: (self.currentCustomer?.photo)! ) else { return }
+        button.setImage(currentCustomerPhoto, for: .normal)
+        button.addTarget(self, action: #selector(handleSettings), for: .touchUpInside)
+        button = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+       // button.layer.cornerRadius = button.frame.height / 2
+        
+        let barButton = UIBarButtonItem(customView: button)
+        self.navigationItem.rightBarButtonItem = barButton
     }
     
     fileprivate func setupNextButton() {

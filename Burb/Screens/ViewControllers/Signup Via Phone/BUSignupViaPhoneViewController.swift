@@ -75,6 +75,7 @@ class BUSignupViaPhoneViewController: UIViewController {
     
     @objc private func handleChooseRole() {
         SignupPhoneInteractor.shared.sendConfirmCode(securityCode: registerModel?.securityCode ?? "", phoneNumber: registerModel?.phoneNumber ?? "")
+        SignupPhoneInteractor.shared.signIn()
         SignupPhoneRouter.shared.goToChooseRoleVC(from: self)
     }
     

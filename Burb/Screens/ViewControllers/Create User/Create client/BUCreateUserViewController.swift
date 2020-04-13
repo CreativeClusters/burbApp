@@ -95,14 +95,13 @@ class BUCreateUserViewController: UIViewController {
     @objc func donePressed() {
         guard let customer = self.customer else { return }
         CreateCustomerInteractor.shared.createCustomer(customer: customer)
+        CreateCustomerInteractor.shared.saveCurrentCustomerSQL(with: customer)
         CreateCustomerRouter.shared.handleOnboarding(from: self)
     }
-    
+
     @objc private func goBack() {
         navigationController?.popViewController(animated: true)
     }
-    
-
     
     @objc func photoViewClicked() {
          let imagePickerController = UIImagePickerController()
@@ -149,9 +148,7 @@ extension BUCreateUserViewController: UITableViewDataSource, UITableViewDelegate
             if let cell = tableView.dequeueReusableCell(withIdentifier: BUTextFieldTableViewCell.name, for: indexPath) as? BUTextFieldTableViewCell {
                 cell.textField.font = UIFont(name: "OpenSans", size: 24)
                 cell.textField.textColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
-                cell.titleLabel.text = "_YOURNAME"
-                cell.textField.placeholder = "_ALEXTURNER"
-                cell.alertLabel.text = "_FILLALLTHETEXT"
+                cell.textField.placeholder = "_YOURNAME"
                 cell.textChanged = {
                     text in
                     self.customer?.name = text
@@ -163,9 +160,7 @@ extension BUCreateUserViewController: UITableViewDataSource, UITableViewDelegate
             if let cell = tableView.dequeueReusableCell(withIdentifier: BUTextFieldTableViewCell.name, for: indexPath) as? BUTextFieldTableViewCell {
                 cell.textField.font = UIFont(name: "OpenSans", size: 24)
                 cell.textField.textColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
-                cell.titleLabel.text = "_YOUPHONENUMBER"
-                cell.textField.placeholder = "_+7 4324 234234 24"
-                cell.alertLabel.text = "_FILLALLTHETEXT"
+                cell.textField.placeholder = "_YOUPHONENUMBER"
                 cell.textField.text = self.customer?.phoneNumber
                 cell.textChanged = {
                     text in

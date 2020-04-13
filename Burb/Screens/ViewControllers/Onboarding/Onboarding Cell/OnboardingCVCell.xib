@@ -21,20 +21,20 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fd6-Y3-7Vj">
                                 <rect key="frame" x="71.5" y="100" width="215" height="215"/>
-                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Fd6-Y3-7Vj" secondAttribute="height" multiplier="1:1" id="zmF-dN-OIH"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JM5-lQ-b7b">
-                                <rect key="frame" x="10" y="325" width="338" height="21"/>
+                                <rect key="frame" x="20" y="325" width="318" height="21"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2q0-BL-73b">
-                                <rect key="frame" x="10" y="356" width="338" height="57"/>
+                                <rect key="frame" x="20" y="356" width="318" height="57"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="nM7-1z-r6u"/>
@@ -46,15 +46,17 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="2q0-BL-73b" secondAttribute="trailing" constant="10" id="3vu-ho-d5b"/>
+                            <constraint firstAttribute="trailing" secondItem="2q0-BL-73b" secondAttribute="trailing" constant="20" id="3vu-ho-d5b"/>
                             <constraint firstItem="2q0-BL-73b" firstAttribute="top" secondItem="JM5-lQ-b7b" secondAttribute="bottom" constant="10" id="B6W-TA-CAp"/>
+                            <constraint firstAttribute="trailing" secondItem="JM5-lQ-b7b" secondAttribute="trailing" constant="20" id="DVZ-zq-lHO"/>
                             <constraint firstItem="Fd6-Y3-7Vj" firstAttribute="centerX" secondItem="Nq9-Uu-uBs" secondAttribute="centerX" id="F6a-sv-4zC"/>
-                            <constraint firstItem="JM5-lQ-b7b" firstAttribute="leading" secondItem="Nq9-Uu-uBs" secondAttribute="leading" constant="10" id="Miz-wF-g30"/>
                             <constraint firstItem="Fd6-Y3-7Vj" firstAttribute="top" secondItem="Nq9-Uu-uBs" secondAttribute="top" constant="100" id="Mvm-1c-Sey"/>
-                            <constraint firstItem="2q0-BL-73b" firstAttribute="leading" secondItem="Nq9-Uu-uBs" secondAttribute="leading" constant="10" id="QFV-xe-1Em"/>
+                            <constraint firstItem="2q0-BL-73b" firstAttribute="leading" secondItem="Nq9-Uu-uBs" secondAttribute="leading" constant="20" id="QFV-xe-1Em"/>
                             <constraint firstItem="JM5-lQ-b7b" firstAttribute="top" secondItem="Fd6-Y3-7Vj" secondAttribute="bottom" constant="10" id="UZa-am-5pR"/>
+                            <constraint firstItem="JM5-lQ-b7b" firstAttribute="centerX" secondItem="Nq9-Uu-uBs" secondAttribute="centerX" id="UqC-Qm-XRQ"/>
+                            <constraint firstItem="JM5-lQ-b7b" firstAttribute="leading" secondItem="Nq9-Uu-uBs" secondAttribute="leading" constant="20" id="bJN-gC-zrr"/>
+                            <constraint firstItem="2q0-BL-73b" firstAttribute="centerX" secondItem="Nq9-Uu-uBs" secondAttribute="centerX" id="dQf-WC-qVc"/>
                             <constraint firstItem="Fd6-Y3-7Vj" firstAttribute="width" secondItem="Nq9-Uu-uBs" secondAttribute="width" multiplier="0.6" id="egl-tO-cub"/>
-                            <constraint firstAttribute="trailing" secondItem="JM5-lQ-b7b" secondAttribute="trailing" constant="10" id="iMx-SD-DB6"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -7,13 +7,12 @@
 //
 
 import UIKit
+import SkyFloatingLabelTextField
 
 class BUTextFieldTableViewCell: UITableViewCell, NiBLoadable {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var lineView: UIView!
-    @IBOutlet weak var alertLabel: UILabel!
+
+    @IBOutlet weak var textField: SkyFloatingLabelTextField!
     
     var textChanged: ItemClosure<String>?
     
@@ -32,9 +31,6 @@ class BUTextFieldTableViewCell: UITableViewCell, NiBLoadable {
         self.textField.font = font
     }
         
-    func setLineHidden() {
-        self.lineView.isHidden = true
-    }
     
     private func addTargets() {
         textField.addTarget(self, action: #selector(nameSurnameTextFieldChanged), for: .editingChanged)
@@ -52,10 +48,16 @@ extension BUTextFieldTableViewCell {
         
         static func decorate(_ cell: BUTextFieldTableViewCell) {
             cell.selectionStyle = .none
-            cell.titleLabel.font = UIFont(name: "OpenSans", size: 14)
-            cell.titleLabel.textColor = UIColor(red: 106.0/2550.0, green: 112.0/2550.0, blue: 126.0/2550.0, alpha: 1.0)
-            cell.alertLabel.font = UIFont(name: "OpenSans-SemiBold", size: 12)
-            cell.alertLabel.textColor = burbColor
+            cell.textField.textAlignment = .center
+            cell.textField.titleLabel.textAlignment = .center
+            cell.textField.tintColor =  burbColor// the color of the blinking cursor
+            cell.textField.textColor = .darkGray
+            cell.textField.lineColor = burbColor
+            cell.textField.selectedTitleColor = blackburbColor
+            cell.textField.selectedLineColor = burbColor
+
+            cell.textField.lineHeight = 2.0 // bottom line height in points
+            cell.textField.selectedLineHeight = 2.0
         }
     }
 }

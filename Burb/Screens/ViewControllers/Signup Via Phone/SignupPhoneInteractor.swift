@@ -39,6 +39,7 @@ final class SignupPhoneInteractor {
                 guard let userID = Auth.auth().currentUser?.uid else { return }
                 let defaults = UserDefaults.standard
                 defaults.setValue(userID, forKey: "userID")
+                defaults.setValue(securityCode, forKey: "securityCode")
                 FirestoreManager.registerReference.document(userID).setData([
                     "userId": userID,
                     "phoneNumber": phoneNumber,
@@ -62,5 +63,20 @@ final class SignupPhoneInteractor {
             }
         }
     }
-  
+    
+    
+    func signIn() {
+        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID"), let verificationCode = UserDefaults.standard.string(forKey: "securityCode") else { return }
+        
+        let credentials = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: verificationCode)
+        
+        Auth.auth().signIn(with: credentials) { (authResult, error) in
+            if let error = error  {
+                let authError = error as NSError
+                print(authError)
+            } else {
+                print("user with \(verificationID) is logged in!")
+            }
+        }
+    }
 }

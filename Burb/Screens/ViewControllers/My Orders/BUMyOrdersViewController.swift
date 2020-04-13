@@ -37,6 +37,7 @@ class BUMyOrdersViewController: UIViewController {
         self.collectionView.dataSource = self
     }
 
+    
     private func registerCells() {
         self.collectionView.register(OrderCollectionViewCell.nib, forCellWithReuseIdentifier:OrderCollectionViewCell.name)
     }

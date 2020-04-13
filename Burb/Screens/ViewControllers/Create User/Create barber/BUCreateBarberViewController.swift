@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class BUCreateBarberViewController: UIViewController {
     
@@ -51,13 +52,23 @@ class BUCreateBarberViewController: UIViewController {
         registerCells()
         setupBackBarItem()
         Decorator.decorate(self)
-        updateDoneButtonStatus()
         addRightBarButton()
     }
     
     private func initBarber() {
         let defaults = UserDefaults.standard
-        self.barber = Barber(id: defaults.string(forKey: "userID")!, name: "", photo: addImage!, fullPhoto: UIImage.init(), phoneNumber: defaults.string(forKey: "phoneNumber")!, avatarReference: "", fullAvatarReference: "", age: 44, weapon: "", education: "", philosophy: "")
+        self.barber = Barber(id: defaults.string(forKey: "userID")!,
+                             name: "",
+                             photo: UIImage.init(),
+                             fullPhoto: UIImage.init(),
+                             phoneNumber: defaults.string(forKey: "phoneNumber")!,
+                             avatarReference: "",
+                             fullAvatarReference: "",
+                             age: Int.init(),
+                             weapon: "",
+                             education: "",
+                             philosophy: "",
+                             city: "")
     }
     
     private func delegating() {
@@ -82,8 +93,9 @@ class BUCreateBarberViewController: UIViewController {
     
     @objc private func donePressed() {
         guard let barber = self.barber else { return }
-        CreateBarberInteractor.shared.createBarber(barber: barber)
-        CreateBarberRouter.shared.handleOnboarding(from: self)
+        CreateBarberInteractor.shared.saveBarberData(barber: barber)
+        CreateBarberInteractor.shared.saveCurrentBarberSQL(with: barber)
+        CreateBarberRouter.shared.handleSpecifyCity(from: self)
     }
     
     private func setupBackBarItem() {
@@ -97,13 +109,6 @@ class BUCreateBarberViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
-    @objc private func handlePricing() {
-        guard let barber = self.barber else {
-            return
-        }
-        let destinationVC = BUBarberPricingViewController(barber: barber, nibName: BUBarberPricingViewController.name, bundle: nil)
-        navigationController?.pushViewController(destinationVC, animated: true)
-    }
     
     func photoViewClicked() {
         let imagePickerController = UIImagePickerController()
@@ -151,9 +156,7 @@ extension BUCreateBarberViewController: UITableViewDataSource, UITableViewDelega
             if let cell = tableView.dequeueReusableCell(withIdentifier: BUTextFieldTableViewCell.name, for: indexPath) as? BUTextFieldTableViewCell {
                 cell.textField.font = UIFont(name: "OpenSans", size: 24)
                 cell.textField.textColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
-                cell.titleLabel.text = "_YOURNAME"
-                cell.textField.placeholder = "_ALEXTURNER"
-                cell.alertLabel.text = "_FILLALLTHETEXT"
+                cell.textField.placeholder = "_YOURNAME"
                 cell.textChanged = {
                      text in
                      self.barber?.name = text
@@ -165,9 +168,8 @@ extension BUCreateBarberViewController: UITableViewDataSource, UITableViewDelega
             if let cell = tableView.dequeueReusableCell(withIdentifier: BUTextFieldTableViewCell.name, for: indexPath) as? BUTextFieldTableViewCell {
                 cell.textField.font = UIFont(name: "OpenSans", size: 24)
                 cell.textField.textColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
-                cell.titleLabel.text = "_YOURPHONENUMBER"
-                cell.textField.placeholder = "_+28 36 424 62 764"
-                cell.alertLabel.text = "_FILLALLTHETEXT"
+                cell.textField.placeholder = "_PHONENUMBER"
+                cell.textField.text = self.barber?.phoneNumber
                 cell.textChanged = {
                      text in
                      self.barber?.phoneNumber = text
@@ -179,12 +181,10 @@ extension BUCreateBarberViewController: UITableViewDataSource, UITableViewDelega
             if let cell = tableView.dequeueReusableCell(withIdentifier: BUTextFieldTableViewCell.name, for: indexPath) as? BUTextFieldTableViewCell {
                 cell.textField.font = UIFont(name: "OpenSans", size: 24)
                 cell.textField.textColor = UIColor(red: 50.0/255.0, green: 50.0/255.0, blue: 50.0/255.0, alpha: 1.0)
-                cell.titleLabel.text = "_YOURAGE"
-                cell.textField.placeholder = "_33"
-                cell.alertLabel.text = "_FILLALLTHETEXT"
+                cell.textField.placeholder = "_YOURAGE"
                 cell.textChanged = {
                      text in
-                     self.barber?.age = Int(text)
+                    self.barber?.age = Int(text)!
                      self.updateDoneButtonStatus()
                  }
                 return cell
@@ -266,8 +266,9 @@ extension BUCreateBarberViewController: UIImagePickerControllerDelegate, UINavig
         
         if let selectedImage = selectedImageFromPicker {
             self.barber?.photo = selectedImage
-            self.tableView.reloadData()
         }
+        updateDoneButtonStatus()
+        self.tableView.reloadData()
     }
     
     

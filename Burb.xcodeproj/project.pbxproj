@@ -16,27 +16,22 @@
 		4407381524322462008ABBB7 /* OrderLocationPickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407381424322462008ABBB7 /* OrderLocationPickerInteractor.swift */; };
 		44073819243244D6008ABBB7 /* BUBarberProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44073817243244D6008ABBB7 /* BUBarberProfileViewController.swift */; };
 		4407381A243244D6008ABBB7 /* BUBarberProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44073818243244D6008ABBB7 /* BUBarberProfileViewController.xib */; };
-		440E4191230D3482000FD5FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4190230D3482000FD5FD /* LoginViewController.swift */; };
-		440E4194230D3E6D000FD5FD /* SignupViaPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4193230D3E6D000FD5FD /* SignupViaPhoneViewController.swift */; };
-		440E4197230D47F6000FD5FD /* ConfirmSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E4196230D47F6000FD5FD /* ConfirmSignupViewController.swift */; };
 		440E41A0230DABE9000FD5FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 440E419F230DABE9000FD5FD /* GoogleService-Info.plist */; };
 		440E41A3230DAECA000FD5FD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E41A2230DAECA000FD5FD /* Extensions.swift */; };
-		440E41A6230DC1F4000FD5FD /* ChooseRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440E41A5230DC1F4000FD5FD /* ChooseRoleViewController.swift */; };
 		4411C5EA23153C46004A51FE /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4411C5E923153C46004A51FE /* Role.swift */; };
-		4411C5EF23158FB1004A51FE /* ClientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4411C5EE23158FB1004A51FE /* ClientSettingsViewController.swift */; };
 		4412CD052327A0C8005961C0 /* burb_IOS_icons-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 4412CD042327A0C8005961C0 /* burb_IOS_icons-01.png */; };
-		441745602340D44E00088C9F /* BarberSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4417455F2340D44E00088C9F /* BarberSettingsViewController.swift */; };
 		4418B72A230D31AF0093BF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4418B729230D31AF0093BF3C /* AppDelegate.swift */; };
 		4418B72F230D31AF0093BF3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4418B72D230D31AF0093BF3C /* Main.storyboard */; };
 		4418B732230D31AF0093BF3C /* Burb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4418B730230D31AF0093BF3C /* Burb.xcdatamodeld */; };
 		4418B734230D31B10093BF3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4418B733230D31B10093BF3C /* Assets.xcassets */; };
 		4418B737230D31B10093BF3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4418B735230D31B10093BF3C /* LaunchScreen.storyboard */; };
-		44319F1A2328E61700C8DD7D /* ConfirmOrderTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44319F192328E61700C8DD7D /* ConfirmOrderTimeViewController.swift */; };
-		4431E9BD2340877D00A152D0 /* CallendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4431E9BC2340877D00A152D0 /* CallendarViewController.swift */; };
-		44323DBD232A2CD500C622E7 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44323DBC232A2CD500C622E7 /* OrdersViewController.swift */; };
-		44323DBF232A2E8E00C622E7 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44323DBE232A2E8E00C622E7 /* OrderCell.swift */; };
+		4429D884243F175600079E81 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4429D883243F175600079E81 /* PhotoView.swift */; };
+		4429D888243F177300079E81 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4429D887243F177300079E81 /* PhotoView.xib */; };
+		4429D88C243F6B7000079E81 /* BUSpecifyCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4429D88A243F6B7000079E81 /* BUSpecifyCityViewController.swift */; };
+		4429D88D243F6B7000079E81 /* BUSpecifyCityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4429D88B243F6B7000079E81 /* BUSpecifyCityViewController.xib */; };
+		4429D891243F6D8E00079E81 /* CityAvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4429D88F243F6D8E00079E81 /* CityAvatarTableViewCell.swift */; };
+		4429D892243F6D8E00079E81 /* CityAvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4429D890243F6D8E00079E81 /* CityAvatarTableViewCell.xib */; };
 		44323DC1232A481400C622E7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44323DC0232A481400C622E7 /* Order.swift */; };
-		4436FE482323A25F00E8A322 /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436FE472323A25F00E8A322 /* TermsOfUseViewController.swift */; };
 		443877C023434D14008AD69F /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443877BE23434D14008AD69F /* NotificationsCell.swift */; };
 		443877C123434D14008AD69F /* NotificationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443877BF23434D14008AD69F /* NotificationsCell.xib */; };
 		443877C42343510C008AD69F /* HidePhoneNumberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443877C22343510C008AD69F /* HidePhoneNumberCell.swift */; };
@@ -72,8 +67,6 @@
 		44472DBA23DDC42C009259C5 /* CreateUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DB923DDC42C009259C5 /* CreateUserRouter.swift */; };
 		44472DBC23DEBF50009259C5 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DBB23DEBF50009259C5 /* Extension+String.swift */; };
 		44472DBF23DEBFD3009259C5 /* ValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DBE23DEBFD3009259C5 /* ValidationHelper.swift */; };
-		44472DCA23E17704009259C5 /* BUClientTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DC823E17704009259C5 /* BUClientTabBarController.swift */; };
-		44472DCB23E17704009259C5 /* BUClientTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DC923E17704009259C5 /* BUClientTabBarController.xib */; };
 		44472DCF23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DCD23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift */; };
 		44472DD023E17A6D009259C5 /* BUOrderLocationPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DCE23E17A6D009259C5 /* BUOrderLocationPickerViewController.xib */; };
 		44472DD423E17AAB009259C5 /* BUDialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DD223E17AAB009259C5 /* BUDialogsViewController.swift */; };
@@ -84,9 +77,6 @@
 		44472DDF23E1D054009259C5 /* BUOrderDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DDD23E1D054009259C5 /* BUOrderDatePickerViewController.xib */; };
 		44472DE323E1D1EB009259C5 /* BULabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44472DE123E1D1EB009259C5 /* BULabelTableViewCell.swift */; };
 		44472DE423E1D1EB009259C5 /* BULabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44472DE223E1D1EB009259C5 /* BULabelTableViewCell.xib */; };
-		44499FA9233B55B000467073 /* ChangeClientSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44499FA8233B55B000467073 /* ChangeClientSettingsViewController.swift */; };
-		444A90C523363322000C9D15 /* BarberDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444A90C323363322000C9D15 /* BarberDetailViewCell.swift */; };
-		444A90C623363322000C9D15 /* BarberDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444A90C423363322000C9D15 /* BarberDetailViewCell.xib */; };
 		444EF2C62421FF6800ED5AC9 /* ChooseRoleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF2C52421FF6800ED5AC9 /* ChooseRoleInteractor.swift */; };
 		444EF2CA24222B6300ED5AC9 /* CreateCustomerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF2C924222B6300ED5AC9 /* CreateCustomerInteractor.swift */; };
 		444EF2CC24225F8F00ED5AC9 /* Barber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF2CB24225F8F00ED5AC9 /* Barber.swift */; };
@@ -95,18 +85,12 @@
 		4459EC5A23CCA92800FE6292 /* LogoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459EC5823CCA92800FE6292 /* LogoTableViewCell.swift */; };
 		4459EC5B23CCA92800FE6292 /* LogoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4459EC5923CCA92800FE6292 /* LogoTableViewCell.xib */; };
 		4459EC6323CCB65A00FE6292 /* StartRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459EC6223CCB65A00FE6292 /* StartRouter.swift */; };
-		445A4A6423322F5500DE0417 /* ClientTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445A4A6323322F5500DE0417 /* ClientTabbarController.swift */; };
-		445A4A672332B93900DE0417 /* DetailOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445A4A662332B93900DE0417 /* DetailOrderViewController.swift */; };
 		445FDF8B2421021000DF314B /* BarberAnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FDF8A2421021000DF314B /* BarberAnimView.swift */; };
 		445FDF8D242102A000DF314B /* QC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FDF8C242102A000DF314B /* QC.swift */; };
 		445FDF8F2421054400DF314B /* ClientAnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FDF8E2421054400DF314B /* ClientAnimView.swift */; };
 		445FDF97242117A400DF314B /* BarberCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FDF95242117A400DF314B /* BarberCVCell.swift */; };
 		445FDF98242117A400DF314B /* BarberCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445FDF96242117A400DF314B /* BarberCVCell.xib */; };
-		4466C5DD231E3F83004CA831 /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5DC231E3F83004CA831 /* DialogsViewController.swift */; };
-		4466C5DF231E5AD3004CA831 /* DialogUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5DE231E5AD3004CA831 /* DialogUserCell.swift */; };
-		4466C5E2231E62C7004CA831 /* CurrentDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E1231E62C7004CA831 /* CurrentDialogViewController.swift */; };
 		4466C5E4231EAC0F004CA831 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E3231EAC0F004CA831 /* Message.swift */; };
-		4466C5E6231EB135004CA831 /* MessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466C5E5231EB135004CA831 /* MessageViewCell.swift */; };
 		4466FC3B2432514A00591C4B /* BUCustomerTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466FC392432514A00591C4B /* BUCustomerTabbarController.swift */; };
 		4466FC3C2432514A00591C4B /* BUCustomerTabbarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4466FC3A2432514A00591C4B /* BUCustomerTabbarController.xib */; };
 		4466FC3E2433247600591C4B /* OrderDatePickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4466FC3D2433247600591C4B /* OrderDatePickerInteractor.swift */; };
@@ -133,11 +117,8 @@
 		4477AE7C23E45A3F00295BC9 /* BarberCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4477AE7A23E45A3F00295BC9 /* BarberCollectionViewCell.xib */; };
 		4477AE8023E45B0C00295BC9 /* BUCVTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4477AE7E23E45B0C00295BC9 /* BUCVTableViewCell.swift */; };
 		4477AE8123E45B0C00295BC9 /* BUCVTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4477AE7F23E45B0C00295BC9 /* BUCVTableViewCell.xib */; };
+		447AFC66244305CB00B8F839 /* SpecifyCityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447AFC65244305CB00B8F839 /* SpecifyCityInteractor.swift */; };
 		447B13EB2344A57F004D9275 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447B13EA2344A57F004D9275 /* Typealiases.swift */; };
-		4481D30C2316D3EE00F823F2 /* UserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481D30B2316D3EE00F823F2 /* UserInfoCell.swift */; };
-		4481D3112316F1F700F823F2 /* BarbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4481D3102316F1F700F823F2 /* BarbersViewController.swift */; };
-		448D50B323222E3300F401AE /* ChatLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D50B223222E3300F401AE /* ChatLogViewController.swift */; };
-		448D50B5232237D900F401AE /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448D50B4232237D900F401AE /* ChatMessageCell.swift */; };
 		448D50D523228FD300F401AE /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448D50CB23228FCF00F401AE /* OpenSans-Semibold.ttf */; };
 		448D50D623228FD300F401AE /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448D50CC23228FD000F401AE /* OpenSans-Bold.ttf */; };
 		448D50D723228FD300F401AE /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448D50CD23228FD000F401AE /* OpenSans-BoldItalic.ttf */; };
@@ -148,12 +129,10 @@
 		448D50DC23228FD300F401AE /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448D50D223228FD300F401AE /* OpenSans-Italic.ttf */; };
 		448D50DD23228FD300F401AE /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448D50D323228FD300F401AE /* OpenSans-Light.ttf */; };
 		448D50DE23228FD300F401AE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448D50D423228FD300F401AE /* OpenSans-Regular.ttf */; };
-		448E79B82334E6E000BA2B04 /* DetailBarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E79B72334E6E000BA2B04 /* DetailBarberViewController.swift */; };
 		44968B9D2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44968B9B2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift */; };
 		44968B9E2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44968B9C2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib */; };
-		449E73152317A499004771E8 /* BarberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73142317A499004771E8 /* BarberViewCell.swift */; };
 		449E73172317B07A004771E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73162317B07A004771E8 /* User.swift */; };
-		449E731A2317C3F3004771E8 /* ClientOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449E73192317C3F3004771E8 /* ClientOrderViewController.swift */; };
+		449F2ECD2444410E000779FC /* BarberPricingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449F2ECC2444410E000779FC /* BarberPricingInteractor.swift */; };
 		44A0BCDE23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A0BCDC23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift */; };
 		44A0BCDF23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A0BCDD23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib */; };
 		44A12AF623D0471300912FFB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A12AF523D0471300912FFB /* HeaderView.swift */; };
@@ -184,12 +163,12 @@
 		44B34FDA242F3EAD003FDA16 /* BUOnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B34FD8242F3EAD003FDA16 /* BUOnboardingViewController.xib */; };
 		44B34FDE242F45AF003FDA16 /* OnboardingCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B34FDC242F45AF003FDA16 /* OnboardingCVCell.swift */; };
 		44B34FDF242F45AF003FDA16 /* OnboardingCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B34FDD242F45AF003FDA16 /* OnboardingCVCell.xib */; };
+		44B757F7244075EE00D73EA8 /* BarberPricingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B757F6244075EE00D73EA8 /* BarberPricingRouter.swift */; };
+		44B757F9244076F700D73EA8 /* SpecifyCityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B757F8244076F700D73EA8 /* SpecifyCityRouter.swift */; };
 		44B8594B24068D0B00A5E733 /* FirestoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594A24068D0B00A5E733 /* FirestoreManager.swift */; };
 		44B8594D24068F1800A5E733 /* ChooseBarberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594C24068F1800A5E733 /* ChooseBarberInteractor.swift */; };
 		44B8594F2406B22E00A5E733 /* Extension+Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8594E2406B22E00A5E733 /* Extension+Encodable.swift */; };
 		44B9F7032341ED8C00FC6210 /* NiBLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7022341ED8C00FC6210 /* NiBLoadable.swift */; };
-		44B9F7062341FD7500FC6210 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F7052341FD7500FC6210 /* PhotoView.swift */; };
-		44B9F7082341FD8400FC6210 /* PhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B9F7072341FD8400FC6210 /* PhotoView.xib */; };
 		44B9F70B234248E500FC6210 /* UserAvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F709234248E500FC6210 /* UserAvatarCell.swift */; };
 		44B9F70C234248E500FC6210 /* UserAvatarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44B9F70A234248E500FC6210 /* UserAvatarCell.xib */; };
 		44B9F71023424B8F00FC6210 /* NameUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9F70E23424B8F00FC6210 /* NameUserCell.swift */; };
@@ -212,8 +191,6 @@
 		44BD7F462428DA020033D983 /* BUEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD7F452428DA020033D983 /* BUEmptyView.swift */; };
 		44BD7F482428DA130033D983 /* BUEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44BD7F472428DA130033D983 /* BUEmptyView.xib */; };
 		44BD7F4A242A50220033D983 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BD7F49242A50220033D983 /* StorageManager.swift */; };
-		44EE1DC3232F7AC9007FACED /* CommonSettingsTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE1DC2232F7AC9007FACED /* CommonSettingsTitleCell.swift */; };
-		44EE1DC5232F82E1007FACED /* CommonSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44EE1DC4232F82E1007FACED /* CommonSettingsCell.swift */; };
 		44F433C3240125760044C000 /* BUCreateBarberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433C1240125730044C000 /* BUCreateBarberViewController.xib */; };
 		44F433C4240125760044C000 /* BUCreateBarberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433C2240125760044C000 /* BUCreateBarberViewController.swift */; };
 		44F433C82401259C0044C000 /* BUBarberPricingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433C62401259C0044C000 /* BUBarberPricingViewController.xib */; };
@@ -227,7 +204,6 @@
 		44F433DC240170A10044C000 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433DB240170A10044C000 /* Service.swift */; };
 		44F433E0240172D80044C000 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F433DE240172D80044C000 /* ServiceCollectionViewCell.swift */; };
 		44F433E1240172D80044C000 /* ServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F433DF240172D80044C000 /* ServiceCollectionViewCell.xib */; };
-		44F92518230FDC4300B23454 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F92517230FDC4300B23454 /* CreateUserViewController.swift */; };
 		44F9251B230FE2FC00B23454 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F9251A230FE2FC00B23454 /* RegisterModel.swift */; };
 		BEEB601998CF5E1E05E1B4E1 /* Pods_Burb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A505F22BCD84FD237A35A8 /* Pods_Burb.framework */; };
 /* End PBXBuildFile section */
@@ -242,17 +218,11 @@
 		4407381424322462008ABBB7 /* OrderLocationPickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLocationPickerInteractor.swift; sourceTree = "<group>"; };
 		44073817243244D6008ABBB7 /* BUBarberProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUBarberProfileViewController.swift; sourceTree = "<group>"; };
 		44073818243244D6008ABBB7 /* BUBarberProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUBarberProfileViewController.xib; sourceTree = "<group>"; };
-		440E4190230D3482000FD5FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		440E4193230D3E6D000FD5FD /* SignupViaPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViaPhoneViewController.swift; sourceTree = "<group>"; };
-		440E4196230D47F6000FD5FD /* ConfirmSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSignupViewController.swift; sourceTree = "<group>"; };
 		440E419A230D5C61000FD5FD /* Burb.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Burb.entitlements; sourceTree = "<group>"; };
 		440E419F230DABE9000FD5FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		440E41A2230DAECA000FD5FD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		440E41A5230DC1F4000FD5FD /* ChooseRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRoleViewController.swift; sourceTree = "<group>"; };
 		4411C5E923153C46004A51FE /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
-		4411C5EE23158FB1004A51FE /* ClientSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSettingsViewController.swift; sourceTree = "<group>"; };
 		4412CD042327A0C8005961C0 /* burb_IOS_icons-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burb_IOS_icons-01.png"; sourceTree = "<group>"; };
-		4417455F2340D44E00088C9F /* BarberSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberSettingsViewController.swift; sourceTree = "<group>"; };
 		4418B726230D31AF0093BF3C /* Burb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Burb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4418B729230D31AF0093BF3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4418B72E230D31AF0093BF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -260,12 +230,13 @@
 		4418B733230D31B10093BF3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4418B736230D31B10093BF3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4418B738230D31B10093BF3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44319F192328E61700C8DD7D /* ConfirmOrderTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderTimeViewController.swift; sourceTree = "<group>"; };
-		4431E9BC2340877D00A152D0 /* CallendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallendarViewController.swift; sourceTree = "<group>"; };
-		44323DBC232A2CD500C622E7 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
-		44323DBE232A2E8E00C622E7 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		4429D883243F175600079E81 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		4429D887243F177300079E81 /* PhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
+		4429D88A243F6B7000079E81 /* BUSpecifyCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUSpecifyCityViewController.swift; sourceTree = "<group>"; };
+		4429D88B243F6B7000079E81 /* BUSpecifyCityViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUSpecifyCityViewController.xib; sourceTree = "<group>"; };
+		4429D88F243F6D8E00079E81 /* CityAvatarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityAvatarTableViewCell.swift; sourceTree = "<group>"; };
+		4429D890243F6D8E00079E81 /* CityAvatarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityAvatarTableViewCell.xib; sourceTree = "<group>"; };
 		44323DC0232A481400C622E7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		4436FE472323A25F00E8A322 /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
 		443877BE23434D14008AD69F /* NotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
 		443877BF23434D14008AD69F /* NotificationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsCell.xib; sourceTree = "<group>"; };
 		443877C22343510C008AD69F /* HidePhoneNumberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HidePhoneNumberCell.swift; sourceTree = "<group>"; };
@@ -301,8 +272,6 @@
 		44472DB923DDC42C009259C5 /* CreateUserRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRouter.swift; sourceTree = "<group>"; };
 		44472DBB23DEBF50009259C5 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		44472DBE23DEBFD3009259C5 /* ValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationHelper.swift; sourceTree = "<group>"; };
-		44472DC823E17704009259C5 /* BUClientTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUClientTabBarController.swift; sourceTree = "<group>"; };
-		44472DC923E17704009259C5 /* BUClientTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUClientTabBarController.xib; sourceTree = "<group>"; };
 		44472DCD23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUOrderLocationPickerViewController.swift; sourceTree = "<group>"; };
 		44472DCE23E17A6D009259C5 /* BUOrderLocationPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUOrderLocationPickerViewController.xib; sourceTree = "<group>"; };
 		44472DD223E17AAB009259C5 /* BUDialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUDialogsViewController.swift; sourceTree = "<group>"; };
@@ -313,9 +282,6 @@
 		44472DDD23E1D054009259C5 /* BUOrderDatePickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUOrderDatePickerViewController.xib; sourceTree = "<group>"; };
 		44472DE123E1D1EB009259C5 /* BULabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BULabelTableViewCell.swift; sourceTree = "<group>"; };
 		44472DE223E1D1EB009259C5 /* BULabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BULabelTableViewCell.xib; sourceTree = "<group>"; };
-		44499FA8233B55B000467073 /* ChangeClientSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeClientSettingsViewController.swift; sourceTree = "<group>"; };
-		444A90C323363322000C9D15 /* BarberDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberDetailViewCell.swift; sourceTree = "<group>"; };
-		444A90C423363322000C9D15 /* BarberDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberDetailViewCell.xib; sourceTree = "<group>"; };
 		444EF2C52421FF6800ED5AC9 /* ChooseRoleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseRoleInteractor.swift; sourceTree = "<group>"; };
 		444EF2C924222B6300ED5AC9 /* CreateCustomerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomerInteractor.swift; sourceTree = "<group>"; };
 		444EF2CB24225F8F00ED5AC9 /* Barber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barber.swift; sourceTree = "<group>"; };
@@ -324,18 +290,12 @@
 		4459EC5823CCA92800FE6292 /* LogoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoTableViewCell.swift; sourceTree = "<group>"; };
 		4459EC5923CCA92800FE6292 /* LogoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoTableViewCell.xib; sourceTree = "<group>"; };
 		4459EC6223CCB65A00FE6292 /* StartRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartRouter.swift; sourceTree = "<group>"; };
-		445A4A6323322F5500DE0417 /* ClientTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTabbarController.swift; sourceTree = "<group>"; };
-		445A4A662332B93900DE0417 /* DetailOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailOrderViewController.swift; sourceTree = "<group>"; };
 		445FDF8A2421021000DF314B /* BarberAnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberAnimView.swift; sourceTree = "<group>"; };
 		445FDF8C242102A000DF314B /* QC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QC.swift; sourceTree = "<group>"; };
 		445FDF8E2421054400DF314B /* ClientAnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientAnimView.swift; sourceTree = "<group>"; };
 		445FDF95242117A400DF314B /* BarberCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberCVCell.swift; sourceTree = "<group>"; };
 		445FDF96242117A400DF314B /* BarberCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberCVCell.xib; sourceTree = "<group>"; };
-		4466C5DC231E3F83004CA831 /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
-		4466C5DE231E5AD3004CA831 /* DialogUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogUserCell.swift; sourceTree = "<group>"; };
-		4466C5E1231E62C7004CA831 /* CurrentDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDialogViewController.swift; sourceTree = "<group>"; };
 		4466C5E3231EAC0F004CA831 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		4466C5E5231EB135004CA831 /* MessageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewCell.swift; sourceTree = "<group>"; };
 		4466FC392432514A00591C4B /* BUCustomerTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUCustomerTabbarController.swift; sourceTree = "<group>"; };
 		4466FC3A2432514A00591C4B /* BUCustomerTabbarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUCustomerTabbarController.xib; sourceTree = "<group>"; };
 		4466FC3D2433247600591C4B /* OrderDatePickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDatePickerInteractor.swift; sourceTree = "<group>"; };
@@ -362,11 +322,8 @@
 		4477AE7A23E45A3F00295BC9 /* BarberCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarberCollectionViewCell.xib; sourceTree = "<group>"; };
 		4477AE7E23E45B0C00295BC9 /* BUCVTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUCVTableViewCell.swift; sourceTree = "<group>"; };
 		4477AE7F23E45B0C00295BC9 /* BUCVTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUCVTableViewCell.xib; sourceTree = "<group>"; };
+		447AFC65244305CB00B8F839 /* SpecifyCityInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifyCityInteractor.swift; sourceTree = "<group>"; };
 		447B13EA2344A57F004D9275 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
-		4481D30B2316D3EE00F823F2 /* UserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoCell.swift; sourceTree = "<group>"; };
-		4481D3102316F1F700F823F2 /* BarbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarbersViewController.swift; sourceTree = "<group>"; };
-		448D50B223222E3300F401AE /* ChatLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogViewController.swift; sourceTree = "<group>"; };
-		448D50B4232237D900F401AE /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		448D50CB23228FCF00F401AE /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
 		448D50CC23228FD000F401AE /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		448D50CD23228FD000F401AE /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -377,12 +334,10 @@
 		448D50D223228FD300F401AE /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		448D50D323228FD300F401AE /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		448D50D423228FD300F401AE /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
-		448E79B72334E6E000BA2B04 /* DetailBarberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBarberViewController.swift; sourceTree = "<group>"; };
 		44968B9B2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUTermsOfUseViewController.swift; sourceTree = "<group>"; };
 		44968B9C2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUTermsOfUseViewController.xib; sourceTree = "<group>"; };
-		449E73142317A499004771E8 /* BarberViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberViewCell.swift; sourceTree = "<group>"; };
 		449E73162317B07A004771E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		449E73192317C3F3004771E8 /* ClientOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientOrderViewController.swift; sourceTree = "<group>"; };
+		449F2ECC2444410E000779FC /* BarberPricingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberPricingInteractor.swift; sourceTree = "<group>"; };
 		44A0BCDC23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUDatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		44A0BCDD23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUDatePickerTableViewCell.xib; sourceTree = "<group>"; };
 		44A12AF523D0471300912FFB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -413,12 +368,12 @@
 		44B34FD8242F3EAD003FDA16 /* BUOnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUOnboardingViewController.xib; sourceTree = "<group>"; };
 		44B34FDC242F45AF003FDA16 /* OnboardingCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCVCell.swift; sourceTree = "<group>"; };
 		44B34FDD242F45AF003FDA16 /* OnboardingCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCVCell.xib; sourceTree = "<group>"; };
+		44B757F6244075EE00D73EA8 /* BarberPricingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberPricingRouter.swift; sourceTree = "<group>"; };
+		44B757F8244076F700D73EA8 /* SpecifyCityRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecifyCityRouter.swift; sourceTree = "<group>"; };
 		44B8594A24068D0B00A5E733 /* FirestoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreManager.swift; sourceTree = "<group>"; };
 		44B8594C24068F1800A5E733 /* ChooseBarberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseBarberInteractor.swift; sourceTree = "<group>"; };
 		44B8594E2406B22E00A5E733 /* Extension+Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Encodable.swift"; sourceTree = "<group>"; };
 		44B9F7022341ED8C00FC6210 /* NiBLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiBLoadable.swift; sourceTree = "<group>"; };
-		44B9F7052341FD7500FC6210 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
-		44B9F7072341FD8400FC6210 /* PhotoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoView.xib; sourceTree = "<group>"; };
 		44B9F709234248E500FC6210 /* UserAvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarCell.swift; sourceTree = "<group>"; };
 		44B9F70A234248E500FC6210 /* UserAvatarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAvatarCell.xib; sourceTree = "<group>"; };
 		44B9F70E23424B8F00FC6210 /* NameUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameUserCell.swift; sourceTree = "<group>"; };
@@ -441,8 +396,6 @@
 		44BD7F452428DA020033D983 /* BUEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUEmptyView.swift; sourceTree = "<group>"; };
 		44BD7F472428DA130033D983 /* BUEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUEmptyView.xib; sourceTree = "<group>"; };
 		44BD7F49242A50220033D983 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
-		44EE1DC2232F7AC9007FACED /* CommonSettingsTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSettingsTitleCell.swift; sourceTree = "<group>"; };
-		44EE1DC4232F82E1007FACED /* CommonSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonSettingsCell.swift; sourceTree = "<group>"; };
 		44F433C1240125730044C000 /* BUCreateBarberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BUCreateBarberViewController.xib; sourceTree = "<group>"; };
 		44F433C2240125760044C000 /* BUCreateBarberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUCreateBarberViewController.swift; sourceTree = "<group>"; };
 		44F433C62401259C0044C000 /* BUBarberPricingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BUBarberPricingViewController.xib; sourceTree = "<group>"; };
@@ -456,7 +409,6 @@
 		44F433DB240170A10044C000 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		44F433DE240172D80044C000 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		44F433DF240172D80044C000 /* ServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCollectionViewCell.xib; sourceTree = "<group>"; };
-		44F92517230FDC4300B23454 /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		44F9251A230FE2FC00B23454 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		5BF85E4D343F9B93789287BC /* Pods-Burb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.debug.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.debug.xcconfig"; sourceTree = "<group>"; };
 		6A23F94E0DAEE25EC28BB43B /* Pods-Burb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Burb.release.xcconfig"; path = "Target Support Files/Pods-Burb/Pods-Burb.release.xcconfig"; sourceTree = "<group>"; };
@@ -504,85 +456,6 @@
 			path = "Barber profile";
 			sourceTree = "<group>";
 		};
-		440E418E230D3461000FD5FD /* ViewController OLD! */ = {
-			isa = PBXGroup;
-			children = (
-				4417455E2340D43500088C9F /* BarberSettingsViewController */,
-				4431E9BB2340875300A152D0 /* CallendarViewController */,
-				44499FA7233B556200467073 /* ChangeClientSettingsViewController */,
-				448E79B62334E6CC00BA2B04 /* DetailBarberViewController */,
-				445A4A652332B8C000DE0417 /* DetailOrderViewController */,
-				445A4A6223322F0500DE0417 /* ClientTabbarViewController */,
-				44323DBB232A2CC300C622E7 /* OrdersViewController */,
-				44319F182328E5F300C8DD7D /* ConfirmOrderTimeViewController */,
-				4436FE462323A23E00E8A322 /* TermsOfUseViewController */,
-				448D50B123222E1100F401AE /* ChatLogViewController */,
-				4466C5E0231E62A3004CA831 /* CurrentDialogViewControoler */,
-				4466C5DB231E3F5A004CA831 /* DialogsViewController */,
-				449E73182317C3C6004771E8 /* ClientOrderViewController */,
-				4411C5ED23158F5B004A51FE /* ClientSettingsViewController */,
-				44F92516230FDC1F00B23454 /* CreateUserViewController */,
-				440E41A4230DC1D8000FD5FD /* ChooseRoleViewController */,
-				4481D30D2316F1A400F823F2 /* BarbersViewController */,
-				440E4195230D47D8000FD5FD /* ConfirmSignupViewController */,
-				440E4192230D3E40000FD5FD /* SignupViaPhoneViewController */,
-				440E418F230D346C000FD5FD /* LoginViewController */,
-			);
-			path = "ViewController OLD!";
-			sourceTree = "<group>";
-		};
-		440E418F230D346C000FD5FD /* LoginViewController */ = {
-			isa = PBXGroup;
-			children = (
-				440E4190230D3482000FD5FD /* LoginViewController.swift */,
-			);
-			path = LoginViewController;
-			sourceTree = "<group>";
-		};
-		440E4192230D3E40000FD5FD /* SignupViaPhoneViewController */ = {
-			isa = PBXGroup;
-			children = (
-				440E4193230D3E6D000FD5FD /* SignupViaPhoneViewController.swift */,
-			);
-			path = SignupViaPhoneViewController;
-			sourceTree = "<group>";
-		};
-		440E4195230D47D8000FD5FD /* ConfirmSignupViewController */ = {
-			isa = PBXGroup;
-			children = (
-				440E4196230D47F6000FD5FD /* ConfirmSignupViewController.swift */,
-			);
-			path = ConfirmSignupViewController;
-			sourceTree = "<group>";
-		};
-		440E41A4230DC1D8000FD5FD /* ChooseRoleViewController */ = {
-			isa = PBXGroup;
-			children = (
-				440E41A5230DC1F4000FD5FD /* ChooseRoleViewController.swift */,
-			);
-			path = ChooseRoleViewController;
-			sourceTree = "<group>";
-		};
-		4411C5ED23158F5B004A51FE /* ClientSettingsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4411C5EE23158FB1004A51FE /* ClientSettingsViewController.swift */,
-				4481D30B2316D3EE00F823F2 /* UserInfoCell.swift */,
-				44EE1DC2232F7AC9007FACED /* CommonSettingsTitleCell.swift */,
-				44EE1DC4232F82E1007FACED /* CommonSettingsCell.swift */,
-			);
-			path = ClientSettingsViewController;
-			sourceTree = "<group>";
-		};
-		4417455E2340D43500088C9F /* BarberSettingsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				44B9F7042341FBB000FC6210 /* Views */,
-				4417455F2340D44E00088C9F /* BarberSettingsViewController.swift */,
-			);
-			path = BarberSettingsViewController;
-			sourceTree = "<group>";
-		};
 		4418B71D230D31AF0093BF3C = {
 			isa = PBXGroup;
 			children = (
@@ -612,7 +485,6 @@
 				4418B729230D31AF0093BF3C /* AppDelegate.swift */,
 				440E419A230D5C61000FD5FD /* Burb.entitlements */,
 				4418B72D230D31AF0093BF3C /* Main.storyboard */,
-				440E418E230D3461000FD5FD /* ViewController OLD! */,
 				44B9F70D23424B6C00FC6210 /* Custom Cells */,
 				44F9251E231028DA00B23454 /* Extensions */,
 				44F92519230FE2ED00B23454 /* Models */,
@@ -632,37 +504,33 @@
 			path = Burb;
 			sourceTree = "<group>";
 		};
-		44319F182328E5F300C8DD7D /* ConfirmOrderTimeViewController */ = {
+		4429D882243F173000079E81 /* Photo View */ = {
 			isa = PBXGroup;
 			children = (
-				44319F192328E61700C8DD7D /* ConfirmOrderTimeViewController.swift */,
+				4429D883243F175600079E81 /* PhotoView.swift */,
+				4429D887243F177300079E81 /* PhotoView.xib */,
 			);
-			path = ConfirmOrderTimeViewController;
+			path = "Photo View";
 			sourceTree = "<group>";
 		};
-		4431E9BB2340875300A152D0 /* CallendarViewController */ = {
+		4429D889243F6B1A00079E81 /* Specify City */ = {
 			isa = PBXGroup;
 			children = (
-				4431E9BC2340877D00A152D0 /* CallendarViewController.swift */,
+				4429D88A243F6B7000079E81 /* BUSpecifyCityViewController.swift */,
+				4429D88B243F6B7000079E81 /* BUSpecifyCityViewController.xib */,
+				44B757F8244076F700D73EA8 /* SpecifyCityRouter.swift */,
+				447AFC65244305CB00B8F839 /* SpecifyCityInteractor.swift */,
 			);
-			path = CallendarViewController;
+			path = "Specify City";
 			sourceTree = "<group>";
 		};
-		44323DBB232A2CC300C622E7 /* OrdersViewController */ = {
+		4429D88E243F6D4500079E81 /* City Avatar Cell */ = {
 			isa = PBXGroup;
 			children = (
-				44323DBC232A2CD500C622E7 /* OrdersViewController.swift */,
-				44323DBE232A2E8E00C622E7 /* OrderCell.swift */,
+				4429D88F243F6D8E00079E81 /* CityAvatarTableViewCell.swift */,
+				4429D890243F6D8E00079E81 /* CityAvatarTableViewCell.xib */,
 			);
-			path = OrdersViewController;
-			sourceTree = "<group>";
-		};
-		4436FE462323A23E00E8A322 /* TermsOfUseViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4436FE472323A25F00E8A322 /* TermsOfUseViewController.swift */,
-			);
-			path = TermsOfUseViewController;
+			path = "City Avatar Cell";
 			sourceTree = "<group>";
 		};
 		4440545424080BC400A19220 /* Specify Date */ = {
@@ -731,6 +599,7 @@
 		44472DA323DDAA74009259C5 /* Create User */ = {
 			isa = PBXGroup;
 			children = (
+				4429D889243F6B1A00079E81 /* Specify City */,
 				44F433C52401259C0044C000 /* barber pricing */,
 				44F433C0240125620044C000 /* Create barber */,
 				44F433BF2401253F0044C000 /* Create client */,
@@ -764,15 +633,6 @@
 				44472DBE23DEBFD3009259C5 /* ValidationHelper.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		44472DC723E17697009259C5 /* Client Main Tab Bar */ = {
-			isa = PBXGroup;
-			children = (
-				44472DC823E17704009259C5 /* BUClientTabBarController.swift */,
-				44472DC923E17704009259C5 /* BUClientTabBarController.xib */,
-			);
-			path = "Client Main Tab Bar";
 			sourceTree = "<group>";
 		};
 		44472DCC23E17A1D009259C5 /* Order Location Picker */ = {
@@ -823,14 +683,6 @@
 			path = "Label Cell";
 			sourceTree = "<group>";
 		};
-		44499FA7233B556200467073 /* ChangeClientSettingsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				44499FA8233B55B000467073 /* ChangeClientSettingsViewController.swift */,
-			);
-			path = ChangeClientSettingsViewController;
-			sourceTree = "<group>";
-		};
 		4459EC4F23CCA33D00FE6292 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -843,7 +695,7 @@
 			isa = PBXGroup;
 			children = (
 				4466FC382432507E00591C4B /* barber tabbar */,
-				4466FC372432506F00591C4B /* Client tabbar */,
+				4466FC372432506F00591C4B /* Customer tabbar */,
 				4407381624324497008ABBB7 /* Barber profile */,
 				440738062431E235008ABBB7 /* Barber Orders */,
 				44B34FD2242F3E51003FDA16 /* Onboarding */,
@@ -856,7 +708,6 @@
 				44472DD623E17AB4009259C5 /* Client Profile */,
 				44472DD123E17A98009259C5 /* Dialogs */,
 				44472DCC23E17A1D009259C5 /* Order Location Picker */,
-				44472DC723E17697009259C5 /* Client Main Tab Bar */,
 				44472DA323DDAA74009259C5 /* Create User */,
 				44A12B0C23D46D1F00912FFB /* Choose Role */,
 				44A12B0023D0669900912FFB /* Signup Via Phone */,
@@ -934,22 +785,6 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		445A4A6223322F0500DE0417 /* ClientTabbarViewController */ = {
-			isa = PBXGroup;
-			children = (
-				445A4A6323322F5500DE0417 /* ClientTabbarController.swift */,
-			);
-			path = ClientTabbarViewController;
-			sourceTree = "<group>";
-		};
-		445A4A652332B8C000DE0417 /* DetailOrderViewController */ = {
-			isa = PBXGroup;
-			children = (
-				445A4A662332B93900DE0417 /* DetailOrderViewController.swift */,
-			);
-			path = DetailOrderViewController;
-			sourceTree = "<group>";
-		};
 		445FDF89242101FB00DF314B /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -969,31 +804,13 @@
 			name = "Barber Roll Cell";
 			sourceTree = "<group>";
 		};
-		4466C5DB231E3F5A004CA831 /* DialogsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				4466C5DC231E3F83004CA831 /* DialogsViewController.swift */,
-				4466C5DE231E5AD3004CA831 /* DialogUserCell.swift */,
-			);
-			path = DialogsViewController;
-			sourceTree = "<group>";
-		};
-		4466C5E0231E62A3004CA831 /* CurrentDialogViewControoler */ = {
-			isa = PBXGroup;
-			children = (
-				4466C5E1231E62C7004CA831 /* CurrentDialogViewController.swift */,
-				4466C5E5231EB135004CA831 /* MessageViewCell.swift */,
-			);
-			path = CurrentDialogViewControoler;
-			sourceTree = "<group>";
-		};
-		4466FC372432506F00591C4B /* Client tabbar */ = {
+		4466FC372432506F00591C4B /* Customer tabbar */ = {
 			isa = PBXGroup;
 			children = (
 				4466FC392432514A00591C4B /* BUCustomerTabbarController.swift */,
 				4466FC3A2432514A00591C4B /* BUCustomerTabbarController.xib */,
 			);
-			path = "Client tabbar";
+			path = "Customer tabbar";
 			sourceTree = "<group>";
 		};
 		4466FC382432507E00591C4B /* barber tabbar */ = {
@@ -1085,26 +902,6 @@
 			path = "Cell with CollectionView";
 			sourceTree = "<group>";
 		};
-		4481D30D2316F1A400F823F2 /* BarbersViewController */ = {
-			isa = PBXGroup;
-			children = (
-				449E73142317A499004771E8 /* BarberViewCell.swift */,
-				4481D3102316F1F700F823F2 /* BarbersViewController.swift */,
-				444A90C323363322000C9D15 /* BarberDetailViewCell.swift */,
-				444A90C423363322000C9D15 /* BarberDetailViewCell.xib */,
-			);
-			path = BarbersViewController;
-			sourceTree = "<group>";
-		};
-		448D50B123222E1100F401AE /* ChatLogViewController */ = {
-			isa = PBXGroup;
-			children = (
-				448D50B223222E3300F401AE /* ChatLogViewController.swift */,
-				448D50B4232237D900F401AE /* ChatMessageCell.swift */,
-			);
-			path = ChatLogViewController;
-			sourceTree = "<group>";
-		};
 		448D50B62322898700F401AE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -1122,14 +919,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		448E79B62334E6CC00BA2B04 /* DetailBarberViewController */ = {
-			isa = PBXGroup;
-			children = (
-				448E79B72334E6E000BA2B04 /* DetailBarberViewController.swift */,
-			);
-			path = DetailBarberViewController;
-			sourceTree = "<group>";
-		};
 		44968B9A2403B3B300ABAD83 /* Terms of use */ = {
 			isa = PBXGroup;
 			children = (
@@ -1137,14 +926,6 @@
 				44968B9C2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib */,
 			);
 			path = "Terms of use";
-			sourceTree = "<group>";
-		};
-		449E73182317C3C6004771E8 /* ClientOrderViewController */ = {
-			isa = PBXGroup;
-			children = (
-				449E73192317C3F3004771E8 /* ClientOrderViewController.swift */,
-			);
-			path = ClientOrderViewController;
 			sourceTree = "<group>";
 		};
 		44A0BCDB23E2B14F00B52D62 /* Date Picker Cell */ = {
@@ -1159,6 +940,7 @@
 		44A12AF323D045DF00912FFB /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				4429D882243F173000079E81 /* Photo View */,
 				44B34FC0242CD1F5003FDA16 /* Search bar */,
 				44BD7F442428D9D40033D983 /* Empty View */,
 				44687C2823EC05D500F759F4 /* Header Title View */,
@@ -1279,18 +1061,10 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		44B9F7042341FBB000FC6210 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				44B9F7052341FD7500FC6210 /* PhotoView.swift */,
-				44B9F7072341FD8400FC6210 /* PhotoView.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		44B9F70D23424B6C00FC6210 /* Custom Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4429D88E243F6D4500079E81 /* City Avatar Cell */,
 				4407380B2431F311008ABBB7 /* Inbox Order Cell */,
 				44B34FB3242B532F003FDA16 /* Segment Control Cell */,
 				444054592408146F00A19220 /* Calendar Cell */,
@@ -1358,6 +1132,8 @@
 			children = (
 				44F433C72401259C0044C000 /* BUBarberPricingViewController.swift */,
 				44F433C62401259C0044C000 /* BUBarberPricingViewController.xib */,
+				44B757F6244075EE00D73EA8 /* BarberPricingRouter.swift */,
+				449F2ECC2444410E000779FC /* BarberPricingInteractor.swift */,
 			);
 			path = "barber pricing";
 			sourceTree = "<group>";
@@ -1396,14 +1172,6 @@
 				44F433DF240172D80044C000 /* ServiceCollectionViewCell.xib */,
 			);
 			path = "Service Cell";
-			sourceTree = "<group>";
-		};
-		44F92516230FDC1F00B23454 /* CreateUserViewController */ = {
-			isa = PBXGroup;
-			children = (
-				44F92517230FDC4300B23454 /* CreateUserViewController.swift */,
-			);
-			path = CreateUserViewController;
 			sourceTree = "<group>";
 		};
 		44F92519230FE2ED00B23454 /* Models */ = {
@@ -1527,7 +1295,6 @@
 				44687C1C23EB0A8300F759F4 /* TextFieldTableViewCell.xib in Resources */,
 				44687C0823E81F1900F759F4 /* OrderCollectionViewCell.xib in Resources */,
 				44B34FDA242F3EAD003FDA16 /* BUOnboardingViewController.xib in Resources */,
-				44472DCB23E17704009259C5 /* BUClientTabBarController.xib in Resources */,
 				448D50DD23228FD300F401AE /* OpenSans-Light.ttf in Resources */,
 				44472DE423E1D1EB009259C5 /* BULabelTableViewCell.xib in Resources */,
 				4440545824080BF500A19220 /* BUSpecifyDatesViewController.xib in Resources */,
@@ -1536,18 +1303,17 @@
 				44968B9E2403B3DB00ABAD83 /* BUTermsOfUseViewController.xib in Resources */,
 				4446829C23EEBCE90016167C /* BUTextViewTableViewCell.xib in Resources */,
 				44472DA723DDAAA0009259C5 /* BUCreateUserViewController.xib in Resources */,
+				4429D892243F6D8E00079E81 /* CityAvatarTableViewCell.xib in Resources */,
 				44F433E1240172D80044C000 /* ServiceCollectionViewCell.xib in Resources */,
 				44BD7F482428DA130033D983 /* BUEmptyView.xib in Resources */,
 				44B9F71123424B8F00FC6210 /* NameUserCell.xib in Resources */,
 				44A0BCDF23E2B16A00B52D62 /* BUDatePickerTableViewCell.xib in Resources */,
-				444A90C623363322000C9D15 /* BarberDetailViewCell.xib in Resources */,
 				44F433D5240125D20044C000 /* PricingLabelsTableViewCell.xib in Resources */,
 				4407381A243244D6008ABBB7 /* BUBarberProfileViewController.xib in Resources */,
 				44472DB523DDAE83009259C5 /* AvatarTableViewCell.xib in Resources */,
 				440E41A0230DABE9000FD5FD /* GoogleService-Info.plist in Resources */,
 				44B34FB7242B5359003FDA16 /* SegmentControllTableViewCell.xib in Resources */,
 				4446829723EEBA180016167C /* TwoButtonTableViewCell.xib in Resources */,
-				44B9F7082341FD8400FC6210 /* PhotoView.xib in Resources */,
 				4459EC5523CCA46500FE6292 /* BULoginViewController.xib in Resources */,
 				44F433C82401259C0044C000 /* BUBarberPricingViewController.xib in Resources */,
 				44687BFF23E7FB9800F759F4 /* BUMyOrdersViewController.xib in Resources */,
@@ -1572,6 +1338,7 @@
 				44B9F72523428C6A00FC6210 /* PhilosophyCell.xib in Resources */,
 				4477AE7C23E45A3F00295BC9 /* BarberCollectionViewCell.xib in Resources */,
 				4407380F2431F336008ABBB7 /* InboxOrderCVCell.xib in Resources */,
+				4429D88D243F6B7000079E81 /* BUSpecifyCityViewController.xib in Resources */,
 				44B9F719234269AA00FC6210 /* CommonSettingsLabelCell.xib in Resources */,
 				44472DDA23E17AC7009259C5 /* BUClientProfileViewController.xib in Resources */,
 				44F433D4240125D20044C000 /* SetPriceTableViewCell.xib in Resources */,
@@ -1588,6 +1355,7 @@
 				448D50D523228FD300F401AE /* OpenSans-Semibold.ttf in Resources */,
 				443877C123434D14008AD69F /* NotificationsCell.xib in Resources */,
 				44B9F7292342941500FC6210 /* ReminderCell.xib in Resources */,
+				4429D888243F177300079E81 /* PhotoView.xib in Resources */,
 				44687C2723EBFE9B00F759F4 /* AvatarProfileTableViewCell.xib in Resources */,
 				44F433C3240125760044C000 /* BUCreateBarberViewController.xib in Resources */,
 				445FDF98242117A400DF314B /* BarberCVCell.xib in Resources */,
@@ -1657,8 +1425,8 @@
 				444EF2C62421FF6800ED5AC9 /* ChooseRoleInteractor.swift in Sources */,
 				44687C1823EAFBC700F759F4 /* OrderDatePickerRouter.swift in Sources */,
 				4459EC6323CCB65A00FE6292 /* StartRouter.swift in Sources */,
+				44B757F9244076F700D73EA8 /* SpecifyCityRouter.swift in Sources */,
 				445FDF8D242102A000DF314B /* QC.swift in Sources */,
-				440E4194230D3E6D000FD5FD /* SignupViaPhoneViewController.swift in Sources */,
 				44A12B1723D4915300912FFB /* RoleCollectionViewCell.swift in Sources */,
 				44B9F71C23426D4600FC6210 /* WeaponCell.swift in Sources */,
 				4446829223ED90400016167C /* MyOrdersRouter.swift in Sources */,
@@ -1671,20 +1439,15 @@
 				44B9F71023424B8F00FC6210 /* NameUserCell.swift in Sources */,
 				44472DA623DDAAA0009259C5 /* BUCreateUserViewController.swift in Sources */,
 				4446829B23EEBCE90016167C /* BUTextViewTableViewCell.swift in Sources */,
-				444A90C523363322000C9D15 /* BarberDetailViewCell.swift in Sources */,
 				440E41A3230DAECA000FD5FD /* Extensions.swift in Sources */,
 				44B9F7202342884400FC6210 /* BarberEducationCell.swift in Sources */,
 				44F433D7240125D20044C000 /* ConfirmCodeCollectionViewCell.swift in Sources */,
 				44B8594F2406B22E00A5E733 /* Extension+Encodable.swift in Sources */,
-				440E41A6230DC1F4000FD5FD /* ChooseRoleViewController.swift in Sources */,
 				444022872406C87300DE5DB8 /* AuthManager.swift in Sources */,
 				4477AE7B23E45A3F00295BC9 /* BarberCollectionViewCell.swift in Sources */,
 				44B34FB9242B58C0003FDA16 /* Curency.swift in Sources */,
-				441745602340D44E00088C9F /* BarberSettingsViewController.swift in Sources */,
 				4440545C2408148C00A19220 /* CalendarTableViewCell.swift in Sources */,
 				4446828623ED4DA60016167C /* BUDetailOrderViewController.swift in Sources */,
-				4411C5EF23158FB1004A51FE /* ClientSettingsViewController.swift in Sources */,
-				449E731A2317C3F3004771E8 /* ClientOrderViewController.swift in Sources */,
 				44B9F71423424F0A00FC6210 /* PhoneNumberCell.swift in Sources */,
 				444682A023EEBE4F0016167C /* MapViewTableViewCell.swift in Sources */,
 				4407381524322462008ABBB7 /* OrderLocationPickerInteractor.swift in Sources */,
@@ -1694,75 +1457,60 @@
 				444EF2CA24222B6300ED5AC9 /* CreateCustomerInteractor.swift in Sources */,
 				4407380E2431F336008ABBB7 /* InboxOrderCVCell.swift in Sources */,
 				44F433C92401259C0044C000 /* BUBarberPricingViewController.swift in Sources */,
+				4429D88C243F6B7000079E81 /* BUSpecifyCityViewController.swift in Sources */,
 				44B34FC2242CD210003FDA16 /* File.swift in Sources */,
 				44A12AFE23D065AA00912FFB /* LoginRouter.swift in Sources */,
 				44BCDF7D243A2E8400988CF5 /* OrderManager.swift in Sources */,
-				445A4A6423322F5500DE0417 /* ClientTabbarController.swift in Sources */,
 				44472DBA23DDC42C009259C5 /* CreateUserRouter.swift in Sources */,
+				447AFC66244305CB00B8F839 /* SpecifyCityInteractor.swift in Sources */,
 				44F433D6240125D20044C000 /* PricingLabelsTableViewCell.swift in Sources */,
 				44B34FBD242B626A003FDA16 /* PricingModel.swift in Sources */,
 				4466FC3B2432514A00591C4B /* BUCustomerTabbarController.swift in Sources */,
 				4459EC5423CCA46500FE6292 /* BULoginViewController.swift in Sources */,
-				44319F1A2328E61700C8DD7D /* ConfirmOrderTimeViewController.swift in Sources */,
 				44323DC1232A481400C622E7 /* Order.swift in Sources */,
-				44F92518230FDC4300B23454 /* CreateUserViewController.swift in Sources */,
-				4431E9BD2340877D00A152D0 /* CallendarViewController.swift in Sources */,
 				44472DE323E1D1EB009259C5 /* BULabelTableViewCell.swift in Sources */,
 				444682A323F0003C0016167C /* ChooseBarberRouter.swift in Sources */,
 				44472DDE23E1D054009259C5 /* BUOrderDatePickerViewController.swift in Sources */,
-				4466C5E6231EB135004CA831 /* MessageViewCell.swift in Sources */,
 				4440544A2407EAA700A19220 /* Extension+TextView.swift in Sources */,
-				445A4A672332B93900DE0417 /* DetailOrderViewController.swift in Sources */,
 				44B9F7282342941500FC6210 /* ReminderCell.swift in Sources */,
 				44BCDF7F243A50A400988CF5 /* OnboardingRouter.swift in Sources */,
 				44687C1B23EB0A8300F759F4 /* TextFieldTableViewCell.swift in Sources */,
 				44B34FC7242DE81A003FDA16 /* BUTableView.swift in Sources */,
 				44073819243244D6008ABBB7 /* BUBarberProfileViewController.swift in Sources */,
 				44BD7F432428CCA80033D983 /* CurrentUser.swift in Sources */,
-				44EE1DC5232F82E1007FACED /* CommonSettingsCell.swift in Sources */,
 				44F433C4240125760044C000 /* BUCreateBarberViewController.swift in Sources */,
-				448D50B323222E3300F401AE /* ChatLogViewController.swift in Sources */,
 				44687C3023EC38E500F759F4 /* LabelButtonTableViewCell.swift in Sources */,
 				44472DAB23DDAC6F009259C5 /* BUTextFieldTableViewCell.swift in Sources */,
 				44B8594B24068D0B00A5E733 /* FirestoreManager.swift in Sources */,
 				44687C0A23E9523A00F759F4 /* LocationPickerRouter.swift in Sources */,
 				44A12B1323D47CB100912FFB /* SignupPhoneInteractor.swift in Sources */,
 				44B34FC4242CD449003FDA16 /* extension+UIView.swift in Sources */,
+				449F2ECD2444410E000779FC /* BarberPricingInteractor.swift in Sources */,
 				44B9F7032341ED8C00FC6210 /* NiBLoadable.swift in Sources */,
 				443877C42343510C008AD69F /* HidePhoneNumberCell.swift in Sources */,
 				44B34FC9242DEB73003FDA16 /* Extension+UIImageView.swift in Sources */,
-				448E79B82334E6E000BA2B04 /* DetailBarberViewController.swift in Sources */,
 				44472DB423DDAE83009259C5 /* AvatarTableViewCell.swift in Sources */,
 				44472DBC23DEBF50009259C5 /* Extension+String.swift in Sources */,
 				44968B9D2403B3DB00ABAD83 /* BUTermsOfUseViewController.swift in Sources */,
-				44323DBD232A2CD500C622E7 /* OrdersViewController.swift in Sources */,
-				440E4191230D3482000FD5FD /* LoginViewController.swift in Sources */,
 				4418B732230D31AF0093BF3C /* Burb.xcdatamodeld in Sources */,
 				44B8594D24068F1800A5E733 /* ChooseBarberInteractor.swift in Sources */,
-				4466C5E2231E62C7004CA831 /* CurrentDialogViewController.swift in Sources */,
-				44323DBF232A2E8E00C622E7 /* OrderCell.swift in Sources */,
-				44B9F7062341FD7500FC6210 /* PhotoView.swift in Sources */,
 				444EF2CC24225F8F00ED5AC9 /* Barber.swift in Sources */,
 				4466FC402433315600591C4B /* CreateBarberRouter.swift in Sources */,
-				4466C5DF231E5AD3004CA831 /* DialogUserCell.swift in Sources */,
 				44B9F72423428C6A00FC6210 /* PhilosophyCell.swift in Sources */,
 				443877C023434D14008AD69F /* NotificationsCell.swift in Sources */,
 				4466FC3E2433247600591C4B /* OrderDatePickerInteractor.swift in Sources */,
 				44472DD423E17AAB009259C5 /* BUDialogsViewController.swift in Sources */,
 				44687C2623EBFE9B00F759F4 /* AvatarProfileTableViewCell.swift in Sources */,
-				440E4197230D47F6000FD5FD /* ConfirmSignupViewController.swift in Sources */,
-				4481D30C2316D3EE00F823F2 /* UserInfoCell.swift in Sources */,
 				44472DBF23DEBFD3009259C5 /* ValidationHelper.swift in Sources */,
-				44EE1DC3232F7AC9007FACED /* CommonSettingsTitleCell.swift in Sources */,
 				449E73172317B07A004771E8 /* User.swift in Sources */,
 				4418B72A230D31AF0093BF3C /* AppDelegate.swift in Sources */,
 				44F433D3240125D20044C000 /* SetPriceTableViewCell.swift in Sources */,
 				44472DB723DDB5FB009259C5 /* ChooseRoleRouter.swift in Sources */,
-				449E73152317A499004771E8 /* BarberViewCell.swift in Sources */,
 				44687C2123EBF8CC00F759F4 /* TumblerTableViewCell.swift in Sources */,
 				44F9251B230FE2FC00B23454 /* RegisterModel.swift in Sources */,
 				44B34FB6242B5359003FDA16 /* SegmentControllTableViewCell.swift in Sources */,
 				44A12AFB23D0557F00912FFB /* BUButtonTableViewCell.swift in Sources */,
+				4429D884243F175600079E81 /* PhotoView.swift in Sources */,
 				444022852406BCA100DE5DB8 /* Extension+Decodable.swift in Sources */,
 				4407381324320B51008ABBB7 /* BarberOrdersInteractor.swift in Sources */,
 				44B9F70B234248E500FC6210 /* UserAvatarCell.swift in Sources */,
@@ -1770,28 +1518,24 @@
 				44472DD923E17AC7009259C5 /* BUClientProfileViewController.swift in Sources */,
 				44B34FBB242B5B78003FDA16 /* CreateBarberInteractor.swift in Sources */,
 				44687BFE23E7FB9800F759F4 /* BUMyOrdersViewController.swift in Sources */,
-				448D50B5232237D900F401AE /* ChatMessageCell.swift in Sources */,
 				44687C0723E81F1900F759F4 /* OrderCollectionViewCell.swift in Sources */,
 				44A0BCDE23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift in Sources */,
-				4466C5DD231E3F83004CA831 /* DialogsViewController.swift in Sources */,
 				44472DCF23E17A6D009259C5 /* BUOrderLocationPickerViewController.swift in Sources */,
 				4466C5E4231EAC0F004CA831 /* Message.swift in Sources */,
 				44B34FD9242F3EAD003FDA16 /* BUOnboardingViewController.swift in Sources */,
 				44BD7F462428DA020033D983 /* BUEmptyView.swift in Sources */,
 				4477AE8023E45B0C00295BC9 /* BUCVTableViewCell.swift in Sources */,
-				44499FA9233B55B000467073 /* ChangeClientSettingsViewController.swift in Sources */,
 				445FDF97242117A400DF314B /* BarberCVCell.swift in Sources */,
-				4436FE482323A25F00E8A322 /* TermsOfUseViewController.swift in Sources */,
-				4481D3112316F1F700F823F2 /* BarbersViewController.swift in Sources */,
+				44B757F7244075EE00D73EA8 /* BarberPricingRouter.swift in Sources */,
 				44B9F718234269AA00FC6210 /* CommonSettingsLabelCell.swift in Sources */,
 				445FDF8F2421054400DF314B /* ClientAnimView.swift in Sources */,
+				4429D891243F6D8E00079E81 /* CityAvatarTableViewCell.swift in Sources */,
 				4411C5EA23153C46004A51FE /* Role.swift in Sources */,
 				44BD7F4A242A50220033D983 /* StorageManager.swift in Sources */,
 				4446829023ED8C460016167C /* AvatarOrderTableViewCell.swift in Sources */,
 				447B13EB2344A57F004D9275 /* Typealiases.swift in Sources */,
 				44F433E0240172D80044C000 /* ServiceCollectionViewCell.swift in Sources */,
 				4446829623EEBA180016167C /* TwoButtonTableViewCell.swift in Sources */,
-				44472DCA23E17704009259C5 /* BUClientTabBarController.swift in Sources */,
 				44A12B0823D07F6200912FFB /* PhoneNumberCollectionViewCell.swift in Sources */,
 				4477AE7623E42CB800295BC9 /* BUChooseBarberViewController.swift in Sources */,
 				44A12AF623D0471300912FFB /* HeaderView.swift in Sources */,

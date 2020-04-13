@@ -14,8 +14,8 @@ final class CreateBarberRouter {
     
     private init() {}
     
-    func handleOnboarding(from source: UIViewController) {
-        let destinationVC = BUOnboardingViewController()
+    func handleSpecifyCity(from source: UIViewController) {
+        let destinationVC = BUSpecifyCityViewController()
         source.navigationController?.pushViewController(destinationVC, animated: true)
     }
 }

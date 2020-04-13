@@ -15,7 +15,7 @@ final class ChooseBarberRouter {
     private init() {}
     
     func goToMainTabber(from source: UIViewController) {
-        let destinationVC = BUClientTabBarController()
+        let destinationVC = BUCustomerTabbarController()
             source.navigationController?.pushViewController(destinationVC, animated: true)
     }
 }

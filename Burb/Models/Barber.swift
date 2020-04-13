@@ -10,43 +10,59 @@ import UIKit
 
 class Barber: NSObject {
     var id: String
-    var phoneNumber: String?
-    var name: String?
+    var phoneNumber: String
+    var name: String
     var photo: UIImage?
     var fullPhoto: UIImage?
     var avatarReference: String?
     var fullAvatarReference: String?
-    var age: Int?
+    var age: Int
     var weapon: String?
     var education: String?
     var philosophy: String?
+    var city: String
     
     var dict: [String: Any] {
         return [
-            "id": id,
-            "phone": phoneNumber ?? "",
-            "name": name ?? "",
-            "avatarReference": avatarReference ?? "",
-            "fullAvatarReference": fullAvatarReference ?? "",
-            "age": age ?? "",
-            "weapon": weapon ?? "",
-            "education": education ?? "",
-            "philosophy": philosophy ?? "",
+            "id":                   id,
+            "phone":                phoneNumber,
+            "name":                 name,
+            "avatarReference":      avatarReference ?? "",
+            "fullAvatarReference":  fullAvatarReference ?? "",
+            "age":                  age,
+            "weapon":               weapon ?? "",
+            "education":            education ?? "",
+            "philosophy":           philosophy ?? "",
         ]}
     
-    init(id: String, name: String, photo:UIImage, fullPhoto: UIImage?, phoneNumber: String, avatarReference: String, fullAvatarReference: String, age: Int, weapon: String, education: String, philosophy: String) {
-        self.id = id
-        self.name = name
-        self.phoneNumber = phoneNumber
-        self.photo = photo
-        self.fullPhoto = fullPhoto
-        self.avatarReference = avatarReference
-        self.fullAvatarReference = fullAvatarReference
-        self.age = age
-        self.weapon = weapon
-        self.education = education
-        self.philosophy = philosophy
+    init(id: String, name: String, photo:UIImage, fullPhoto: UIImage?, phoneNumber: String, avatarReference: String, fullAvatarReference: String, age: Int, weapon: String, education: String, philosophy: String, city: String) {
+        self.id =                   id
+        self.name =                 name
+        self.phoneNumber =          phoneNumber
+        self.photo =                photo
+        self.fullPhoto =            fullPhoto!
+        self.avatarReference =      avatarReference
+        self.fullAvatarReference =  fullAvatarReference
+        self.age =                  age
+        self.weapon =               weapon
+        self.education =            education
+        self.philosophy =           philosophy
+        self.city =                 city
     }
+    
+    init?(barberSQL: BarberSQL) {
+        self.id =               barberSQL.id!
+        self.name =             barberSQL.name!
+        self.phoneNumber =      barberSQL.phoneNumber!
+        self.photo =            UIImage(data: barberSQL.photo!)!
+        self.fullPhoto =        UIImage(data: barberSQL.fullPhoto!)!
+        self.age =              Int(barberSQL.age)
+        self.weapon =           barberSQL.weapon!
+        self.education =        barberSQL.education
+        self.philosophy =       barberSQL.philosophy
+        self.city =             barberSQL.city!
+    }
+    
     
     var isFilled: Bool {
         guard !(name ?? "").isEmpty,!(phoneNumber ?? "").isEmpty, photo != nil, fullPhoto != nil, age != nil else {

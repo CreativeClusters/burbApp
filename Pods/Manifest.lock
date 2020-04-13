@@ -284,6 +284,7 @@ PODS:
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
   - RaisePlaceholder (1.0.3)
+  - SkyFloatingLabelTextField (3.8.0)
   - SPStorkController (1.7.9)
 
 DEPENDENCIES:
@@ -296,6 +297,7 @@ DEPENDENCIES:
   - FirebaseStorage
   - FlagPhoneNumber
   - RaisePlaceholder
+  - SkyFloatingLabelTextField (~> 3.0)
   - SPStorkController
 
 SPEC REPOS:
@@ -326,6 +328,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - RaisePlaceholder
+    - SkyFloatingLabelTextField
     - SPStorkController
 
 SPEC CHECKSUMS:
@@ -355,8 +358,9 @@ SPEC CHECKSUMS:
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   RaisePlaceholder: e77c8565f556e25659bdf1b9a77647a952b8cb70
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
   SPStorkController: 36bd84206267232747b19d48852659bd71ede28f
 
-PODFILE CHECKSUM: 5349a405941ebf0db4dc2288537eb344427fb294
+PODFILE CHECKSUM: cb5450b624be59d294bb8f389d93e555f8bcbde9
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.8.3

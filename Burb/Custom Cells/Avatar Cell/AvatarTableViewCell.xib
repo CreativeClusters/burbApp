@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,25 +24,36 @@
                             <constraint firstAttribute="width" constant="160" id="aIn-wd-LgI"/>
                         </constraints>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-Pr-6Wz">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EOK-sf-d31">
                         <rect key="frame" x="84" y="39" width="152" height="152"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_512" translatesAutoresizingMaskIntoConstraints="NO" id="aPn-pg-itg">
+                        <rect key="frame" x="91.5" y="46.5" width="137" height="137"/>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="O10-3i-5Mu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="5nh-kS-5N1"/>
-                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="centerY" secondItem="O10-3i-5Mu" secondAttribute="centerY" id="6KK-To-9nV"/>
+                    <constraint firstItem="EOK-sf-d31" firstAttribute="width" secondItem="O10-3i-5Mu" secondAttribute="width" multiplier="0.95" id="AJ7-3g-O4O"/>
+                    <constraint firstItem="aPn-pg-itg" firstAttribute="centerX" secondItem="EOK-sf-d31" secondAttribute="centerX" id="GHw-wX-HQo"/>
                     <constraint firstItem="O10-3i-5Mu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Jls-m4-jDb"/>
-                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="centerX" secondItem="O10-3i-5Mu" secondAttribute="centerX" id="TXG-lu-KJa"/>
-                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="height" secondItem="O10-3i-5Mu" secondAttribute="height" multiplier="0.95" id="ZLG-C5-DyK"/>
-                    <constraint firstItem="5dU-Pr-6Wz" firstAttribute="width" secondItem="O10-3i-5Mu" secondAttribute="width" multiplier="0.95" id="uIa-bZ-um7"/>
+                    <constraint firstItem="EOK-sf-d31" firstAttribute="centerY" secondItem="O10-3i-5Mu" secondAttribute="centerY" id="NJL-mI-FtE"/>
+                    <constraint firstItem="EOK-sf-d31" firstAttribute="height" secondItem="O10-3i-5Mu" secondAttribute="height" multiplier="0.95" id="R2X-sO-6uP"/>
+                    <constraint firstItem="aPn-pg-itg" firstAttribute="height" secondItem="EOK-sf-d31" secondAttribute="height" multiplier="0.9" id="YgJ-EP-Q0e"/>
+                    <constraint firstItem="aPn-pg-itg" firstAttribute="width" secondItem="EOK-sf-d31" secondAttribute="width" multiplier="0.9" id="lpq-AG-WHO"/>
+                    <constraint firstItem="aPn-pg-itg" firstAttribute="centerY" secondItem="EOK-sf-d31" secondAttribute="centerY" id="nik-Sw-Aew"/>
+                    <constraint firstItem="EOK-sf-d31" firstAttribute="centerX" secondItem="O10-3i-5Mu" secondAttribute="centerX" id="xGW-QE-p6Y"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="avatarImageView" destination="5dU-Pr-6Wz" id="3az-UT-WaJ"/>
+                <outlet property="avatarImageView" destination="EOK-sf-d31" id="UCB-Qf-djS"/>
                 <outlet property="circleView" destination="O10-3i-5Mu" id="O6B-fT-trR"/>
+                <outlet property="plusImageView" destination="aPn-pg-itg" id="VFb-VO-sQh"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="215.625"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="add_512" width="512" height="512"/>
+    </resources>
 </document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PhotoView" customModule="Burb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="238"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OY6-1P-IKQ">
+                    <rect key="frame" x="0.0" y="0.0" width="267" height="238"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_512" translatesAutoresizingMaskIntoConstraints="NO" id="lZW-qb-tW9">
+                    <rect key="frame" x="26.5" y="24" width="214" height="190"/>
+                    <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="OY6-1P-IKQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Irb-8m-L6x"/>
+                <constraint firstItem="lZW-qb-tW9" firstAttribute="width" secondItem="OY6-1P-IKQ" secondAttribute="width" multiplier="0.8" id="JQx-Mg-Ilk"/>
+                <constraint firstItem="lZW-qb-tW9" firstAttribute="centerX" secondItem="OY6-1P-IKQ" secondAttribute="centerX" id="QLE-OR-JKx"/>
+                <constraint firstItem="lZW-qb-tW9" firstAttribute="height" secondItem="OY6-1P-IKQ" secondAttribute="height" multiplier="0.8" id="mph-EH-ROC"/>
+                <constraint firstItem="lZW-qb-tW9" firstAttribute="centerY" secondItem="OY6-1P-IKQ" secondAttribute="centerY" id="o1Q-4A-vJI"/>
+                <constraint firstItem="OY6-1P-IKQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="o5y-kU-yjn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OY6-1P-IKQ" secondAttribute="trailing" id="u8c-My-skv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="OY6-1P-IKQ" secondAttribute="bottom" id="vLj-8H-0wD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="OY6-1P-IKQ" id="DKm-7b-WaV"/>
+                <outlet property="plusImageView" destination="lZW-qb-tW9" id="AHN-Pg-o9H"/>
+            </connections>
+            <point key="canvasLocation" x="31.159420289855074" y="-102.45535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_512" width="512" height="512"/>
+    </resources>
+</document>

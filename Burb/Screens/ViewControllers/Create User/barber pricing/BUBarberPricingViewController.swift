@@ -10,6 +10,7 @@ import UIKit
 
 class BUBarberPricingViewController: UIViewController, NiBLoadable {
     
+    
     fileprivate enum CellModel {
         case textLabel
         case curency
@@ -55,34 +56,47 @@ class BUBarberPricingViewController: UIViewController, NiBLoadable {
     private let curencyModel: [Curency] = [.rubles, .euro, .dollars]
     private var headerModel: [HeaderModel] = [.textLabel, .curency, .nameAndPrice, .haircut, .beardHaircut, .babyHaircut, .dangerousShave, .clipper, .stacking, .button]
     private var model: [CellModel] = [.textLabel, .curency, .nameAndPrice, .haircut, .beardHaircut, .babyHaircut, .dangerousShave, .clipper, .stacking, .button]
+    private var currencyModel: [Curency] = [.rubles]
+    lazy private var currentCurencyImage: UIImage? = UIImage(systemName: "dollarsign.circle.fill")?.withTintColor(burbColor)
+    
+    private let dollarImage = UIImage(systemName: "dollarsign.circle.fill")?.withTintColor(burbColor)
+    private let euroImage = UIImage(systemName: "eurosign.circle.fill")?.withTintColor(burbColor)
+    private let rurImage = UIImage(systemName: "rublesign.circle.fill")?.withTintColor(burbColor)
     
     private var pricingModel: PricingModel?
+    private var currentBarber: BarberSQL?
+    
     @IBOutlet weak var tableView: UITableView!
     
-    
-    init(barber: Barber, nibName: String?, bundle: Bundle?) {
-        self.pricingModel?.barber = barber
+    override init(nibName: String?, bundle: Bundle?) {
         super.init(nibName: nibName, bundle: bundle)
     }
     
     required init(coder aDecoder: NSCoder) {
         super.init(nibName: BUBarberPricingViewController.name, bundle: Bundle.main)
- }
- 
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
- }
- 
-    deinit {
-     NotificationCenter.default.removeObserver(self)
- }
+    }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         Decorator.decorate(self)
         delegating()
         registerCells()
+        initIfavailable()
+        initPricingModel()
+    }
+    
+    private func initIfavailable() {
+        SpecifyCityInteractor.shared.fetchBarberSQL { (data) in
+            self.currentBarber = data
+        }
+    }
+    
+    private func initPricingModel() {
+        self.pricingModel = PricingModel(curency: .rubles, haircut: Int.init(), beardHaircur: Int.init(), babyHaircut: Int.init(), dangerousShave: Int.init(), clipper: Int.init(), stacking: Int.init())
     }
     
     private func delegating() {
@@ -99,9 +113,23 @@ class BUBarberPricingViewController: UIViewController, NiBLoadable {
     }
     
     @objc func handleOnboarding() {
-        print("asdad")
+        guard let barberId = self.currentBarber?.id, let barberPricingModel = self.pricingModel else { return }
+        BarberPricingInteractor.shared.savePricingData(by: barberId, with: barberPricingModel)
+        BarberPricingRouter.shared.handleOnboarding(from: self, with: .Barber)
     }
     
+    fileprivate func switchCurency(with image: UIImage) {
+        if let cell = self.tableView.dequeueReusableCell(withIdentifier: SetPriceTableViewCell.name) as? SetPriceTableViewCell {
+            cell.priceTextField.iconImage = image
+            self.tableView.reloadData()
+        }
+    }
+    
+    fileprivate func updateDoneButtonStatus() {
+        if let cell = self.tableView.dequeueReusableCell(withIdentifier: BUButtonTableViewCell.name) as? BUButtonTableViewCell {
+            cell.button.isEnabled = ((self.pricingModel?.pricingIsFilled) != nil)
+        }
+    }
 }
 
 extension BUBarberPricingViewController: UITableViewDelegate, UITableViewDataSource {
@@ -129,9 +157,27 @@ extension BUBarberPricingViewController: UITableViewDelegate, UITableViewDataSou
                 cell.set(titles: self.curencyModel.map{ $0.rawValue.capitalized})
                 cell.indexChanged = {
                     index in
-                    print(index)
                     cell.index = index
+                    let currency = self.curencyModel[index]
+                    self.pricingModel?.curency = currency
+                    self.currentCurencyImage = self.rurImage
                     
+                    switch index {
+                    case 0:
+                        self.switchCurency(with: self.currentCurencyImage!)
+                        self.currentCurencyImage = self.rurImage
+                        self.updateDoneButtonStatus()
+                    case 1:
+                        self.switchCurency(with: self.currentCurencyImage!)
+                        self.currentCurencyImage = self.dollarImage
+                        self.updateDoneButtonStatus()
+                    case 2:
+                        self.switchCurency(with: self.currentCurencyImage!)
+                        self.currentCurencyImage = self.euroImage
+                        self.updateDoneButtonStatus()
+                    default:
+                        break
+                    }
                 }
                 return cell
             }
@@ -143,57 +189,98 @@ extension BUBarberPricingViewController: UITableViewDelegate, UITableViewDataSou
         case .haircut:
             if let cell = self.tableView.dequeueReusableCell(withIdentifier: SetPriceTableViewCell.name, for: indexPath) as? SetPriceTableViewCell {
                 cell.setTitle(text: "_HAIRCUT")
-                if let haircutImage = UIImage(named: "haircut") {
-                 cell.setPicture(image: haircutImage)
+                if let haircutImage = UIImage(named: "cut1") {
+                    cell.setPicture(image: haircutImage)
+                }
+                cell.setPriceImage(image: self.currentCurencyImage!)
+                cell.textChanged = {
+                    text in
+                    self.pricingModel?.haircut = Int(text)
+                    self.updateDoneButtonStatus()
                 }
                 return cell
             }
         case .beardHaircut:
             if let cell = self.tableView.dequeueReusableCell(withIdentifier: SetPriceTableViewCell.name, for: indexPath) as? SetPriceTableViewCell {
                 cell.setTitle(text: "_BEARDHAIRCUT")
-                if let beardHaircutImage = UIImage(named: "beardHaircut") {
-                 cell.setPicture(image: beardHaircutImage)
+                if let beardHaircutImage = UIImage(named: "cut2") {
+                    cell.setPicture(image: beardHaircutImage)
+                }
+                cell.setPriceImage(image: self.currentCurencyImage!)
+                cell.textChanged = {
+                    text in
+                    self.pricingModel?.beardHaircur = Int(text)
+                    self.updateDoneButtonStatus()
                 }
                 return cell
             }
         case .babyHaircut:
             if let cell = self.tableView.dequeueReusableCell(withIdentifier: SetPriceTableViewCell.name, for: indexPath) as? SetPriceTableViewCell {
                 cell.setTitle(text: "_BABYHAIRCUT")
-                if let babyHaircutImage = UIImage(named: "babyHaircut") {
-                 cell.setPicture(image: babyHaircutImage)
+                if let babyHaircutImage = UIImage(named: "cut3") {
+                    cell.setPicture(image: babyHaircutImage)
+                }
+                cell.setPriceImage(image: self.currentCurencyImage!)
+                cell.textChanged = {
+                    text in
+                    self.pricingModel?.babyHaircut = Int(text)
+                    self.updateDoneButtonStatus()
                 }
                 return cell
             }
         case .dangerousShave:
             if let cell = self.tableView.dequeueReusableCell(withIdentifier: SetPriceTableViewCell.name, for: indexPath) as? SetPriceTableViewCell {
                 cell.setTitle(text: "_DANGEROUSSAVE")
-                if let dangerousShaveImage = UIImage(named: "dangerousShave") {
-                 cell.setPicture(image: dangerousShaveImage)
+                if let dangerousShaveImage = UIImage(named: "cut4") {
+                    cell.setPicture(image: dangerousShaveImage)
+                }
+                cell.setPriceImage(image: self.currentCurencyImage!)
+                cell.textChanged = {
+                    text in
+                    self.pricingModel?.dangerousShave = Int(text)
+                    self.updateDoneButtonStatus()
                 }
                 return cell
             }
         case .clipper:
             if let cell = self.tableView.dequeueReusableCell(withIdentifier: SetPriceTableViewCell.name, for: indexPath) as? SetPriceTableViewCell {
                 cell.setTitle(text: "_CLIPPER")
-                if let clipperImage = UIImage(named: "clipper") {
-                 cell.setPicture(image: clipperImage)
+                if let clipperImage = UIImage(named: "cut5") {
+                    cell.setPicture(image: clipperImage)
+                }
+                cell.setPriceImage(image: self.currentCurencyImage!)
+                cell.textChanged = {
+                    text in
+                    self.pricingModel?.clipper = Int(text)
+                    self.updateDoneButtonStatus()
                 }
                 return cell
-            }        case .stacking:
-                if let cell = self.tableView.dequeueReusableCell(withIdentifier: SetPriceTableViewCell.name, for: indexPath) as? SetPriceTableViewCell {
-                    cell.setTitle(text: "_STACKING")
-                    if let stackingImage = UIImage(named: "stacking") {
-                     cell.setPicture(image: stackingImage)
-                    }
-                    return cell
-            }        case .button:
-                if let cell = self.tableView.dequeueReusableCell(withIdentifier: BUButtonTableViewCell.name, for: indexPath) as? BUButtonTableViewCell {
-                    cell.button.setTitle("_CONFIRM", for: .normal)
-                    cell.setColor(color: burbColor)
-                    cell.setFont(font: UIFont(name: "OpenSans-Semibold", size: 15)!)
-                    cell.button.tintColor = .white
-                    cell.button.addTarget(self, action: #selector(handleOnboarding), for: .touchUpInside)
-                    return cell
+            }
+        case .stacking:
+            if let cell = self.tableView.dequeueReusableCell(withIdentifier: SetPriceTableViewCell.name, for: indexPath) as? SetPriceTableViewCell {
+                cell.setTitle(text: "_STACKING")
+                if let stackingImage = UIImage(named: "cut6") {
+                    cell.setPicture(image: stackingImage)
+                }
+                cell.setPriceImage(image: self.currentCurencyImage!)
+                cell.textChanged = {
+                    text in
+                    self.pricingModel?.stacking = Int(text)
+                    self.updateDoneButtonStatus()
+                }
+                return cell
+            }
+        case .button:
+            if let cell = self.tableView.dequeueReusableCell(withIdentifier: BUButtonTableViewCell.name, for: indexPath) as? BUButtonTableViewCell {
+                cell.button.setTitle("_CONFIRM", for: .normal)
+                cell.setColor(color: burbColor)
+                cell.setFont(font: UIFont(name: "OpenSans-Semibold", size: 15)!)
+                cell.button.tintColor = .white
+                cell.button.isEnabled = ((pricingModel?.pricingIsFilled) != nil)
+                cell.buttonHandler = {
+                    self.handleOnboarding()
+                }
+                return cell
             }
         }
         return UITableViewCell.init()
@@ -211,17 +298,17 @@ extension BUBarberPricingViewController: UITableViewDelegate, UITableViewDataSou
         case .nameAndPrice:
             return 44
         case .haircut:
-            return 44
+            return 52
         case .beardHaircut:
-            return 44
+            return 52
         case .babyHaircut:
-            return 44
+            return 52
         case .dangerousShave:
-            return 44
+            return 52
         case .clipper:
-            return 44
+            return 52
         case .stacking:
-            return 44
+            return 52
         case .button:
             return 50
         }
@@ -231,7 +318,7 @@ extension BUBarberPricingViewController: UITableViewDelegate, UITableViewDataSou
         let headerModels = headerModel[section]
         switch headerModels {
         case .textLabel:
-            return 44
+            return 0
         case .curency:
             return 0
         case .nameAndPrice:
@@ -239,17 +326,17 @@ extension BUBarberPricingViewController: UITableViewDelegate, UITableViewDataSou
         case .haircut:
             return 0
         case .beardHaircut:
-            return 0
+            return 3
         case .babyHaircut:
-            return 0
+            return 3
         case .dangerousShave:
-            return 0
+            return 3
         case .clipper:
-            return 0
+            return 3
         case .stacking:
-            return 0
+            return 3
         case .button:
-            return self.tableView.frame.height / 10
+            return self.tableView.frame.height / 9
         }
     }
     
@@ -257,9 +344,6 @@ extension BUBarberPricingViewController: UITableViewDelegate, UITableViewDataSou
         _ = headerModel[section]
         return UIView.init()
     }
-    
-    
-    
 }
 
 

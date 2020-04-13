@@ -20,5 +20,8 @@ final class OnboardingRouter {
         source.navigationController?.pushViewController(destinationVC, animated: true)
     }
     
-    
+    func handleBarber(from source: UIViewController) {
+        let destinationVC = BUSpecifyDatesViewController()
+        source.navigationController?.pushViewController(destinationVC, animated: true)
+    }
 }

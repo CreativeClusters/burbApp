@@ -12,6 +12,7 @@ class AvatarTableViewCell: UITableViewCell, NiBLoadable {
     
     @IBOutlet weak var circleView: UIView!
     @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var plusImageView: UIImageView!
     
     var percent = 0
     var timer: Timer!
@@ -24,20 +25,21 @@ class AvatarTableViewCell: UITableViewCell, NiBLoadable {
         Decorator.decorate(self)
         addTargets()
     }
-
-    func setPicture(image: UIImage) {
+    
+    func set(image: UIImage) {
         avatarImageView.image = image
+        plusImageView.isHidden = true
     }
     
     func addTargets() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(imageViewTapped))
-        self.avatarImageView.addGestureRecognizer(tap)
+        avatarImageView.addGestureRecognizer(tap)
+        plusImageView.addGestureRecognizer(tap)
     }
     
     @objc func imageViewTapped() {
         photoViewClicked!()
     }
-    
     
 }
 
@@ -52,8 +54,10 @@ extension AvatarTableViewCell {
             cell.circleView.layer.cornerRadius = cell.circleView.frame.size.width / 2
             cell.circleView.layer.borderColor = burbColor.cgColor
             cell.circleView.layer.borderWidth = 2
-            cell.avatarImageView.layer.cornerRadius = cell.avatarImageView.frame.size.width / 2
+            cell.avatarImageView.layer.cornerRadius  = cell.avatarImageView.frame.size.width / 2
+            cell.plusImageView.layer.cornerRadius  = cell.plusImageView.frame.size.width / 2
             cell.avatarImageView.isUserInteractionEnabled = true
+            cell.plusImageView.isUserInteractionEnabled = true
         }
     }
 }

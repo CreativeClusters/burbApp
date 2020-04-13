@@ -21,6 +21,7 @@ class FirestoreManager {
     static let barbers = "barbers"
     static let orders = "orders"
     static let services = "services"
+    static let pricingModel = "pricingModel"
     
     static let sourceReference = Firestore.firestore()
     
@@ -29,6 +30,7 @@ class FirestoreManager {
     static let barbersReference = sourceReference.collection(barbers)
     static let ordersReference = sourceReference.collection(orders)
     static let servicesReference = sourceReference.collection(services)
+    static let pricingModelReference = sourceReference.collection(pricingModel)
 }
 
 

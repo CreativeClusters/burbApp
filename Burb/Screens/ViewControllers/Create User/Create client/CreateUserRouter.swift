@@ -18,6 +18,5 @@ final class CreateCustomerRouter {
         let destinationVC = BUOnboardingViewController()
         source.navigationController?.pushViewController(destinationVC, animated: true)
     }
-    
-    
 }
+

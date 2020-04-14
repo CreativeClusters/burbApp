@@ -14,8 +14,8 @@ class StartRouter {
     
     private init() {}
     
-    private let rootViewController: UIViewController = BUOrderLocationPickerViewController()
-    
+    private let rootViewController: UIViewController = BULoginViewController()
+     
     func root(_ window: inout UIWindow?) {
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)

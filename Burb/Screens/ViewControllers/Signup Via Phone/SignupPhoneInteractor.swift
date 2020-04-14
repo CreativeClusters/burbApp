@@ -51,32 +51,10 @@ final class SignupPhoneInteractor {
     
     func checkIfUserExists(phoneNumber: String) {
 
-        if (phoneNumber.isEmpty == false){
-            let databaseReference = FirestoreManager.registerReference
+        if (phoneNumber.isEmpty == false) {
             
-            databaseReference.getDocuments { (snapshot, error) in
-                if let value = snapshot?.value(forKey: "phoneNumber") {
-                    print("we already have \(value)")
-                } else {
-                    print("user doesnt exist")
-                }
-            }
+          //  FirestoreManager.registerReference.
         }
     }
     
-    
-    func signIn() {
-        guard let verificationID = UserDefaults.standard.string(forKey: "authVerificationID"), let verificationCode = UserDefaults.standard.string(forKey: "securityCode") else { return }
-        
-        let credentials = PhoneAuthProvider.provider().credential(withVerificationID: verificationID, verificationCode: verificationCode)
-        
-        Auth.auth().signIn(with: credentials) { (authResult, error) in
-            if let error = error  {
-                let authError = error as NSError
-                print(authError)
-            } else {
-                print("user with \(verificationID) is logged in!")
-            }
-        }
-    }
 }

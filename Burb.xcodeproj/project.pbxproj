@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		440304AF2446033000D9C90E /* BUBarberTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440304AD2446033000D9C90E /* BUBarberTabbarViewController.swift */; };
+		440304B02446033000D9C90E /* BUBarberTabbarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440304AE2446033000D9C90E /* BUBarberTabbarViewController.xib */; };
 		440738092431E263008ABBB7 /* BUBarberOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440738072431E263008ABBB7 /* BUBarberOrdersViewController.swift */; };
 		4407380A2431E263008ABBB7 /* BUBarberOrdersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440738082431E263008ABBB7 /* BUBarberOrdersViewController.xib */; };
 		4407380E2431F336008ABBB7 /* InboxOrderCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407380C2431F336008ABBB7 /* InboxOrderCVCell.swift */; };
 		4407380F2431F336008ABBB7 /* InboxOrderCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4407380D2431F336008ABBB7 /* InboxOrderCVCell.xib */; };
-		4407381124320898008ABBB7 /* BUOrdersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407381024320898008ABBB7 /* BUOrdersDataManager.swift */; };
 		4407381324320B51008ABBB7 /* BarberOrdersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407381224320B51008ABBB7 /* BarberOrdersInteractor.swift */; };
 		4407381524322462008ABBB7 /* OrderLocationPickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407381424322462008ABBB7 /* OrderLocationPickerInteractor.swift */; };
 		44073819243244D6008ABBB7 /* BUBarberProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44073817243244D6008ABBB7 /* BUBarberProfileViewController.swift */; };
@@ -209,11 +210,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		440304AD2446033000D9C90E /* BUBarberTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUBarberTabbarViewController.swift; sourceTree = "<group>"; };
+		440304AE2446033000D9C90E /* BUBarberTabbarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUBarberTabbarViewController.xib; sourceTree = "<group>"; };
 		440738072431E263008ABBB7 /* BUBarberOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUBarberOrdersViewController.swift; sourceTree = "<group>"; };
 		440738082431E263008ABBB7 /* BUBarberOrdersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BUBarberOrdersViewController.xib; sourceTree = "<group>"; };
 		4407380C2431F336008ABBB7 /* InboxOrderCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxOrderCVCell.swift; sourceTree = "<group>"; };
 		4407380D2431F336008ABBB7 /* InboxOrderCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InboxOrderCVCell.xib; sourceTree = "<group>"; };
-		4407381024320898008ABBB7 /* BUOrdersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUOrdersDataManager.swift; sourceTree = "<group>"; };
 		4407381224320B51008ABBB7 /* BarberOrdersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarberOrdersInteractor.swift; sourceTree = "<group>"; };
 		4407381424322462008ABBB7 /* OrderLocationPickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderLocationPickerInteractor.swift; sourceTree = "<group>"; };
 		44073817243244D6008ABBB7 /* BUBarberProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BUBarberProfileViewController.swift; sourceTree = "<group>"; };
@@ -432,7 +434,6 @@
 			children = (
 				440738072431E263008ABBB7 /* BUBarberOrdersViewController.swift */,
 				440738082431E263008ABBB7 /* BUBarberOrdersViewController.xib */,
-				4407381024320898008ABBB7 /* BUOrdersDataManager.swift */,
 				4407381224320B51008ABBB7 /* BarberOrdersInteractor.swift */,
 			);
 			path = "Barber Orders";
@@ -816,6 +817,8 @@
 		4466FC382432507E00591C4B /* barber tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				440304AD2446033000D9C90E /* BUBarberTabbarViewController.swift */,
+				440304AE2446033000D9C90E /* BUBarberTabbarViewController.xib */,
 			);
 			path = "barber tabbar";
 			sourceTree = "<group>";
@@ -1355,6 +1358,7 @@
 				448D50D523228FD300F401AE /* OpenSans-Semibold.ttf in Resources */,
 				443877C123434D14008AD69F /* NotificationsCell.xib in Resources */,
 				44B9F7292342941500FC6210 /* ReminderCell.xib in Resources */,
+				440304B02446033000D9C90E /* BUBarberTabbarViewController.xib in Resources */,
 				4429D888243F177300079E81 /* PhotoView.xib in Resources */,
 				44687C2723EBFE9B00F759F4 /* AvatarProfileTableViewCell.xib in Resources */,
 				44F433C3240125760044C000 /* BUCreateBarberViewController.xib in Resources */,
@@ -1421,7 +1425,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4440545724080BF500A19220 /* BUSpecifyDatesViewController.swift in Sources */,
-				4407381124320898008ABBB7 /* BUOrdersDataManager.swift in Sources */,
 				444EF2C62421FF6800ED5AC9 /* ChooseRoleInteractor.swift in Sources */,
 				44687C1823EAFBC700F759F4 /* OrderDatePickerRouter.swift in Sources */,
 				4459EC6323CCB65A00FE6292 /* StartRouter.swift in Sources */,
@@ -1517,6 +1520,7 @@
 				44F433DC240170A10044C000 /* Service.swift in Sources */,
 				44472DD923E17AC7009259C5 /* BUClientProfileViewController.swift in Sources */,
 				44B34FBB242B5B78003FDA16 /* CreateBarberInteractor.swift in Sources */,
+				440304AF2446033000D9C90E /* BUBarberTabbarViewController.swift in Sources */,
 				44687BFE23E7FB9800F759F4 /* BUMyOrdersViewController.swift in Sources */,
 				44687C0723E81F1900F759F4 /* OrderCollectionViewCell.swift in Sources */,
 				44A0BCDE23E2B16A00B52D62 /* BUDatePickerTableViewCell.swift in Sources */,

@@ -75,7 +75,7 @@ class BUSignupViaPhoneViewController: UIViewController {
     
     @objc private func handleChooseRole() {
         SignupPhoneInteractor.shared.sendConfirmCode(securityCode: registerModel?.securityCode ?? "", phoneNumber: registerModel?.phoneNumber ?? "")
-        SignupPhoneInteractor.shared.signIn()
+        AuthManager.shared.signIn()
         SignupPhoneRouter.shared.goToChooseRoleVC(from: self)
     }
     
@@ -94,8 +94,8 @@ class BUSignupViaPhoneViewController: UIViewController {
         rightBarBarButton.tintColor = burbColor
         rightBarBarButton.isEnabled = false
         navigationItem.rightBarButtonItem = rightBarBarButton
+     //   SignupPhoneInteractor.shared.checkIfUserExists(phoneNumber: phoneToSend)
     }
-    
 }
 
 extension BUSignupViaPhoneViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

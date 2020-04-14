@@ -110,7 +110,6 @@ class BUChooseRoleViewController: UIViewController, UICollectionViewDelegate, UI
         registerCells()
         addRightBarButton()
         setupBackBarItem()
-        
         chooseBarberInteratcor.shared.fetchBarbers()
     }
     
@@ -127,7 +126,6 @@ class BUChooseRoleViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     @objc private func handleCreateUser() {
-      //  ChooseRoleInteractor.shared.setRole(role: selectedRole.rawValue)
         switch self.selectedRole {
         case .Barber:
             ChooseRoleRouter.shared.handleCreateBarberVC(from: self)

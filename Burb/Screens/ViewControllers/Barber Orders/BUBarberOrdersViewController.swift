@@ -43,7 +43,7 @@ extension BUBarberOrdersViewController: UICollectionViewDelegateFlowLayout, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: OrderCollectionViewCell.name, for: indexPath) as? OrderCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: InboxOrderCVCell.name, for: indexPath) as? InboxOrderCVCell
         return cell!
     }
     
@@ -64,9 +64,9 @@ extension BUBarberOrdersViewController {
     fileprivate class Decorator {
         private init() {}
         static func decorate(_ vc: BUBarberOrdersViewController) {
-            vc.navigationController?.isNavigationBarHidden = false
-            vc.navigationController?.navigationBar.barTintColor = UIColor.white
-            vc.navigationController?.navigationBar.shadowImage = UIImage()
+            vc.parent?.navigationController?.isNavigationBarHidden = false
+            vc.parent?.navigationController?.navigationBar.barTintColor = UIColor.white
+            vc.parent?.navigationController?.navigationBar.shadowImage = UIImage()
             
             vc.segmentControl.setTitle("_inbox", forSegmentAt: 0)
             vc.segmentControl.setTitle("_accepted", forSegmentAt: 1)
@@ -74,7 +74,7 @@ extension BUBarberOrdersViewController {
             vc.segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: burbColor], for: .selected)
             vc.segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
             
-            vc.title = "_orders"
+            vc.parent?.title = "_ORDERS"
         }
         
     }

@@ -287,10 +287,10 @@ extension BUBarberProfileViewController {
     fileprivate class Decorator {
         private init() {}
         static func decorate(_ vc: BUBarberProfileViewController) {
-            vc.title = "_PROFILE SETTINGS"
+            vc.parent?.title = "_PROFILE"
             vc.hideKeyboardWhenTappedAround()
-            vc.navigationController?.navigationBar.shadowImage = UIImage()
-            vc.navigationController?.navigationBar.barTintColor = UIColor.white
+            vc.parent?.navigationController?.navigationBar.shadowImage = UIImage()
+            vc.parent?.navigationController?.navigationBar.barTintColor = UIColor.white
         }
     }
 }
